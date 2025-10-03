@@ -302,19 +302,25 @@ const Index = () => {
               <p className="text-lg text-muted-foreground leading-relaxed">
                 Gaurav Tatwawadi is the driving force behind our vision of making investing and insurance truly 
                 <strong> client-first and risk-aware</strong>. A graduate from <strong>COEP (College of Engineering, Pune)</strong> and 
-                an alumnus of <strong>MDI Gurgaon</strong>, Gaurav combines the sharpness of engineering with the strategic 
-                thinking of a top-tier management institute.
+                an alumnus of <strong>MDI Gurgaon</strong>, Gaurav combines the analytical rigor of engineering with the strategic 
+                acumen of elite business management.
               </p>
               
               <p className="text-lg text-muted-foreground leading-relaxed">
-                With years of experience in finance, strategy, and client advisory, he personally reviews every 
-                client's portfolio to ensure that risk is properly evaluated and goals are matched with the right 
-                financial products.
+                With <strong>12+ years in the finance industry</strong>, Gaurav has worked under the best in the business, 
+                learning from industry leaders and mastering the art of wealth creation and protection. His expertise spans 
+                portfolio management, risk evaluation, and strategic financial planning for diverse client segments.
+              </p>
+              
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                As <strong>Co-founder of autumnbreezefilmz.com</strong> and a <strong>trusted advisor to celebrities and HNIs</strong>, 
+                Gaurav has built a reputation for delivering personalized, high-integrity financial solutions. He personally reviews 
+                every client's portfolio to ensure risk is properly evaluated and goals are matched with the right financial products.
               </p>
               
               <p className="text-lg text-muted-foreground leading-relaxed">
                 For Gaurav, this isn't just business — it's a <strong>mission to bring integrity, transparency, and 
-                discipline</strong> to wealth and protection management in India.
+                discipline</strong> to wealth and protection management across India.
               </p>
               
               <div className="pt-4 border-l-4 border-primary pl-6 italic">
