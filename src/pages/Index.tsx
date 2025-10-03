@@ -25,11 +25,14 @@ const Index = () => {
       {/* Header */}
       <header className="fixed top-0 w-full bg-background/80 backdrop-blur-md border-b border-border z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center">
               <TrendingUp className="w-6 h-6 text-primary-foreground" />
             </div>
-            <span className="text-xl font-bold text-foreground">Tatwa Financials</span>
+            <div className="flex flex-col">
+              <span className="text-xl font-bold text-foreground leading-none">Tatwa Financials</span>
+              <span className="text-[10px] text-muted-foreground font-medium">AMFI Registered Distributor</span>
+            </div>
           </div>
           <nav className="hidden md:flex items-center gap-8">
             <a href="#why-us" className="text-muted-foreground hover:text-foreground transition-colors">
@@ -37,6 +40,9 @@ const Index = () => {
             </a>
             <a href="#expertise" className="text-muted-foreground hover:text-foreground transition-colors">
               Expertise
+            </a>
+            <a href="#partners" className="text-muted-foreground hover:text-foreground transition-colors">
+              Partners
             </a>
             <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors">
               About
@@ -283,73 +289,103 @@ const Index = () => {
       </section>
 
       {/* Partners Section */}
-      <section className="py-20 px-4">
-        <div className="container mx-auto">
-          <div className="text-center mb-16">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-accent text-primary-foreground mb-6">
-              <Handshake className="w-8 h-8" />
+      <section id="partners" className="py-20 px-4 bg-gradient-to-b from-muted/30 via-background to-muted/30 relative overflow-hidden">
+        {/* Decorative Background Elements */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,hsl(var(--primary)/0.05),transparent_50%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,hsl(var(--secondary)/0.05),transparent_50%)]" />
+        
+        <div className="container mx-auto relative z-10">
+          <div className="text-center mb-16 animate-fade-in">
+            <div className="inline-flex items-center justify-center w-20 h-20 rounded-3xl bg-gradient-to-br from-primary via-accent to-secondary text-primary-foreground mb-6 shadow-[var(--shadow-glow)] animate-scale-in">
+              <Handshake className="w-10 h-10" />
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">Our Partners</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Trusted collaborations with leading financial institutions and technology partners
+            <h2 className="text-4xl md:text-6xl font-bold mb-4 text-foreground bg-clip-text text-transparent bg-gradient-to-r from-primary via-accent to-secondary animate-slide-up">
+              Our Partners
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+              Trusted collaborations with India's leading financial institutions and technology innovators
             </p>
           </div>
 
           {/* Technology Partner */}
-          <div className="mb-16 max-w-4xl mx-auto">
-            <h3 className="text-2xl font-bold text-center mb-8 text-foreground">
-              Technology Partner
-            </h3>
-            <div className="max-w-md mx-auto">
-              <PartnerLogo name="Redvision Technologies Pvt Ltd" category="technology" />
+          <div className="mb-20 max-w-4xl mx-auto">
+            <div className="text-center mb-8">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 text-accent text-sm font-semibold mb-4">
+                <Zap className="w-4 h-4" />
+                Technology Partner
+              </div>
+              <h3 className="text-3xl font-bold text-foreground">
+                Powered by Innovation
+              </h3>
+            </div>
+            <div className="max-w-lg mx-auto">
+              <PartnerLogo name="Redvision Technologies Pvt Ltd" category="technology" delay={0} />
             </div>
           </div>
 
           {/* AMC Partners */}
-          <div className="mb-16">
-            <h3 className="text-2xl font-bold text-center mb-8 text-foreground">
-              Asset Management Company Partners
-            </h3>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-              <PartnerLogo name="HDFC Mutual Fund" category="amc" />
-              <PartnerLogo name="ICICI Prudential MF" category="amc" />
-              <PartnerLogo name="SBI Mutual Fund" category="amc" />
-              <PartnerLogo name="Axis Mutual Fund" category="amc" />
-              <PartnerLogo name="Nippon India MF" category="amc" />
-              <PartnerLogo name="Kotak Mahindra MF" category="amc" />
-              <PartnerLogo name="Aditya Birla Sun Life MF" category="amc" />
-              <PartnerLogo name="UTI Mutual Fund" category="amc" />
-              <PartnerLogo name="DSP Mutual Fund" category="amc" />
-              <PartnerLogo name="Franklin Templeton MF" category="amc" />
-              <PartnerLogo name="IDFC Mutual Fund" category="amc" />
-              <PartnerLogo name="Mirae Asset MF" category="amc" />
-              <PartnerLogo name="Tata Mutual Fund" category="amc" />
-              <PartnerLogo name="Invesco Mutual Fund" category="amc" />
-              <PartnerLogo name="L&T Mutual Fund" category="amc" />
+          <div className="mb-20">
+            <div className="text-center mb-10">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-semibold mb-4">
+                <BarChart3 className="w-4 h-4" />
+                Asset Management Partners
+              </div>
+              <h3 className="text-3xl font-bold text-foreground mb-3">
+                Top Fund Houses
+              </h3>
+              <p className="text-muted-foreground max-w-2xl mx-auto">
+                Access to India's most trusted mutual fund providers
+              </p>
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+              <PartnerLogo name="HDFC Mutual Fund" category="amc" delay={0} />
+              <PartnerLogo name="ICICI Prudential MF" category="amc" delay={50} />
+              <PartnerLogo name="SBI Mutual Fund" category="amc" delay={100} />
+              <PartnerLogo name="Axis Mutual Fund" category="amc" delay={150} />
+              <PartnerLogo name="Nippon India MF" category="amc" delay={200} />
+              <PartnerLogo name="Kotak Mahindra MF" category="amc" delay={250} />
+              <PartnerLogo name="Aditya Birla Sun Life MF" category="amc" delay={300} />
+              <PartnerLogo name="UTI Mutual Fund" category="amc" delay={350} />
+              <PartnerLogo name="DSP Mutual Fund" category="amc" delay={400} />
+              <PartnerLogo name="Franklin Templeton MF" category="amc" delay={450} />
+              <PartnerLogo name="IDFC Mutual Fund" category="amc" delay={500} />
+              <PartnerLogo name="Mirae Asset MF" category="amc" delay={550} />
+              <PartnerLogo name="Tata Mutual Fund" category="amc" delay={600} />
+              <PartnerLogo name="Invesco Mutual Fund" category="amc" delay={650} />
+              <PartnerLogo name="L&T Mutual Fund" category="amc" delay={700} />
             </div>
           </div>
 
           {/* Insurance Partners */}
           <div>
-            <h3 className="text-2xl font-bold text-center mb-8 text-foreground">
-              Insurance Company Partners
-            </h3>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-              <PartnerLogo name="LIC of India" category="insurance" />
-              <PartnerLogo name="HDFC Life" category="insurance" />
-              <PartnerLogo name="SBI Life" category="insurance" />
-              <PartnerLogo name="ICICI Prudential Life" category="insurance" />
-              <PartnerLogo name="Max Life Insurance" category="insurance" />
-              <PartnerLogo name="Bajaj Allianz Life" category="insurance" />
-              <PartnerLogo name="Tata AIA Life" category="insurance" />
-              <PartnerLogo name="Kotak Life Insurance" category="insurance" />
-              <PartnerLogo name="Aditya Birla Sun Life" category="insurance" />
-              <PartnerLogo name="Star Health Insurance" category="insurance" />
-              <PartnerLogo name="HDFC ERGO Health" category="insurance" />
-              <PartnerLogo name="Niva Bupa Health" category="insurance" />
-              <PartnerLogo name="Care Health Insurance" category="insurance" />
-              <PartnerLogo name="Reliance General" category="insurance" />
-              <PartnerLogo name="ICICI Lombard" category="insurance" />
+            <div className="text-center mb-10">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/10 text-secondary text-sm font-semibold mb-4">
+                <Heart className="w-4 h-4" />
+                Insurance Partners
+              </div>
+              <h3 className="text-3xl font-bold text-foreground mb-3">
+                Leading Insurers
+              </h3>
+              <p className="text-muted-foreground max-w-2xl mx-auto">
+                Comprehensive coverage from India's most reliable insurance companies
+              </p>
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+              <PartnerLogo name="LIC of India" category="insurance" delay={0} />
+              <PartnerLogo name="HDFC Life" category="insurance" delay={50} />
+              <PartnerLogo name="SBI Life" category="insurance" delay={100} />
+              <PartnerLogo name="ICICI Prudential Life" category="insurance" delay={150} />
+              <PartnerLogo name="Max Life Insurance" category="insurance" delay={200} />
+              <PartnerLogo name="Bajaj Allianz Life" category="insurance" delay={250} />
+              <PartnerLogo name="Tata AIA Life" category="insurance" delay={300} />
+              <PartnerLogo name="Kotak Life Insurance" category="insurance" delay={350} />
+              <PartnerLogo name="Aditya Birla Sun Life" category="insurance" delay={400} />
+              <PartnerLogo name="Star Health Insurance" category="insurance" delay={450} />
+              <PartnerLogo name="HDFC ERGO Health" category="insurance" delay={500} />
+              <PartnerLogo name="Niva Bupa Health" category="insurance" delay={550} />
+              <PartnerLogo name="Care Health Insurance" category="insurance" delay={600} />
+              <PartnerLogo name="Reliance General" category="insurance" delay={650} />
+              <PartnerLogo name="ICICI Lombard" category="insurance" delay={700} />
             </div>
           </div>
         </div>
