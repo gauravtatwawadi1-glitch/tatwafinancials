@@ -85,7 +85,7 @@ const Index = () => {
               </p>
               <div className="flex flex-wrap gap-4">
                 <Button size="lg" className="bg-gradient-to-r from-primary to-accent text-primary-foreground hover:shadow-[var(--shadow-glow)] transition-all duration-300" asChild>
-                  <a href="https://wa.link/aq90ws" target="_blank" rel="noopener noreferrer">
+                  <a href="https://calendly.com/gauravtatwawadi/30min" target="_blank" rel="noopener noreferrer">
                     Get free consultation and risk profiling
                   </a>
                 </Button>
