@@ -62,7 +62,7 @@ const Index = () => {
             <div className="animate-fade-in">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
                 <Award className="w-4 h-4" />
-                AMFI & IRDAI Registered
+                AMFI & IRDAI Registered Distributors
               </div>
               <h1 className="text-5xl md:text-6xl font-bold mb-6 text-foreground leading-tight">
                 Invest Smart.
