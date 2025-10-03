@@ -275,60 +275,106 @@ const Index = () => {
       </section>
 
       {/* About the Founder */}
-      <section id="about" className="py-20 px-4 bg-muted/30">
-        <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-12">
+      <section id="about" className="py-20 px-4 bg-gradient-to-b from-muted/30 via-background to-muted/30 relative overflow-hidden">
+        {/* Decorative Background */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,hsl(var(--primary)/0.03),transparent_70%)]" />
+        
+        <div className="container mx-auto max-w-6xl relative z-10">
+          <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">About the Founder</h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-primary via-accent to-secondary mx-auto rounded-full" />
           </div>
           
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="flex justify-center md:justify-start">
-              <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary to-accent rounded-full blur-2xl opacity-20" />
-                <img
-                  src={founderPhoto}
-                  alt="Gaurav Tatwawadi - Founder & Chief Advisor"
-                  className="relative rounded-full shadow-[var(--shadow-strong)] w-48 h-48 object-cover border-4 border-background"
-                />
+          {/* Founder Profile Card */}
+          <div className="bg-card border border-border rounded-3xl shadow-[var(--shadow-strong)] overflow-hidden mb-12">
+            <div className="grid md:grid-cols-3 gap-8 p-8 md:p-12">
+              {/* Photo and Name */}
+              <div className="flex flex-col items-center text-center space-y-4">
+                <div className="relative">
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary to-accent rounded-full blur-2xl opacity-30 scale-110" />
+                  <img
+                    src={founderPhoto}
+                    alt="Gaurav Tatwawadi - Founder & Chief Advisor"
+                    className="relative rounded-full shadow-[var(--shadow-strong)] w-40 h-40 object-cover border-4 border-background"
+                  />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-foreground">Gaurav Tatwawadi</h3>
+                  <p className="text-primary font-semibold">Founder & Chief Advisor</p>
+                </div>
+                
+                {/* Credentials Badges */}
+                <div className="flex flex-wrap gap-2 justify-center pt-2">
+                  <span className="px-3 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-full">
+                    COEP Graduate
+                  </span>
+                  <span className="px-3 py-1 bg-accent/10 text-accent text-xs font-semibold rounded-full">
+                    MDI Gurgaon
+                  </span>
+                  <span className="px-3 py-1 bg-secondary/10 text-secondary text-xs font-semibold rounded-full">
+                    12+ Years
+                  </span>
+                </div>
+              </div>
+              
+              {/* Bio Content */}
+              <div className="md:col-span-2 space-y-4">
+                <p className="text-base text-muted-foreground leading-relaxed">
+                  Gaurav Tatwawadi is the driving force behind our vision of making investing and insurance truly 
+                  <strong> client-first and risk-aware</strong>. A graduate from <strong>COEP (College of Engineering, Pune)</strong> and 
+                  an alumnus of <strong>MDI Gurgaon</strong>, Gaurav combines the analytical rigor of engineering with the strategic 
+                  acumen of elite business management.
+                </p>
+                
+                <p className="text-base text-muted-foreground leading-relaxed">
+                  With <strong>12+ years in the finance industry</strong>, Gaurav has worked under the best in the business, 
+                  learning from industry leaders and mastering the art of wealth creation and protection. His expertise spans 
+                  portfolio management, risk evaluation, and strategic financial planning for diverse client segments.
+                </p>
+                
+                <p className="text-base text-muted-foreground leading-relaxed">
+                  As <strong>Co-founder of autumnbreezefilmz.com</strong> and a <strong>trusted advisor to celebrities and HNIs</strong>, 
+                  Gaurav has built a reputation for delivering personalized, high-integrity financial solutions. He personally reviews 
+                  every client's portfolio to ensure risk is properly evaluated and goals are matched with the right financial products.
+                </p>
               </div>
             </div>
+          </div>
+          
+          {/* Highlights Grid */}
+          <div className="grid md:grid-cols-3 gap-6 mb-12">
+            <div className="bg-gradient-to-br from-primary/5 to-primary/10 border border-primary/20 rounded-2xl p-6 text-center">
+              <div className="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mx-auto mb-4">
+                <BarChart3 className="w-6 h-6" />
+              </div>
+              <h4 className="font-bold text-foreground mb-2">12+ Years</h4>
+              <p className="text-sm text-muted-foreground">Finance Industry Experience</p>
+            </div>
             
-            <div className="text-left space-y-6">
-              <div>
-                <h3 className="text-3xl font-bold text-foreground mb-2">Gaurav Tatwawadi</h3>
-                <p className="text-xl text-primary font-semibold mb-6">Founder & Chief Advisor</p>
+            <div className="bg-gradient-to-br from-accent/5 to-accent/10 border border-accent/20 rounded-2xl p-6 text-center">
+              <div className="w-12 h-12 rounded-xl bg-accent/10 text-accent flex items-center justify-center mx-auto mb-4">
+                <Award className="w-6 h-6" />
               </div>
-              
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Gaurav Tatwawadi is the driving force behind our vision of making investing and insurance truly 
-                <strong> client-first and risk-aware</strong>. A graduate from <strong>COEP (College of Engineering, Pune)</strong> and 
-                an alumnus of <strong>MDI Gurgaon</strong>, Gaurav combines the analytical rigor of engineering with the strategic 
-                acumen of elite business management.
-              </p>
-              
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                With <strong>12+ years in the finance industry</strong>, Gaurav has worked under the best in the business, 
-                learning from industry leaders and mastering the art of wealth creation and protection. His expertise spans 
-                portfolio management, risk evaluation, and strategic financial planning for diverse client segments.
-              </p>
-              
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                As <strong>Co-founder of autumnbreezefilmz.com</strong> and a <strong>trusted advisor to celebrities and HNIs</strong>, 
-                Gaurav has built a reputation for delivering personalized, high-integrity financial solutions. He personally reviews 
-                every client's portfolio to ensure risk is properly evaluated and goals are matched with the right financial products.
-              </p>
-              
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                For Gaurav, this isn't just business — it's a <strong>mission to bring integrity, transparency, and 
-                discipline</strong> to wealth and protection management across India.
-              </p>
-              
-              <div className="pt-4 border-l-4 border-primary pl-6 italic">
-                <p className="text-lg text-foreground">
-                  "Every client deserves a portfolio built for their life story, not a one-size-fits-all product push."
-                </p>
-                <p className="text-sm text-muted-foreground mt-2">– Gaurav Tatwawadi</p>
+              <h4 className="font-bold text-foreground mb-2">Trusted Advisor</h4>
+              <p className="text-sm text-muted-foreground">To Celebrities & HNIs</p>
+            </div>
+            
+            <div className="bg-gradient-to-br from-secondary/5 to-secondary/10 border border-secondary/20 rounded-2xl p-6 text-center">
+              <div className="w-12 h-12 rounded-xl bg-secondary/10 text-secondary flex items-center justify-center mx-auto mb-4">
+                <Target className="w-6 h-6" />
               </div>
+              <h4 className="font-bold text-foreground mb-2">Co-founder</h4>
+              <p className="text-sm text-muted-foreground">autumnbreezefilmz.com</p>
+            </div>
+          </div>
+          
+          {/* Mission Quote */}
+          <div className="max-w-3xl mx-auto">
+            <div className="bg-gradient-to-br from-primary to-accent p-8 rounded-2xl shadow-[var(--shadow-glow)] text-primary-foreground">
+              <p className="text-xl md:text-2xl font-semibold mb-4 italic text-center">
+                "Every client deserves a portfolio built for their life story, not a one-size-fits-all product push."
+              </p>
+              <p className="text-center opacity-90">– Gaurav Tatwawadi</p>
             </div>
           </div>
         </div>
