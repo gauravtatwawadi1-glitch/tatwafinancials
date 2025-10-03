@@ -389,7 +389,7 @@ const Index = () => {
                 {/* Social Links */}
                 <div className="flex gap-3 pt-2">
                   <a
-                    href="https://www.linkedin.com/in/gaurav-tatwawadi"
+                    href="https://www.linkedin.com/in/gaurav-tatwawadi-5133a917/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-10 h-10 rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-primary-foreground flex items-center justify-center transition-all duration-300"
