@@ -35,18 +35,18 @@ export const PartnerLogo = ({ name, category = "amc", delay = 0 }: PartnerLogoPr
 
   return (
     <div
-      className={`${bgGradient} ${borderColor} border rounded-lg p-3 flex items-center gap-3 transition-all duration-300 hover:shadow-md hover:-translate-y-0.5 group animate-fade-in relative overflow-hidden`}
+      className={`${bgGradient} ${borderColor} border rounded-xl p-4 flex flex-col items-center justify-center gap-3 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 group animate-fade-in relative overflow-hidden min-h-[120px]`}
       style={{ animationDelay: `${delay}ms` }}
     >
       <div className="absolute inset-0 bg-gradient-to-br from-transparent via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
       
-      {/* Logo */}
-      <div className={`${bgGradient} ${textColor} w-10 h-10 rounded-md flex items-center justify-center font-bold text-sm flex-shrink-0 relative z-10 border ${borderColor}`}>
+      {/* Logo Circle */}
+      <div className={`${textColor} w-14 h-14 rounded-full bg-background border-2 ${borderColor} flex items-center justify-center font-bold text-lg relative z-10 group-hover:scale-110 transition-transform duration-300`}>
         {getInitials(name)}
       </div>
       
       {/* Name */}
-      <span className={`${textColor} font-semibold text-xs md:text-sm text-left relative z-10 leading-tight`}>
+      <span className={`${textColor} font-semibold text-xs text-center relative z-10 leading-tight`}>
         {name}
       </span>
     </div>
