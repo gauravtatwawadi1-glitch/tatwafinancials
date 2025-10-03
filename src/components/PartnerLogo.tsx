@@ -41,7 +41,7 @@ export const PartnerLogo = ({ name, category = "amc", delay = 0 }: PartnerLogoPr
       <div className="absolute inset-0 bg-gradient-to-br from-transparent via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
       
       {/* Logo Circle */}
-      <div className={`${textColor} w-14 h-14 rounded-full bg-background border-2 ${borderColor} flex items-center justify-center font-bold text-lg relative z-10 group-hover:scale-110 transition-transform duration-300`}>
+      <div className={`${textColor} w-20 h-20 rounded-full bg-background border-2 ${borderColor} flex items-center justify-center font-bold text-xl relative z-10 group-hover:scale-110 transition-transform duration-300`}>
         {getInitials(name)}
       </div>
       
