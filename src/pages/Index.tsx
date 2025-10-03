@@ -36,6 +36,8 @@ import nipponIndiaLogo from "@/assets/logos/nippon-india.png";
 import kotakMfLogo from "@/assets/logos/kotak-mf.png";
 import adityaBirlaLogo from "@/assets/logos/aditya-birla.png";
 import utiMfLogo from "@/assets/logos/uti-mf.png";
+import tataMfLogo from "@/assets/logos/tata-mf.png";
+import franklinTempletonLogo from "@/assets/logos/franklin-templeton.png";
 import licIndiaLogo from "@/assets/logos/lic-india.png";
 import hdfcLifeLogo from "@/assets/logos/hdfc-life.png";
 import sbiLifeLogo from "@/assets/logos/sbi-life.png";
@@ -43,6 +45,8 @@ import maxLifeLogo from "@/assets/logos/max-life.png";
 import bajajAllianzLogo from "@/assets/logos/bajaj-allianz.png";
 import starHealthLogo from "@/assets/logos/star-health.png";
 import careHealthLogo from "@/assets/logos/care-health.png";
+import iciciLombardLogo from "@/assets/logos/icici-lombard.png";
+import tataAigLogo from "@/assets/logos/tata-aig.png";
 import redvisionLogo from "@/assets/logos/redvision.png";
 
 const Index = () => {
@@ -500,6 +504,8 @@ const Index = () => {
               <PartnerLogo name="Kotak MF" category="amc" delay={250} logo={kotakMfLogo} />
               <PartnerLogo name="Aditya Birla" category="amc" delay={300} logo={adityaBirlaLogo} />
               <PartnerLogo name="UTI MF" category="amc" delay={350} logo={utiMfLogo} />
+              <PartnerLogo name="Tata MF" category="amc" delay={400} logo={tataMfLogo} />
+              <PartnerLogo name="Franklin Templeton" category="amc" delay={450} logo={franklinTempletonLogo} />
             </div>
             <div className="text-center mt-6">
               <p className="text-muted-foreground text-sm font-medium">
@@ -531,6 +537,8 @@ const Index = () => {
               <PartnerLogo name="Bajaj Allianz" category="insurance" delay={250} logo={bajajAllianzLogo} />
               <PartnerLogo name="Star Health" category="insurance" delay={300} logo={starHealthLogo} />
               <PartnerLogo name="Care Health" category="insurance" delay={350} logo={careHealthLogo} />
+              <PartnerLogo name="ICICI Lombard" category="insurance" delay={400} logo={iciciLombardLogo} />
+              <PartnerLogo name="Tata AIG" category="insurance" delay={450} logo={tataAigLogo} />
             </div>
             <div className="text-center mt-6">
               <p className="text-muted-foreground text-sm font-medium">
