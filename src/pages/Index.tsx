@@ -21,6 +21,22 @@ import {
 } from "lucide-react";
 import heroImage from "@/assets/hero-finance.jpg";
 import founderPhoto from "@/assets/founder-photo.jpg";
+import hdfcMfLogo from "@/assets/logos/hdfc-mf.png";
+import iciciPrudentialLogo from "@/assets/logos/icici-prudential.png";
+import sbiMfLogo from "@/assets/logos/sbi-mf.png";
+import axisMfLogo from "@/assets/logos/axis-mf.png";
+import nipponIndiaLogo from "@/assets/logos/nippon-india.png";
+import kotakMfLogo from "@/assets/logos/kotak-mf.png";
+import adityaBirlaLogo from "@/assets/logos/aditya-birla.png";
+import utiMfLogo from "@/assets/logos/uti-mf.png";
+import licIndiaLogo from "@/assets/logos/lic-india.png";
+import hdfcLifeLogo from "@/assets/logos/hdfc-life.png";
+import sbiLifeLogo from "@/assets/logos/sbi-life.png";
+import maxLifeLogo from "@/assets/logos/max-life.png";
+import bajajAllianzLogo from "@/assets/logos/bajaj-allianz.png";
+import starHealthLogo from "@/assets/logos/star-health.png";
+import careHealthLogo from "@/assets/logos/care-health.png";
+import redvisionLogo from "@/assets/logos/redvision.png";
 
 const Index = () => {
   return (
@@ -408,7 +424,7 @@ const Index = () => {
               </h3>
             </div>
             <div className="max-w-lg mx-auto">
-              <PartnerLogo name="Redvision Technologies Pvt Ltd" category="technology" delay={0} />
+              <PartnerLogo name="Redvision Technologies Pvt Ltd" category="technology" delay={0} logo={redvisionLogo} />
             </div>
           </div>
 
@@ -427,14 +443,14 @@ const Index = () => {
               </p>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 max-w-6xl mx-auto">
-              <PartnerLogo name="HDFC MF" category="amc" delay={0} />
-              <PartnerLogo name="ICICI Prudential" category="amc" delay={50} />
-              <PartnerLogo name="SBI MF" category="amc" delay={100} />
-              <PartnerLogo name="Axis MF" category="amc" delay={150} />
-              <PartnerLogo name="Nippon India" category="amc" delay={200} />
-              <PartnerLogo name="Kotak MF" category="amc" delay={250} />
-              <PartnerLogo name="Aditya Birla" category="amc" delay={300} />
-              <PartnerLogo name="UTI MF" category="amc" delay={350} />
+              <PartnerLogo name="HDFC MF" category="amc" delay={0} logo={hdfcMfLogo} />
+              <PartnerLogo name="ICICI Prudential" category="amc" delay={50} logo={iciciPrudentialLogo} />
+              <PartnerLogo name="SBI MF" category="amc" delay={100} logo={sbiMfLogo} />
+              <PartnerLogo name="Axis MF" category="amc" delay={150} logo={axisMfLogo} />
+              <PartnerLogo name="Nippon India" category="amc" delay={200} logo={nipponIndiaLogo} />
+              <PartnerLogo name="Kotak MF" category="amc" delay={250} logo={kotakMfLogo} />
+              <PartnerLogo name="Aditya Birla" category="amc" delay={300} logo={adityaBirlaLogo} />
+              <PartnerLogo name="UTI MF" category="amc" delay={350} logo={utiMfLogo} />
             </div>
             <div className="text-center mt-6">
               <p className="text-muted-foreground text-sm font-medium">
@@ -458,14 +474,14 @@ const Index = () => {
               </p>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 max-w-6xl mx-auto">
-              <PartnerLogo name="LIC of India" category="insurance" delay={0} />
-              <PartnerLogo name="HDFC Life" category="insurance" delay={50} />
-              <PartnerLogo name="SBI Life" category="insurance" delay={100} />
-              <PartnerLogo name="ICICI Prudential" category="insurance" delay={150} />
-              <PartnerLogo name="Max Life" category="insurance" delay={200} />
-              <PartnerLogo name="Bajaj Allianz" category="insurance" delay={250} />
-              <PartnerLogo name="Star Health" category="insurance" delay={300} />
-              <PartnerLogo name="Care Health" category="insurance" delay={350} />
+              <PartnerLogo name="LIC of India" category="insurance" delay={0} logo={licIndiaLogo} />
+              <PartnerLogo name="HDFC Life" category="insurance" delay={50} logo={hdfcLifeLogo} />
+              <PartnerLogo name="SBI Life" category="insurance" delay={100} logo={sbiLifeLogo} />
+              <PartnerLogo name="ICICI Prudential" category="insurance" delay={150} logo={iciciPrudentialLogo} />
+              <PartnerLogo name="Max Life" category="insurance" delay={200} logo={maxLifeLogo} />
+              <PartnerLogo name="Bajaj Allianz" category="insurance" delay={250} logo={bajajAllianzLogo} />
+              <PartnerLogo name="Star Health" category="insurance" delay={300} logo={starHealthLogo} />
+              <PartnerLogo name="Care Health" category="insurance" delay={350} logo={careHealthLogo} />
             </div>
             <div className="text-center mt-6">
               <p className="text-muted-foreground text-sm font-medium">

@@ -2,9 +2,10 @@ interface PartnerLogoProps {
   name: string;
   category?: "amc" | "insurance" | "technology";
   delay?: number;
+  logo?: string;
 }
 
-export const PartnerLogo = ({ name, category = "amc", delay = 0 }: PartnerLogoProps) => {
+export const PartnerLogo = ({ name, category = "amc", delay = 0, logo }: PartnerLogoProps) => {
   const bgGradient = {
     amc: "bg-gradient-to-br from-primary/5 to-primary/10 hover:from-primary/10 hover:to-primary/20",
     insurance: "bg-gradient-to-br from-secondary/5 to-secondary/10 hover:from-secondary/10 hover:to-secondary/20",
@@ -41,8 +42,14 @@ export const PartnerLogo = ({ name, category = "amc", delay = 0 }: PartnerLogoPr
       <div className="absolute inset-0 bg-gradient-to-br from-transparent via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
       
       {/* Logo Circle */}
-      <div className={`${textColor} w-20 h-20 rounded-full bg-background border-2 ${borderColor} flex items-center justify-center font-bold text-xl relative z-10 group-hover:scale-110 transition-transform duration-300`}>
-        {getInitials(name)}
+      <div className={`w-20 h-20 rounded-full bg-background border-2 ${borderColor} flex items-center justify-center relative z-10 group-hover:scale-110 transition-transform duration-300 overflow-hidden`}>
+        {logo ? (
+          <img src={logo} alt={`${name} logo`} className="w-16 h-16 object-contain" />
+        ) : (
+          <span className={`${textColor} font-bold text-xl`}>
+            {getInitials(name)}
+          </span>
+        )}
       </div>
       
       {/* Name */}
