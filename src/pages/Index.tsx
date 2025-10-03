@@ -67,8 +67,10 @@ const Index = () => {
               About
             </a>
           </nav>
-          <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
-            Client Login
+          <Button className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>
+            <a href="https://wealthelite.in/client-login" target="_blank" rel="noopener noreferrer">
+              Client Login
+            </a>
           </Button>
         </div>
       </header>
