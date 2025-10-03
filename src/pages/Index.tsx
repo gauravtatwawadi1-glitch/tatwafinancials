@@ -86,7 +86,7 @@ const Index = () => {
               <div className="flex flex-wrap gap-4">
                 <Button size="lg" className="bg-gradient-to-r from-primary to-accent text-primary-foreground hover:shadow-[var(--shadow-glow)] transition-all duration-300" asChild>
                   <a href="https://wa.link/aq90ws" target="_blank" rel="noopener noreferrer">
-                    Start Your Journey
+                    Get free consultation and risk profiling
                   </a>
                 </Button>
                 <Dialog>
