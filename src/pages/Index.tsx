@@ -323,7 +323,7 @@ const Index = () => {
                 </p>
                 
                 <p className="text-base text-muted-foreground leading-relaxed">
-                  Having worked under the best in the business, Gaurav has mastered the art of wealth creation and protection. 
+                  Having worked under the best in the business, Gaurav has mastered the art of wealth multiplication and protection. 
                   His expertise spans portfolio management, risk evaluation, and strategic financial planning. As 
                   <strong> Co-founder of autumnbreezefilmz.com</strong>, he has built a reputation for delivering personalized, 
                   high-integrity financial solutions that match each client's unique goals and risk profile.
