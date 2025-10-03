@@ -98,8 +98,11 @@ const Index = () => {
                 <Button
                   size="lg"
                   className="bg-gradient-to-r from-primary to-accent text-primary-foreground hover:shadow-[var(--shadow-glow)] transition-all duration-300"
+                  asChild
                 >
-                  Start Your Journey
+                  <a href="https://wa.me/8879014522" target="_blank" rel="noopener noreferrer">
+                    Start Your Journey
+                  </a>
                 </Button>
                 <Button
                   size="lg"
