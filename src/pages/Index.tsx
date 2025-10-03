@@ -18,6 +18,7 @@ import {
   Handshake,
 } from "lucide-react";
 import heroImage from "@/assets/hero-finance.jpg";
+import founderPhoto from "@/assets/founder-photo.jpg";
 
 const Index = () => {
   return (
@@ -273,18 +274,57 @@ const Index = () => {
         </div>
       </section>
 
-      {/* About Us */}
+      {/* About the Founder */}
       <section id="about" className="py-20 px-4 bg-muted/30">
-        <div className="container mx-auto max-w-4xl text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">About Us</h2>
-          <p className="text-xl text-muted-foreground leading-relaxed mb-8">
-            We bring the best of <strong>finance + technology</strong> to your fingertips. Our team
-            combines decades of investment knowledge with a passion for transparency and integrity.
-          </p>
-          <p className="text-xl text-muted-foreground leading-relaxed">
-            Every portfolio is personally evaluated, ensuring you never feel like "just another
-            client."
-          </p>
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">About the Founder</h2>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="flex justify-center">
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-to-br from-primary to-accent rounded-2xl blur-xl opacity-30" />
+                <img
+                  src={founderPhoto}
+                  alt="Gaurav Tatwawadi - Founder & Chief Advisor"
+                  className="relative rounded-2xl shadow-[var(--shadow-strong)] w-full max-w-md"
+                />
+              </div>
+            </div>
+            
+            <div className="text-left space-y-6">
+              <div>
+                <h3 className="text-3xl font-bold text-foreground mb-2">Gaurav Tatwawadi</h3>
+                <p className="text-xl text-primary font-semibold mb-6">Founder & Chief Advisor</p>
+              </div>
+              
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Gaurav Tatwawadi is the driving force behind our vision of making investing and insurance truly 
+                <strong> client-first and risk-aware</strong>. A graduate from <strong>COEP (College of Engineering, Pune)</strong> and 
+                an alumnus of <strong>MDI Gurgaon</strong>, Gaurav combines the sharpness of engineering with the strategic 
+                thinking of a top-tier management institute.
+              </p>
+              
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                With years of experience in finance, strategy, and client advisory, he personally reviews every 
+                client's portfolio to ensure that risk is properly evaluated and goals are matched with the right 
+                financial products.
+              </p>
+              
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                For Gaurav, this isn't just business — it's a <strong>mission to bring integrity, transparency, and 
+                discipline</strong> to wealth and protection management in India.
+              </p>
+              
+              <div className="pt-4 border-l-4 border-primary pl-6 italic">
+                <p className="text-lg text-foreground">
+                  "Every client deserves a portfolio built for their life story, not a one-size-fits-all product push."
+                </p>
+                <p className="text-sm text-muted-foreground mt-2">– Gaurav Tatwawadi</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -324,68 +364,64 @@ const Index = () => {
           </div>
 
           {/* AMC Partners */}
-          <div className="mb-20">
-            <div className="text-center mb-10">
+          <div className="mb-16">
+            <div className="text-center mb-8">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-semibold mb-4">
                 <BarChart3 className="w-4 h-4" />
                 Asset Management Partners
               </div>
-              <h3 className="text-3xl font-bold text-foreground mb-3">
+              <h3 className="text-2xl font-bold text-foreground mb-2">
                 Top Fund Houses
               </h3>
-              <p className="text-muted-foreground max-w-2xl mx-auto">
-                Access to India's most trusted mutual fund providers
+              <p className="text-sm text-muted-foreground">
+                A few of our trusted mutual fund partners
               </p>
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-              <PartnerLogo name="HDFC Mutual Fund" category="amc" delay={0} />
-              <PartnerLogo name="ICICI Prudential MF" category="amc" delay={50} />
-              <PartnerLogo name="SBI Mutual Fund" category="amc" delay={100} />
-              <PartnerLogo name="Axis Mutual Fund" category="amc" delay={150} />
-              <PartnerLogo name="Nippon India MF" category="amc" delay={200} />
-              <PartnerLogo name="Kotak Mahindra MF" category="amc" delay={250} />
-              <PartnerLogo name="Aditya Birla Sun Life MF" category="amc" delay={300} />
-              <PartnerLogo name="UTI Mutual Fund" category="amc" delay={350} />
-              <PartnerLogo name="DSP Mutual Fund" category="amc" delay={400} />
-              <PartnerLogo name="Franklin Templeton MF" category="amc" delay={450} />
-              <PartnerLogo name="IDFC Mutual Fund" category="amc" delay={500} />
-              <PartnerLogo name="Mirae Asset MF" category="amc" delay={550} />
-              <PartnerLogo name="Tata Mutual Fund" category="amc" delay={600} />
-              <PartnerLogo name="Invesco Mutual Fund" category="amc" delay={650} />
-              <PartnerLogo name="L&T Mutual Fund" category="amc" delay={700} />
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 max-w-5xl mx-auto">
+              <PartnerLogo name="HDFC MF" category="amc" delay={0} />
+              <PartnerLogo name="ICICI Prudential" category="amc" delay={50} />
+              <PartnerLogo name="SBI MF" category="amc" delay={100} />
+              <PartnerLogo name="Axis MF" category="amc" delay={150} />
+              <PartnerLogo name="Nippon India" category="amc" delay={200} />
+              <PartnerLogo name="Kotak MF" category="amc" delay={250} />
+              <PartnerLogo name="Aditya Birla" category="amc" delay={300} />
+              <PartnerLogo name="UTI MF" category="amc" delay={350} />
+            </div>
+            <div className="text-center mt-6">
+              <p className="text-muted-foreground text-sm font-medium">
+                ...and many more leading AMCs
+              </p>
             </div>
           </div>
 
           {/* Insurance Partners */}
           <div>
-            <div className="text-center mb-10">
+            <div className="text-center mb-8">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/10 text-secondary text-sm font-semibold mb-4">
                 <Heart className="w-4 h-4" />
                 Insurance Partners
               </div>
-              <h3 className="text-3xl font-bold text-foreground mb-3">
+              <h3 className="text-2xl font-bold text-foreground mb-2">
                 Leading Insurers
               </h3>
-              <p className="text-muted-foreground max-w-2xl mx-auto">
-                Comprehensive coverage from India's most reliable insurance companies
+              <p className="text-sm text-muted-foreground">
+                A few of our trusted insurance partners
               </p>
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 max-w-5xl mx-auto">
               <PartnerLogo name="LIC of India" category="insurance" delay={0} />
               <PartnerLogo name="HDFC Life" category="insurance" delay={50} />
               <PartnerLogo name="SBI Life" category="insurance" delay={100} />
-              <PartnerLogo name="ICICI Prudential Life" category="insurance" delay={150} />
-              <PartnerLogo name="Max Life Insurance" category="insurance" delay={200} />
-              <PartnerLogo name="Bajaj Allianz Life" category="insurance" delay={250} />
-              <PartnerLogo name="Tata AIA Life" category="insurance" delay={300} />
-              <PartnerLogo name="Kotak Life Insurance" category="insurance" delay={350} />
-              <PartnerLogo name="Aditya Birla Sun Life" category="insurance" delay={400} />
-              <PartnerLogo name="Star Health Insurance" category="insurance" delay={450} />
-              <PartnerLogo name="HDFC ERGO Health" category="insurance" delay={500} />
-              <PartnerLogo name="Niva Bupa Health" category="insurance" delay={550} />
-              <PartnerLogo name="Care Health Insurance" category="insurance" delay={600} />
-              <PartnerLogo name="Reliance General" category="insurance" delay={650} />
-              <PartnerLogo name="ICICI Lombard" category="insurance" delay={700} />
+              <PartnerLogo name="ICICI Prudential" category="insurance" delay={150} />
+              <PartnerLogo name="Max Life" category="insurance" delay={200} />
+              <PartnerLogo name="Bajaj Allianz" category="insurance" delay={250} />
+              <PartnerLogo name="Star Health" category="insurance" delay={300} />
+              <PartnerLogo name="Care Health" category="insurance" delay={350} />
+            </div>
+            <div className="text-center mt-6">
+              <p className="text-muted-foreground text-sm font-medium">
+                ...and many more leading insurance companies
+              </p>
             </div>
           </div>
         </div>
