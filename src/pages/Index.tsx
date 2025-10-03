@@ -50,7 +50,7 @@ const Index = () => {
             </a>
           </nav>
           <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
-            Download App
+            Client Login
           </Button>
         </div>
       </header>
@@ -282,13 +282,13 @@ const Index = () => {
           </div>
           
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="flex justify-center">
+            <div className="flex justify-center md:justify-start">
               <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary to-accent rounded-2xl blur-xl opacity-30" />
+                <div className="absolute inset-0 bg-gradient-to-br from-primary to-accent rounded-full blur-2xl opacity-20" />
                 <img
                   src={founderPhoto}
                   alt="Gaurav Tatwawadi - Founder & Chief Advisor"
-                  className="relative rounded-2xl shadow-[var(--shadow-strong)] w-full max-w-md"
+                  className="relative rounded-full shadow-[var(--shadow-strong)] w-48 h-48 object-cover border-4 border-background"
                 />
               </div>
             </div>
