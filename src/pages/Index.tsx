@@ -58,7 +58,7 @@ const Index = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4 relative overflow-hidden">
+      <section className="pt-24 pb-12 px-4 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-accent/5 to-secondary/5" />
         <div className="container mx-auto relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -107,9 +107,9 @@ const Index = () => {
       </section>
 
       {/* Why Choose Us */}
-      <section id="why-us" className="py-20 px-4 bg-muted/30">
+      <section id="why-us" className="py-12 px-4 bg-muted/30">
         <div className="container mx-auto">
-          <div className="text-center mb-16 animate-fade-in">
+          <div className="text-center mb-10 animate-fade-in">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">Why Choose Us</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Your trusted partner for digital investment and insurance solutions
@@ -151,9 +151,9 @@ const Index = () => {
       </section>
 
       {/* Expertise Section */}
-      <section id="expertise" className="py-20 px-4">
+      <section id="expertise" className="py-12 px-4">
         <div className="container mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-10">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">Our Expertise</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Comprehensive financial solutions tailored to your needs
@@ -185,7 +185,7 @@ const Index = () => {
       </section>
 
       {/* Risk Evaluation Edge */}
-      <section className="py-20 px-4 bg-gradient-to-br from-primary/5 via-accent/5 to-secondary/5">
+      <section className="py-12 px-4 bg-gradient-to-br from-primary/5 via-accent/5 to-secondary/5">
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-accent text-primary-foreground mb-6">
@@ -194,7 +194,7 @@ const Index = () => {
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
               Our Edge: Risk Evaluation
             </h2>
-            <p className="text-xl text-muted-foreground mb-12 leading-relaxed">
+            <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
               Unlike traditional distributors, our approach begins with <strong>YOU</strong>.
             </p>
             <div className="grid md:grid-cols-3 gap-6 mb-8">
@@ -233,9 +233,9 @@ const Index = () => {
       </section>
 
       {/* Digital Experience */}
-      <section className="py-20 px-4">
+      <section className="py-12 px-4">
         <div className="container mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-10">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
               100% Digital Experience
             </h2>
@@ -277,18 +277,18 @@ const Index = () => {
       </section>
 
       {/* About the Founder */}
-      <section id="about" className="py-20 px-4 bg-gradient-to-b from-muted/30 via-background to-muted/30 relative overflow-hidden">
+      <section id="about" className="py-12 px-4 bg-gradient-to-b from-muted/30 via-background to-muted/30 relative overflow-hidden">
         {/* Decorative Background */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,hsl(var(--primary)/0.03),transparent_70%)]" />
         
         <div className="container mx-auto max-w-6xl relative z-10">
-          <div className="text-center mb-16">
+          <div className="text-center mb-10">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">About the Founder</h2>
             <div className="w-24 h-1 bg-gradient-to-r from-primary via-accent to-secondary mx-auto rounded-full" />
           </div>
           
           {/* Founder Profile Card */}
-          <div className="bg-card border border-border rounded-3xl shadow-[var(--shadow-strong)] overflow-hidden mb-12">
+          <div className="bg-card border border-border rounded-3xl shadow-[var(--shadow-strong)] overflow-hidden mb-8">
             <div className="grid md:grid-cols-3 gap-8 p-8 md:p-12">
               {/* Photo and Name */}
               <div className="flex flex-col items-center text-center space-y-4">
@@ -378,13 +378,13 @@ const Index = () => {
       </section>
 
       {/* Partners Section */}
-      <section id="partners" className="py-20 px-4 bg-gradient-to-b from-muted/30 via-background to-muted/30 relative overflow-hidden">
+      <section id="partners" className="py-12 px-4 bg-gradient-to-b from-muted/30 via-background to-muted/30 relative overflow-hidden">
         {/* Decorative Background Elements */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,hsl(var(--primary)/0.05),transparent_50%)]" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,hsl(var(--secondary)/0.05),transparent_50%)]" />
         
         <div className="container mx-auto relative z-10">
-          <div className="text-center mb-16 animate-fade-in">
+          <div className="text-center mb-10 animate-fade-in">
             <div className="inline-flex items-center justify-center w-20 h-20 rounded-3xl bg-gradient-to-br from-primary via-accent to-secondary text-primary-foreground mb-6 shadow-[var(--shadow-glow)] animate-scale-in">
               <Handshake className="w-10 h-10" />
             </div>
@@ -397,7 +397,7 @@ const Index = () => {
           </div>
 
           {/* Technology Partner */}
-          <div className="mb-20 max-w-4xl mx-auto">
+          <div className="mb-12 max-w-4xl mx-auto">
             <div className="text-center mb-8">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 text-accent text-sm font-semibold mb-4">
                 <Zap className="w-4 h-4" />
@@ -413,7 +413,7 @@ const Index = () => {
           </div>
 
           {/* AMC Partners */}
-          <div className="mb-16">
+          <div className="mb-10">
             <div className="text-center mb-8">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-semibold mb-4">
                 <BarChart3 className="w-4 h-4" />
@@ -477,7 +477,7 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-4 bg-gradient-to-br from-primary via-accent to-secondary text-primary-foreground">
+      <section className="py-16 px-4 bg-gradient-to-br from-primary via-accent to-secondary text-primary-foreground">
         <div className="container mx-auto max-w-4xl text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Ready to invest smarter and protect your future?
@@ -496,7 +496,7 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="py-12 px-4 bg-foreground text-background">
+      <footer className="py-8 px-4 bg-foreground text-background">
         <div className="container mx-auto">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
