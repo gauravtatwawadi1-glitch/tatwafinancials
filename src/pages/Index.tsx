@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { FeatureCard } from "@/components/FeatureCard";
 import { ExpertiseCard } from "@/components/ExpertiseCard";
+import { PartnerLogo } from "@/components/PartnerLogo";
 import {
   Shield,
   Smartphone,
@@ -14,6 +15,7 @@ import {
   Zap,
   Target,
   Award,
+  Handshake,
 } from "lucide-react";
 import heroImage from "@/assets/hero-finance.jpg";
 
@@ -27,7 +29,7 @@ const Index = () => {
             <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center">
               <TrendingUp className="w-6 h-6 text-primary-foreground" />
             </div>
-            <span className="text-xl font-bold text-foreground">InvestSecure</span>
+            <span className="text-xl font-bold text-foreground">Tatwa Financials</span>
           </div>
           <nav className="hidden md:flex items-center gap-8">
             <a href="#why-us" className="text-muted-foreground hover:text-foreground transition-colors">
@@ -280,6 +282,79 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Partners Section */}
+      <section className="py-20 px-4">
+        <div className="container mx-auto">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-accent text-primary-foreground mb-6">
+              <Handshake className="w-8 h-8" />
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">Our Partners</h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              Trusted collaborations with leading financial institutions and technology partners
+            </p>
+          </div>
+
+          {/* Technology Partner */}
+          <div className="mb-16 max-w-4xl mx-auto">
+            <h3 className="text-2xl font-bold text-center mb-8 text-foreground">
+              Technology Partner
+            </h3>
+            <div className="max-w-md mx-auto">
+              <PartnerLogo name="Redvision Technologies Pvt Ltd" category="technology" />
+            </div>
+          </div>
+
+          {/* AMC Partners */}
+          <div className="mb-16">
+            <h3 className="text-2xl font-bold text-center mb-8 text-foreground">
+              Asset Management Company Partners
+            </h3>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+              <PartnerLogo name="HDFC Mutual Fund" category="amc" />
+              <PartnerLogo name="ICICI Prudential MF" category="amc" />
+              <PartnerLogo name="SBI Mutual Fund" category="amc" />
+              <PartnerLogo name="Axis Mutual Fund" category="amc" />
+              <PartnerLogo name="Nippon India MF" category="amc" />
+              <PartnerLogo name="Kotak Mahindra MF" category="amc" />
+              <PartnerLogo name="Aditya Birla Sun Life MF" category="amc" />
+              <PartnerLogo name="UTI Mutual Fund" category="amc" />
+              <PartnerLogo name="DSP Mutual Fund" category="amc" />
+              <PartnerLogo name="Franklin Templeton MF" category="amc" />
+              <PartnerLogo name="IDFC Mutual Fund" category="amc" />
+              <PartnerLogo name="Mirae Asset MF" category="amc" />
+              <PartnerLogo name="Tata Mutual Fund" category="amc" />
+              <PartnerLogo name="Invesco Mutual Fund" category="amc" />
+              <PartnerLogo name="L&T Mutual Fund" category="amc" />
+            </div>
+          </div>
+
+          {/* Insurance Partners */}
+          <div>
+            <h3 className="text-2xl font-bold text-center mb-8 text-foreground">
+              Insurance Company Partners
+            </h3>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+              <PartnerLogo name="LIC of India" category="insurance" />
+              <PartnerLogo name="HDFC Life" category="insurance" />
+              <PartnerLogo name="SBI Life" category="insurance" />
+              <PartnerLogo name="ICICI Prudential Life" category="insurance" />
+              <PartnerLogo name="Max Life Insurance" category="insurance" />
+              <PartnerLogo name="Bajaj Allianz Life" category="insurance" />
+              <PartnerLogo name="Tata AIA Life" category="insurance" />
+              <PartnerLogo name="Kotak Life Insurance" category="insurance" />
+              <PartnerLogo name="Aditya Birla Sun Life" category="insurance" />
+              <PartnerLogo name="Star Health Insurance" category="insurance" />
+              <PartnerLogo name="HDFC ERGO Health" category="insurance" />
+              <PartnerLogo name="Niva Bupa Health" category="insurance" />
+              <PartnerLogo name="Care Health Insurance" category="insurance" />
+              <PartnerLogo name="Reliance General" category="insurance" />
+              <PartnerLogo name="ICICI Lombard" category="insurance" />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 px-4 bg-gradient-to-br from-primary via-accent to-secondary text-primary-foreground">
         <div className="container mx-auto max-w-4xl text-center">
@@ -308,7 +383,7 @@ const Index = () => {
                 <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center">
                   <TrendingUp className="w-5 h-5 text-primary-foreground" />
                 </div>
-                <span className="text-lg font-bold">InvestSecure</span>
+                <span className="text-lg font-bold">Tatwa Financials</span>
               </div>
               <p className="text-sm opacity-80">
                 Your trusted partner for digital investment and insurance solutions.
@@ -343,7 +418,7 @@ const Index = () => {
             </div>
           </div>
           <div className="pt-8 border-t border-background/20 text-center text-sm opacity-80">
-            <p>© 2025 InvestSecure. All rights reserved. Registered with AMFI & IRDAI.</p>
+            <p>© 2025 Tatwa Financials. All rights reserved. Registered with AMFI & IRDAI.</p>
           </div>
         </div>
       </footer>
