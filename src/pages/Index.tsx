@@ -426,7 +426,7 @@ const Index = () => {
                 A few of our trusted mutual fund partners
               </p>
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 max-w-5xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 max-w-5xl mx-auto">
               <PartnerLogo name="HDFC MF" category="amc" delay={0} />
               <PartnerLogo name="ICICI Prudential" category="amc" delay={50} />
               <PartnerLogo name="SBI MF" category="amc" delay={100} />
@@ -457,7 +457,7 @@ const Index = () => {
                 A few of our trusted insurance partners
               </p>
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 max-w-5xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 max-w-5xl mx-auto">
               <PartnerLogo name="LIC of India" category="insurance" delay={0} />
               <PartnerLogo name="HDFC Life" category="insurance" delay={50} />
               <PartnerLogo name="SBI Life" category="insurance" delay={100} />

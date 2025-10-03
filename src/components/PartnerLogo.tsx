@@ -23,13 +23,30 @@ export const PartnerLogo = ({ name, category = "amc", delay = 0 }: PartnerLogoPr
     technology: "border-accent/20 hover:border-accent/40",
   }[category];
 
+  // Generate logo from initials
+  const getInitials = (name: string) => {
+    return name
+      .split(' ')
+      .map(word => word[0])
+      .join('')
+      .slice(0, 2)
+      .toUpperCase();
+  };
+
   return (
     <div
-      className={`${bgGradient} ${borderColor} border-2 rounded-xl p-6 flex items-center justify-center min-h-[110px] transition-all duration-500 hover:shadow-[var(--shadow-strong)] hover:-translate-y-1 group animate-fade-in relative overflow-hidden`}
+      className={`${bgGradient} ${borderColor} border rounded-lg p-3 flex items-center gap-3 transition-all duration-300 hover:shadow-md hover:-translate-y-0.5 group animate-fade-in relative overflow-hidden`}
       style={{ animationDelay: `${delay}ms` }}
     >
-      <div className="absolute inset-0 bg-gradient-to-br from-transparent via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-      <span className={`${textColor} font-bold text-center text-sm md:text-base group-hover:scale-110 transition-transform duration-300 relative z-10`}>
+      <div className="absolute inset-0 bg-gradient-to-br from-transparent via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+      
+      {/* Logo */}
+      <div className={`${bgGradient} ${textColor} w-10 h-10 rounded-md flex items-center justify-center font-bold text-sm flex-shrink-0 relative z-10 border ${borderColor}`}>
+        {getInitials(name)}
+      </div>
+      
+      {/* Name */}
+      <span className={`${textColor} font-semibold text-xs md:text-sm text-left relative z-10 leading-tight`}>
         {name}
       </span>
     </div>
