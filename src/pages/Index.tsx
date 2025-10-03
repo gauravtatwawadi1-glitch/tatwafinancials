@@ -336,10 +336,12 @@ const Index = () => {
                     href="https://www.instagram.com/gaurav.tatwawadi"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-10 h-10 rounded-full border-2 border-accent text-accent hover:bg-accent hover:text-primary-foreground flex items-center justify-center transition-all duration-300"
+                    className="w-10 h-10 rounded-full bg-gradient-to-br from-purple-600 via-pink-600 to-orange-500 p-[2px] hover:shadow-lg hover:scale-105 flex items-center justify-center transition-all duration-300"
                     aria-label="Instagram Profile"
                   >
-                    <Instagram className="w-5 h-5" />
+                    <div className="w-full h-full rounded-full bg-background flex items-center justify-center">
+                      <Instagram className="w-5 h-5 text-pink-600" />
+                    </div>
                   </a>
                 </div>
               </div>
