@@ -2,30 +2,8 @@ import { Button } from "@/components/ui/button";
 import { FeatureCard } from "@/components/FeatureCard";
 import { ExpertiseCard } from "@/components/ExpertiseCard";
 import { PartnerLogo } from "@/components/PartnerLogo";
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog";
-import {
-  Shield,
-  Smartphone,
-  TrendingUp,
-  CheckCircle2,
-  BarChart3,
-  Heart,
-  LineChart,
-  Cloud,
-  Lock,
-  Zap,
-  Target,
-  Award,
-  Handshake,
-  Linkedin,
-  Instagram,
-} from "lucide-react";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import { Shield, Smartphone, TrendingUp, CheckCircle2, BarChart3, Heart, LineChart, Cloud, Lock, Zap, Target, Award, Handshake, Linkedin, Instagram } from "lucide-react";
 import heroImage from "@/assets/hero-finance.jpg";
 import founderPhoto from "@/assets/founder-photo.jpg";
 import hdfcMfLogo from "@/assets/logos/hdfc-mf.png";
@@ -48,10 +26,8 @@ import careHealthLogo from "@/assets/logos/care-health.png";
 import iciciLombardLogo from "@/assets/logos/icici-lombard.png";
 import tataAigLogo from "@/assets/logos/tata-aig.png";
 import redvisionLogo from "@/assets/logos/redvision.png";
-
 const Index = () => {
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       {/* Header */}
       <header className="fixed top-0 w-full bg-background/80 backdrop-blur-md border-b border-border z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
@@ -108,22 +84,14 @@ const Index = () => {
                 investment and protection powered by data-driven risk evaluation.
               </p>
               <div className="flex flex-wrap gap-4">
-                <Button
-                  size="lg"
-                  className="bg-gradient-to-r from-primary to-accent text-primary-foreground hover:shadow-[var(--shadow-glow)] transition-all duration-300"
-                  asChild
-                >
+                <Button size="lg" className="bg-gradient-to-r from-primary to-accent text-primary-foreground hover:shadow-[var(--shadow-glow)] transition-all duration-300" asChild>
                   <a href="https://wa.me/8879014522" target="_blank" rel="noopener noreferrer">
                     Start Your Journey
                   </a>
                 </Button>
                 <Dialog>
                   <DialogTrigger asChild>
-                    <Button
-                      size="lg"
-                      variant="outline"
-                      className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground"
-                    >
+                    <Button size="lg" variant="outline" className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground">
                       <Smartphone className="w-5 h-5 mr-2" />
                       Download App
                     </Button>
@@ -135,26 +103,18 @@ const Index = () => {
                       </DialogTitle>
                     </DialogHeader>
                     <div className="grid gap-4 py-4">
-                      <Button
-                        size="lg"
-                        className="h-20 bg-gradient-to-r from-primary to-accent text-primary-foreground hover:shadow-[var(--shadow-glow)] transition-all duration-300"
-                        asChild
-                      >
+                      <Button size="lg" className="h-20 bg-gradient-to-r from-primary to-accent text-primary-foreground hover:shadow-[var(--shadow-glow)] transition-all duration-300" asChild>
                         <a href="#" className="flex items-center justify-center gap-4">
                           <svg className="w-10 h-10" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M17.523 15.3414c-.5511 0-.9993-.4486-.9993-.9997s.4483-.9993.9993-.9993c.5511 0 .9993.4483.9993.9993.0001.5511-.4482.9997-.9993.9997m-11.046 0c-.5511 0-.9993-.4486-.9993-.9997s.4482-.9993.9993-.9993c.5511 0 .9993.4483.9993.9993 0 .5511-.4483.9997-.9993.9997m11.4045-6.02l1.9973-3.4592a.416.416 0 00-.1521-.5676.416.416 0 00-.5676.1521l-2.0223 3.503C15.5902 8.2439 13.8533 7.8508 12 7.8508s-3.5902.3931-5.1367 1.0989L4.841 5.4467a.4161.4161 0 00-.5677-.1521.4157.4157 0 00-.1521.5676l1.9973 3.4592C2.6889 11.1867.3432 14.6589 0 18.761h24c-.3435-4.1021-2.6892-7.5743-6.1185-9.4396"/>
+                            <path d="M17.523 15.3414c-.5511 0-.9993-.4486-.9993-.9997s.4483-.9993.9993-.9993c.5511 0 .9993.4483.9993.9993.0001.5511-.4482.9997-.9993.9997m-11.046 0c-.5511 0-.9993-.4486-.9993-.9997s.4482-.9993.9993-.9993c.5511 0 .9993.4483.9993.9993 0 .5511-.4483.9997-.9993.9997m11.4045-6.02l1.9973-3.4592a.416.416 0 00-.1521-.5676.416.416 0 00-.5676.1521l-2.0223 3.503C15.5902 8.2439 13.8533 7.8508 12 7.8508s-3.5902.3931-5.1367 1.0989L4.841 5.4467a.4161.4161 0 00-.5677-.1521.4157.4157 0 00-.1521.5676l1.9973 3.4592C2.6889 11.1867.3432 14.6589 0 18.761h24c-.3435-4.1021-2.6892-7.5743-6.1185-9.4396" />
                           </svg>
                           <span className="text-lg font-semibold">Download for Android</span>
                         </a>
                       </Button>
-                      <Button
-                        size="lg"
-                        className="h-20 bg-gradient-to-r from-secondary to-accent text-primary-foreground hover:shadow-[var(--shadow-glow)] transition-all duration-300"
-                        asChild
-                      >
+                      <Button size="lg" className="h-20 bg-gradient-to-r from-secondary to-accent text-primary-foreground hover:shadow-[var(--shadow-glow)] transition-all duration-300" asChild>
                         <a href="#" className="flex items-center justify-center gap-4">
                           <svg className="w-10 h-10" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
                           </svg>
                           <span className="text-lg font-semibold">Download for iOS</span>
                         </a>
@@ -165,11 +125,7 @@ const Index = () => {
               </div>
             </div>
             <div className="animate-scale-in">
-              <img
-                src={heroImage}
-                alt="Financial dashboard showing investment growth and security"
-                className="rounded-2xl shadow-[var(--shadow-strong)] w-full"
-              />
+              <img src={heroImage} alt="Financial dashboard showing investment growth and security" className="rounded-2xl shadow-[var(--shadow-strong)] w-full" />
             </div>
           </div>
         </div>
@@ -185,36 +141,12 @@ const Index = () => {
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 animate-slide-up">
-            <FeatureCard
-              icon={Shield}
-              title="Trusted & Certified"
-              description="AMFI & IRDAI registered distributor with full regulatory compliance and transparency."
-            />
-            <FeatureCard
-              icon={Smartphone}
-              title="All-Digital Convenience"
-              description="Access investments & insurance anytime, anywhere with our easy-to-use mobile app."
-            />
-            <FeatureCard
-              icon={Target}
-              title="Best Risk Evaluation"
-              description="We evaluate your financial goals, risk appetite, and life stage to build the right portfolio."
-            />
-            <FeatureCard
-              icon={CheckCircle2}
-              title="360° Coverage"
-              description="From Mutual Funds to Insurance, we ensure your wealth grows and your future stays protected."
-            />
-            <FeatureCard
-              icon={TrendingUp}
-              title="Transparent & Client-First"
-              description="No jargon, no hidden costs – just clear advice and honest guidance."
-            />
-            <FeatureCard
-              icon={Zap}
-              title="Fast & Paperless"
-              description="Complete onboarding, KYC, and transactions digitally in minutes."
-            />
+            <FeatureCard icon={Shield} title="Trusted & Certified" description="AMFI & IRDAI registered distributor with full regulatory compliance and transparency." />
+            <FeatureCard icon={Smartphone} title="All-Digital Convenience" description="Access investments & insurance anytime, anywhere with our easy-to-use mobile app." />
+            <FeatureCard icon={Target} title="Best Risk Evaluation" description="We evaluate your financial goals, risk appetite, and life stage to build the right portfolio." />
+            <FeatureCard icon={CheckCircle2} title="360° Coverage" description="From Mutual Funds to Insurance, we ensure your wealth grows and your future stays protected." />
+            <FeatureCard icon={TrendingUp} title="Transparent & Client-First" description="No jargon, no hidden costs – just clear advice and honest guidance." />
+            <FeatureCard icon={Zap} title="Fast & Paperless" description="Complete onboarding, KYC, and transactions digitally in minutes." />
           </div>
         </div>
       </section>
@@ -229,26 +161,8 @@ const Index = () => {
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            <ExpertiseCard
-              icon={BarChart3}
-              title="Mutual Funds Distribution"
-              features={[
-                "Wide range of schemes across top fund houses",
-                "Tailored asset allocation based on your profile",
-                "SIPs, lump sum investments, retirement & child-goal planning",
-                "Regular portfolio reviews and rebalancing",
-              ]}
-            />
-            <ExpertiseCard
-              icon={Heart}
-              title="Insurance Distribution"
-              features={[
-                "Life Insurance, Health Insurance, Term Plans",
-                "Coverage aligned with your actual needs (not oversold)",
-                "Fast, paperless onboarding through our app",
-                "Claim assistance and policy management",
-              ]}
-            />
+            <ExpertiseCard icon={BarChart3} title="Mutual Funds Distribution" features={["Wide range of schemes across top fund houses", "Tailored asset allocation based on your profile", "SIPs, lump sum investments, retirement & child-goal planning", "Regular portfolio reviews and rebalancing"]} />
+            <ExpertiseCard icon={Heart} title="Insurance Distribution" features={["Life Insurance, Health Insurance, Term Plans", "Coverage aligned with your actual needs (not oversold)", "Fast, paperless onboarding through our app", "Claim assistance and policy management"]} />
           </div>
         </div>
       </section>
@@ -363,11 +277,7 @@ const Index = () => {
               <div className="flex flex-col items-center text-center space-y-4">
                 <div className="relative">
                   <div className="absolute inset-0 bg-gradient-to-br from-primary to-accent rounded-full blur-2xl opacity-30 scale-110" />
-                  <img
-                    src={founderPhoto}
-                    alt="Gaurav Tatwawadi - Founder & Chief Advisor"
-                    className="relative rounded-full shadow-[var(--shadow-strong)] w-40 h-40 object-cover border-4 border-background"
-                  />
+                  <img src={founderPhoto} alt="Gaurav Tatwawadi - Founder & Chief Advisor" className="relative rounded-full shadow-[var(--shadow-strong)] w-40 h-40 object-cover border-4 border-background" />
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold text-foreground">Gaurav Tatwawadi</h3>
@@ -392,22 +302,10 @@ const Index = () => {
                 
                 {/* Social Links */}
                 <div className="flex gap-3 pt-2">
-                  <a
-                    href="https://www.linkedin.com/in/gaurav-tatwawadi-5133a917/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-10 h-10 rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-primary-foreground flex items-center justify-center transition-all duration-300"
-                    aria-label="LinkedIn Profile"
-                  >
+                  <a href="https://www.linkedin.com/in/gaurav-tatwawadi-5133a917/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-primary-foreground flex items-center justify-center transition-all duration-300" aria-label="LinkedIn Profile">
                     <Linkedin className="w-5 h-5" />
                   </a>
-                  <a
-                    href="https://www.instagram.com/gaurav.tatwawadi"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-10 h-10 rounded-full bg-gradient-to-br from-purple-600 via-pink-600 to-orange-500 p-[2px] hover:shadow-lg hover:scale-105 flex items-center justify-center transition-all duration-300"
-                    aria-label="Instagram Profile"
-                  >
+                  <a href="https://www.instagram.com/gaurav.tatwawadi" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-gradient-to-br from-purple-600 via-pink-600 to-orange-500 p-[2px] hover:shadow-lg hover:scale-105 flex items-center justify-center transition-all duration-300" aria-label="Instagram Profile">
                     <div className="w-full h-full rounded-full bg-background flex items-center justify-center">
                       <Instagram className="w-5 h-5 text-pink-600" />
                     </div>
@@ -508,9 +406,7 @@ const Index = () => {
               <PartnerLogo name="Franklin Templeton" category="amc" delay={450} logo={franklinTempletonLogo} />
             </div>
             <div className="text-center mt-6">
-              <p className="text-muted-foreground text-sm font-medium">
-                ...and many more leading AMCs
-              </p>
+              <p className="text-muted-foreground text-sm font-medium">...and all the leading AMCs</p>
             </div>
           </div>
 
@@ -558,10 +454,7 @@ const Index = () => {
           <p className="text-xl mb-8 opacity-90">
             Download our app today and experience the future of financial distribution.
           </p>
-          <Button
-            size="lg"
-            className="bg-background text-primary hover:bg-background/90 shadow-[var(--shadow-strong)]"
-          >
+          <Button size="lg" className="bg-background text-primary hover:bg-background/90 shadow-[var(--shadow-strong)]">
             <Smartphone className="w-5 h-5 mr-2" />
             Get Started Now
           </Button>
@@ -616,8 +509,6 @@ const Index = () => {
           </div>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
