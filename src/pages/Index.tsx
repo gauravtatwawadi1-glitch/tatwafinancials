@@ -16,6 +16,8 @@ import {
   Target,
   Award,
   Handshake,
+  Linkedin,
+  Instagram,
 } from "lucide-react";
 import heroImage from "@/assets/hero-finance.jpg";
 import founderPhoto from "@/assets/founder-photo.jpg";
@@ -306,14 +308,39 @@ const Index = () => {
                 {/* Credentials Badges */}
                 <div className="flex flex-wrap gap-2 justify-center pt-2">
                   <span className="px-3 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-full">
-                    COEP Graduate
+                    MBA - MDI Gurgaon
                   </span>
                   <span className="px-3 py-1 bg-accent/10 text-accent text-xs font-semibold rounded-full">
-                    MDI Gurgaon
+                    COEP Graduate
                   </span>
                   <span className="px-3 py-1 bg-secondary/10 text-secondary text-xs font-semibold rounded-full">
-                    12+ Years
+                    12+ Years Experience
                   </span>
+                  <span className="px-3 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-full">
+                    Trusted Advisor to Celebrities
+                  </span>
+                </div>
+                
+                {/* Social Links */}
+                <div className="flex gap-3 pt-2">
+                  <a
+                    href="https://www.linkedin.com/in/gaurav-tatwawadi"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-primary-foreground flex items-center justify-center transition-all duration-300"
+                    aria-label="LinkedIn Profile"
+                  >
+                    <Linkedin className="w-5 h-5" />
+                  </a>
+                  <a
+                    href="https://www.instagram.com/gaurav.tatwawadi"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 rounded-full bg-accent/10 text-accent hover:bg-accent hover:text-primary-foreground flex items-center justify-center transition-all duration-300"
+                    aria-label="Instagram Profile"
+                  >
+                    <Instagram className="w-5 h-5" />
+                  </a>
                 </div>
               </div>
               
