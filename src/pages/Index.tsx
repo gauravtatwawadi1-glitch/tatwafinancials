@@ -348,50 +348,18 @@ const Index = () => {
               <div className="md:col-span-2 space-y-4">
                 <p className="text-base text-muted-foreground leading-relaxed">
                   Gaurav Tatwawadi is the driving force behind our vision of making investing and insurance truly 
-                  <strong> client-first and risk-aware</strong>. A graduate from <strong>COEP (College of Engineering, Pune)</strong> and 
-                  an alumnus of <strong>MDI Gurgaon</strong>, Gaurav combines the analytical rigor of engineering with the strategic 
-                  acumen of elite business management.
+                  <strong> client-first and risk-aware</strong>. Combining the analytical rigor of engineering from 
+                  <strong> COEP (College of Engineering, Pune)</strong> with elite business management training from 
+                  <strong> MDI Gurgaon</strong>, he brings a unique perspective to financial advisory.
                 </p>
                 
                 <p className="text-base text-muted-foreground leading-relaxed">
-                  With <strong>12+ years in the finance industry</strong>, Gaurav has worked under the best in the business, 
-                  learning from industry leaders and mastering the art of wealth creation and protection. His expertise spans 
-                  portfolio management, risk evaluation, and strategic financial planning for diverse client segments.
-                </p>
-                
-                <p className="text-base text-muted-foreground leading-relaxed">
-                  As <strong>Co-founder of autumnbreezefilmz.com</strong> and a <strong>trusted advisor to celebrities and HNIs</strong>, 
-                  Gaurav has built a reputation for delivering personalized, high-integrity financial solutions. He personally reviews 
-                  every client's portfolio to ensure risk is properly evaluated and goals are matched with the right financial products.
+                  Having worked under the best in the business, Gaurav has mastered the art of wealth creation and protection. 
+                  His expertise spans portfolio management, risk evaluation, and strategic financial planning. As 
+                  <strong> Co-founder of autumnbreezefilmz.com</strong>, he has built a reputation for delivering personalized, 
+                  high-integrity financial solutions that match each client's unique goals and risk profile.
                 </p>
               </div>
-            </div>
-          </div>
-          
-          {/* Highlights Grid */}
-          <div className="grid md:grid-cols-3 gap-6 mb-12">
-            <div className="bg-gradient-to-br from-primary/5 to-primary/10 border border-primary/20 rounded-2xl p-6 text-center">
-              <div className="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mx-auto mb-4">
-                <BarChart3 className="w-6 h-6" />
-              </div>
-              <h4 className="font-bold text-foreground mb-2">12+ Years</h4>
-              <p className="text-sm text-muted-foreground">Finance Industry Experience</p>
-            </div>
-            
-            <div className="bg-gradient-to-br from-accent/5 to-accent/10 border border-accent/20 rounded-2xl p-6 text-center">
-              <div className="w-12 h-12 rounded-xl bg-accent/10 text-accent flex items-center justify-center mx-auto mb-4">
-                <Award className="w-6 h-6" />
-              </div>
-              <h4 className="font-bold text-foreground mb-2">Trusted Advisor</h4>
-              <p className="text-sm text-muted-foreground">To Celebrities & HNIs</p>
-            </div>
-            
-            <div className="bg-gradient-to-br from-secondary/5 to-secondary/10 border border-secondary/20 rounded-2xl p-6 text-center">
-              <div className="w-12 h-12 rounded-xl bg-secondary/10 text-secondary flex items-center justify-center mx-auto mb-4">
-                <Target className="w-6 h-6" />
-              </div>
-              <h4 className="font-bold text-foreground mb-2">Co-founder</h4>
-              <p className="text-sm text-muted-foreground">autumnbreezefilmz.com</p>
             </div>
           </div>
           
