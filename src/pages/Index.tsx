@@ -405,9 +405,9 @@ const Index = () => {
           <div className="max-w-3xl mx-auto">
             <div className="bg-gradient-to-br from-primary to-accent p-6 rounded-2xl shadow-[var(--shadow-glow)] text-primary-foreground">
               <p className="text-lg md:text-xl font-semibold mb-2 italic text-center">
-                "Risk comes from not knowing what you're doing. Build your portfolio around your goals and timeline, not around someone else's product catalog."
+                "An investment in knowledge pays the best interest. And the best knowledge comes from those who've walked the path before you."
               </p>
-              <p className="text-center text-sm opacity-90">– Inspired by Warren Buffett's wisdom</p>
+              <p className="text-center text-sm opacity-90">– Benjamin Franklin</p>
             </div>
           </div>
         </div>
