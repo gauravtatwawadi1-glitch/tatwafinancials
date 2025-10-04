@@ -362,7 +362,7 @@ const Index = () => {
                     COEP Graduate
                   </span>
                   <span className="px-3 py-1 bg-secondary/10 text-secondary text-xs font-semibold rounded-full">
-                    12+ Years Experience
+                    AMFI registered (ARN: 341189)
                   </span>
                   <span className="px-3 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-full">
                     Trusted Advisor to Celebrities
