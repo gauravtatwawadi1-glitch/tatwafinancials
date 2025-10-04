@@ -164,7 +164,7 @@ const Index = () => {
               How It Works
             </h2>
             <p className="text-muted-foreground">
-              Simple, transparent, and efficient investment process
+              From risk profiling to wealth creation - your complete investment journey
             </p>
           </div>
 
