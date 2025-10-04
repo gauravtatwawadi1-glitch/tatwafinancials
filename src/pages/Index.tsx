@@ -164,7 +164,7 @@ const Index = () => {
               How It Works
             </h2>
             <p className="text-muted-foreground">
-              From risk profiling to wealth creation - your complete investment journey
+              We advise, top AMCs professionally manage your money
             </p>
           </div>
 
