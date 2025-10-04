@@ -414,6 +414,128 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Testimonials Section */}
+      <section className="py-12 px-4 bg-background">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-10">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">What Our Clients Say</h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              Real experiences from investors who trust us with their financial future
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Testimonial 1 */}
+            <div className="bg-card border border-border rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+              <div className="flex gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <svg key={i} className="w-5 h-5 fill-primary" viewBox="0 0 24 24">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                  </svg>
+                ))}
+              </div>
+              <p className="text-muted-foreground mb-4 italic">
+                "Gaurav's personalized approach to risk profiling helped me build a portfolio that perfectly matches my financial goals. The app makes tracking investments so simple!"
+              </p>
+              <div>
+                <p className="font-semibold text-foreground">Priya Sharma</p>
+                <p className="text-sm text-muted-foreground">Software Engineer, Bangalore</p>
+              </div>
+            </div>
+
+            {/* Testimonial 2 */}
+            <div className="bg-card border border-border rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+              <div className="flex gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <svg key={i} className="w-5 h-5 fill-primary" viewBox="0 0 24 24">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                  </svg>
+                ))}
+              </div>
+              <p className="text-muted-foreground mb-4 italic">
+                "Finally found an advisor who focuses on my risk appetite rather than pushing products. The transparency and regular reviews give me complete peace of mind."
+              </p>
+              <div>
+                <p className="font-semibold text-foreground">Rajesh Patel</p>
+                <p className="text-sm text-muted-foreground">Business Owner, Mumbai</p>
+              </div>
+            </div>
+
+            {/* Testimonial 3 */}
+            <div className="bg-card border border-border rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+              <div className="flex gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <svg key={i} className="w-5 h-5 fill-primary" viewBox="0 0 24 24">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                  </svg>
+                ))}
+              </div>
+              <p className="text-muted-foreground mb-4 italic">
+                "The digital platform is incredibly user-friendly. I can invest, track, and redeem anytime. Gaurav's expertise in mutual funds has helped grow my wealth significantly."
+              </p>
+              <div>
+                <p className="font-semibold text-foreground">Ananya Reddy</p>
+                <p className="text-sm text-muted-foreground">Doctor, Hyderabad</p>
+              </div>
+            </div>
+
+            {/* Testimonial 4 */}
+            <div className="bg-card border border-border rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+              <div className="flex gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <svg key={i} className="w-5 h-5 fill-primary" viewBox="0 0 24 24">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                  </svg>
+                ))}
+              </div>
+              <p className="text-muted-foreground mb-4 italic">
+                "From retirement planning to my child's education fund, Tatwa Financials has structured everything perfectly. The best part? No hidden charges, just honest advice."
+              </p>
+              <div>
+                <p className="font-semibold text-foreground">Vikram Desai</p>
+                <p className="text-sm text-muted-foreground">Marketing Director, Pune</p>
+              </div>
+            </div>
+
+            {/* Testimonial 5 */}
+            <div className="bg-card border border-border rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+              <div className="flex gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <svg key={i} className="w-5 h-5 fill-primary" viewBox="0 0 24 24">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                  </svg>
+                ))}
+              </div>
+              <p className="text-muted-foreground mb-4 italic">
+                "Being a first-time investor, I was nervous. Gaurav's detailed risk assessment and patient guidance made me confident. My SIPs are performing excellently!"
+              </p>
+              <div>
+                <p className="font-semibold text-foreground">Meera Krishnan</p>
+                <p className="text-sm text-muted-foreground">HR Manager, Chennai</p>
+              </div>
+            </div>
+
+            {/* Testimonial 6 */}
+            <div className="bg-card border border-border rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+              <div className="flex gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <svg key={i} className="w-5 h-5 fill-primary" viewBox="0 0 24 24">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                  </svg>
+                ))}
+              </div>
+              <p className="text-muted-foreground mb-4 italic">
+                "Professional, transparent, and truly client-first. The regular portfolio reviews and rebalancing suggestions have helped me stay on track with my wealth goals."
+              </p>
+              <div>
+                <p className="font-semibold text-foreground">Arjun Mehta</p>
+                <p className="text-sm text-muted-foreground">Entrepreneur, Delhi</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Partners Section */}
       <section id="partners" className="py-12 px-4 bg-gradient-to-b from-muted/30 via-background to-muted/30 relative overflow-hidden">
         {/* Decorative Background Elements */}
