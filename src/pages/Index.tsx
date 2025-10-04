@@ -18,6 +18,8 @@ import tataMfLogo from "@/assets/logos/tata-mf.png";
 import franklinTempletonLogo from "@/assets/logos/franklin-templeton.png";
 import redvisionLogo from "@/assets/logos/redvision.png";
 import turtlemintLogo from "@/assets/logos/turtlemint.png";
+import amfiLogo from "@/assets/logos/amfi.png";
+import nismLogo from "@/assets/logos/nism.png";
 const Index = () => {
   return <div className="min-h-screen bg-background">
       {/* Header */}
@@ -112,6 +114,15 @@ const Index = () => {
                     </div>
                   </DialogContent>
                 </Dialog>
+              </div>
+              
+              {/* Regulatory Logos */}
+              <div className="flex items-center gap-6 mt-8 pt-8 border-t border-border/50">
+                <span className="text-sm text-muted-foreground font-medium">Certified by:</span>
+                <div className="flex items-center gap-4">
+                  <img src={amfiLogo} alt="AMFI Registered" className="h-10 object-contain opacity-70 hover:opacity-100 transition-opacity" />
+                  <img src={nismLogo} alt="NISM Certified" className="h-10 object-contain opacity-70 hover:opacity-100 transition-opacity" />
+                </div>
               </div>
             </div>
             <div className="animate-scale-in">
