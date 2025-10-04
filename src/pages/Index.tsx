@@ -29,7 +29,7 @@ const Index = () => {
             </div>
             <div className="flex flex-col">
               <span className="text-xl font-bold text-foreground leading-none">Tatwa Financials</span>
-              <span className="text-[10px] text-muted-foreground font-medium">AMFI Registered Distributor</span>
+              <span className="text-[10px] text-muted-foreground font-medium">AMFI Registered Distributor (ARN-341189)</span>
             </div>
           </div>
           <nav className="hidden md:flex items-center gap-8">
