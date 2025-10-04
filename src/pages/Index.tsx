@@ -3,7 +3,7 @@ import { FeatureCard } from "@/components/FeatureCard";
 import { ExpertiseCard } from "@/components/ExpertiseCard";
 import { PartnerLogo } from "@/components/PartnerLogo";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
-import { Shield, Smartphone, TrendingUp, CheckCircle2, BarChart3, Heart, LineChart, Cloud, Lock, Zap, Target, Award, Handshake, Linkedin, Instagram } from "lucide-react";
+import { Shield, Smartphone, TrendingUp, CheckCircle2, BarChart3, LineChart, Cloud, Lock, Zap, Target, Award, Handshake, Linkedin, Instagram } from "lucide-react";
 import heroImage from "@/assets/hero-finance.jpg";
 import founderPhoto from "@/assets/founder-photo.jpg";
 import hdfcMfLogo from "@/assets/logos/hdfc-mf.png";
@@ -16,15 +16,6 @@ import adityaBirlaLogo from "@/assets/logos/aditya-birla.png";
 import utiMfLogo from "@/assets/logos/uti-mf.png";
 import tataMfLogo from "@/assets/logos/tata-mf.png";
 import franklinTempletonLogo from "@/assets/logos/franklin-templeton.png";
-import licIndiaLogo from "@/assets/logos/lic-india.png";
-import hdfcLifeLogo from "@/assets/logos/hdfc-life.png";
-import sbiLifeLogo from "@/assets/logos/sbi-life.png";
-import maxLifeLogo from "@/assets/logos/max-life.png";
-import bajajAllianzLogo from "@/assets/logos/bajaj-allianz.png";
-import starHealthLogo from "@/assets/logos/star-health.png";
-import careHealthLogo from "@/assets/logos/care-health.png";
-import iciciLombardLogo from "@/assets/logos/icici-lombard.png";
-import tataAigLogo from "@/assets/logos/tata-aig.png";
 import redvisionLogo from "@/assets/logos/redvision.png";
 const Index = () => {
   return <div className="min-h-screen bg-background">
@@ -70,18 +61,18 @@ const Index = () => {
             <div className="animate-fade-in">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
                 <Award className="w-4 h-4" />
-                AMFI & IRDAI Registered Distributors
+                AMFI Registered Mutual Fund Distributor
               </div>
               <h1 className="text-5xl md:text-6xl font-bold mb-6 text-foreground leading-tight">
                 Invest Smart.
                 <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-accent to-secondary">
-                  Insure Secure.
+                  Grow Confidently.
                 </span>
               </h1>
               <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-                100% digital Mutual Fund & Insurance Distributor. Experience seamless app-based
-                investment and protection powered by data-driven risk evaluation.
+                100% digital Mutual Fund Distributor. Experience seamless app-based
+                investment powered by data-driven risk evaluation and personalized portfolio management.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Button size="lg" className="bg-gradient-to-r from-primary to-accent text-primary-foreground hover:shadow-[var(--shadow-glow)] transition-all duration-300" asChild>
@@ -135,14 +126,14 @@ const Index = () => {
           <div className="text-center mb-10 animate-fade-in">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">Why Choose Us</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Your trusted partner for digital investment and insurance solutions
+              Your trusted partner for digital investment solutions
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 animate-slide-up">
-            <FeatureCard icon={Shield} title="Trusted & Certified" description="AMFI & IRDAI registered distributor with full regulatory compliance and transparency." />
-            <FeatureCard icon={Smartphone} title="All-Digital Convenience" description="Access investments & insurance anytime, anywhere with our easy-to-use mobile app." />
+            <FeatureCard icon={Shield} title="Trusted & Certified" description="AMFI registered distributor with full regulatory compliance and transparency." />
+            <FeatureCard icon={Smartphone} title="All-Digital Convenience" description="Access your investments anytime, anywhere with our easy-to-use mobile app." />
             <FeatureCard icon={Target} title="Best Risk Evaluation" description="We evaluate your financial goals, risk appetite, and life stage to build the right portfolio." />
-            <FeatureCard icon={CheckCircle2} title="360° Coverage" description="From Mutual Funds to Insurance, we ensure your wealth grows and your future stays protected." />
+            <FeatureCard icon={CheckCircle2} title="Comprehensive Planning" description="Tailored Mutual Fund solutions aligned with your retirement, child education, and wealth creation goals." />
             <FeatureCard icon={TrendingUp} title="Transparent & Client-First" description="No jargon, no hidden costs – just clear advice and honest guidance." />
             <FeatureCard icon={Zap} title="Fast & Paperless" description="Complete onboarding, KYC, and transactions digitally in minutes." />
           </div>
@@ -160,7 +151,7 @@ const Index = () => {
           </div>
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <ExpertiseCard icon={BarChart3} title="Mutual Funds Distribution" features={["Wide range of schemes across top fund houses", "Tailored asset allocation based on your profile", "SIPs, lump sum investments, retirement & child-goal planning", "Regular portfolio reviews and rebalancing"]} />
-            <ExpertiseCard icon={Heart} title="Insurance Distribution" features={["Life Insurance, Health Insurance, Term Plans", "Coverage aligned with your actual needs (not oversold)", "Fast, paperless onboarding through our app", "Claim assistance and policy management"]} />
+            <ExpertiseCard icon={LineChart} title="Risk Evaluation" features={["Comprehensive risk profiling using advanced frameworks", "Analysis of your financial goals and investment horizon", "Personalized asset allocation strategies", "Regular risk assessment and portfolio rebalancing"]} />
           </div>
         </div>
       </section>
@@ -170,13 +161,13 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-accent text-primary-foreground mb-6">
-              <LineChart className="w-8 h-8" />
+              <Target className="w-8 h-8" />
             </div>
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-              Our Edge: Risk Evaluation
+              Our Edge: Data-Driven Risk Evaluation
             </h2>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              Unlike traditional distributors, our approach begins with <strong>YOU</strong>.
+              Unlike traditional distributors, our approach begins with understanding <strong>YOUR</strong> unique financial profile.
             </p>
             <div className="grid md:grid-cols-3 gap-6 mb-8">
               <div className="p-6 rounded-xl bg-card border border-border">
@@ -314,14 +305,14 @@ const Index = () => {
               {/* Bio Content */}
               <div className="md:col-span-2 space-y-4">
                 <p className="text-base text-muted-foreground leading-relaxed">
-                  Gaurav Tatwawadi is the driving force behind our vision of making investing and insurance truly 
+                  Gaurav Tatwawadi is the driving force behind our vision of making investing truly 
                   <strong> client-first and risk-aware</strong>. Combining the analytical rigor of engineering from 
                   <strong> COEP (College of Engineering, Pune)</strong> with elite business management training from 
                   <strong> MDI Gurgaon</strong>, he brings a unique perspective to financial advisory.
                 </p>
                 
                 <p className="text-base text-muted-foreground leading-relaxed">
-                  Having worked under the best in the business, Gaurav has mastered the art of wealth multiplication and protection. 
+                  Having worked under the best in the business, Gaurav has mastered the art of wealth multiplication through strategic mutual fund investments. 
                   His expertise spans portfolio management, risk evaluation, and strategic financial planning. As 
                   <strong> Co-founder of autumnbreezefilmz.com</strong>, he has built a reputation for delivering personalized, 
                   high-integrity financial solutions that match each client's unique goals and risk profile.
@@ -357,7 +348,7 @@ const Index = () => {
               Our Partners
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Trusted collaborations with India's leading financial institutions and technology innovators
+              Trusted collaborations with India's leading Mutual Fund houses and technology innovators
             </p>
           </div>
 
@@ -408,38 +399,6 @@ const Index = () => {
             </div>
           </div>
 
-          {/* Insurance Partners */}
-          <div>
-            <div className="text-center mb-8">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/10 text-secondary text-sm font-semibold mb-4">
-                <Heart className="w-4 h-4" />
-                Insurance Partners
-              </div>
-              <h3 className="text-2xl font-bold text-foreground mb-2">
-                Leading Insurers
-              </h3>
-              <p className="text-sm text-muted-foreground">
-                A few of our trusted insurance partners
-              </p>
-            </div>
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 max-w-6xl mx-auto">
-              <PartnerLogo name="LIC of India" category="insurance" delay={0} logo={licIndiaLogo} />
-              <PartnerLogo name="HDFC Life" category="insurance" delay={50} logo={hdfcLifeLogo} />
-              <PartnerLogo name="SBI Life" category="insurance" delay={100} logo={sbiLifeLogo} />
-              <PartnerLogo name="ICICI Prudential" category="insurance" delay={150} logo={iciciPrudentialLogo} />
-              <PartnerLogo name="Max Life" category="insurance" delay={200} logo={maxLifeLogo} />
-              <PartnerLogo name="Bajaj Allianz" category="insurance" delay={250} logo={bajajAllianzLogo} />
-              <PartnerLogo name="Star Health" category="insurance" delay={300} logo={starHealthLogo} />
-              <PartnerLogo name="Care Health" category="insurance" delay={350} logo={careHealthLogo} />
-              <PartnerLogo name="ICICI Lombard" category="insurance" delay={400} logo={iciciLombardLogo} />
-              <PartnerLogo name="Tata AIG" category="insurance" delay={450} logo={tataAigLogo} />
-            </div>
-            <div className="text-center mt-6">
-              <p className="text-muted-foreground text-sm font-medium">
-                ...and many more leading insurance companies
-              </p>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -447,10 +406,10 @@ const Index = () => {
       <section className="py-16 px-4 bg-gradient-to-br from-primary via-accent to-secondary text-primary-foreground">
         <div className="container mx-auto max-w-4xl text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Ready to invest smarter and protect your future?
+            Ready to invest smarter and grow your wealth?
           </h2>
           <p className="text-xl mb-8 opacity-90">
-            Download our app today and experience the future of financial distribution.
+            Download our app today and experience the future of mutual fund investing.
           </p>
           <Button size="lg" className="bg-background text-primary hover:bg-background/90 shadow-[var(--shadow-strong)]" asChild>
             <a href="https://wa.link/aq90ws" target="_blank" rel="noopener noreferrer" className="flex items-center">
@@ -475,16 +434,16 @@ const Index = () => {
                 <span className="text-lg font-bold">Tatwa Financials</span>
               </div>
               <p className="text-sm opacity-80">
-                Your trusted partner for digital investment and insurance solutions.
+                Your trusted partner for digital mutual fund investment solutions.
               </p>
             </div>
             <div>
               <h4 className="font-semibold mb-4">Products</h4>
               <ul className="space-y-2 text-sm opacity-80">
                 <li>Mutual Funds</li>
-                <li>Life Insurance</li>
-                <li>Health Insurance</li>
-                <li>Term Plans</li>
+                <li>SIP Investments</li>
+                <li>Wealth Management</li>
+                <li>Risk Profiling</li>
               </ul>
             </div>
             <div>
@@ -502,12 +461,12 @@ const Index = () => {
                 <li>Privacy Policy</li>
                 <li>Terms of Service</li>
                 <li>AMFI Registration</li>
-                <li>IRDAI Registration</li>
+                <li>Compliance</li>
               </ul>
             </div>
           </div>
           <div className="pt-8 border-t border-background/20 text-center text-sm opacity-80">
-            <p>© 2025 Tatwa Financials. All rights reserved. Registered with AMFI & IRDAI.</p>
+            <p>© 2025 Tatwa Financials. All rights reserved. AMFI Registered Mutual Fund Distributor.</p>
           </div>
         </div>
       </footer>
