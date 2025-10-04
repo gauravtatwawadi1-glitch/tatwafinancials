@@ -430,54 +430,60 @@ const Index = () => {
               Our Partners
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Trusted collaborations with India's leading Mutual Fund houses and technology innovators
+              Trusted collaborations across Technology, Insurance, and Asset Management
             </p>
           </div>
 
-          {/* Technology Partner */}
-          <div className="mb-8 max-w-4xl mx-auto">
-            <div className="text-center mb-6">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 text-accent text-sm font-semibold mb-4">
-                <Zap className="w-4 h-4" />
-                Technology Partner
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-10">
+            {/* Technology Partner */}
+            <div>
+              <div className="text-center mb-6">
+                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent/10 text-accent text-sm font-semibold mb-3">
+                  <Zap className="w-4 h-4" />
+                  Technology Partner
+                </div>
               </div>
-              <h3 className="text-3xl font-bold text-foreground">
-                Powered by Innovation
-              </h3>
+              <div>
+                <PartnerLogo name="Redvision Technologies Pvt Ltd" category="technology" delay={0} logo={redvisionLogo} />
+              </div>
             </div>
-            <div className="max-w-lg mx-auto">
-              <PartnerLogo name="Redvision Technologies Pvt Ltd" category="technology" delay={0} logo={redvisionLogo} />
+
+            {/* Insurance Partner */}
+            <div>
+              <div className="text-center mb-6">
+                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-secondary/10 text-secondary text-sm font-semibold mb-3">
+                  <Shield className="w-4 h-4" />
+                  Insurance Partner
+                </div>
+              </div>
+              <div>
+                <PartnerLogo name="Turtlemint" category="insurance" delay={0} logo={turtlemintLogo} />
+              </div>
+            </div>
+
+            {/* AMC Partners Preview */}
+            <div>
+              <div className="text-center mb-6">
+                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-semibold mb-3">
+                  <BarChart3 className="w-4 h-4" />
+                  Asset Management
+                </div>
+              </div>
+              <div className="grid grid-cols-2 gap-3">
+                <PartnerLogo name="HDFC MF" category="amc" delay={0} logo={hdfcMfLogo} />
+                <PartnerLogo name="ICICI Prudential" category="amc" delay={50} logo={iciciPrudentialLogo} />
+              </div>
             </div>
           </div>
 
-          {/* Insurance Partner */}
-          <div className="mb-8 max-w-4xl mx-auto">
-            <div className="text-center mb-6">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/10 text-secondary text-sm font-semibold mb-4">
-                <Shield className="w-4 h-4" />
-                Insurance Partner
-              </div>
-              <h3 className="text-3xl font-bold text-foreground">
-                Comprehensive Protection
-              </h3>
-            </div>
-            <div className="max-w-lg mx-auto">
-              <PartnerLogo name="Turtlemint" category="insurance" delay={0} logo={turtlemintLogo} />
-            </div>
-          </div>
-
-          {/* AMC Partners */}
+          {/* Full AMC Partners Grid */}
           <div className="mb-10">
-            <div className="text-center mb-8">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-semibold mb-4">
-                <BarChart3 className="w-4 h-4" />
-                Asset Management Partners
-              </div>
+            <div className="text-center mb-6">
               <h3 className="text-2xl font-bold text-foreground mb-2">
-                Top Fund Houses
+                All Asset Management Partners
               </h3>
               <p className="text-sm text-muted-foreground">
-                A few of our trusted mutual fund partners
+                Working with India's leading mutual fund houses
               </p>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 max-w-6xl mx-auto">
