@@ -17,6 +17,7 @@ import utiMfLogo from "@/assets/logos/uti-mf.png";
 import tataMfLogo from "@/assets/logos/tata-mf.png";
 import franklinTempletonLogo from "@/assets/logos/franklin-templeton.png";
 import redvisionLogo from "@/assets/logos/redvision.png";
+import turtlemintLogo from "@/assets/logos/turtlemint.png";
 const Index = () => {
   return <div className="min-h-screen bg-background">
       {/* Header */}
@@ -434,8 +435,8 @@ const Index = () => {
           </div>
 
           {/* Technology Partner */}
-          <div className="mb-12 max-w-4xl mx-auto">
-            <div className="text-center mb-8">
+          <div className="mb-8 max-w-4xl mx-auto">
+            <div className="text-center mb-6">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 text-accent text-sm font-semibold mb-4">
                 <Zap className="w-4 h-4" />
                 Technology Partner
@@ -446,6 +447,22 @@ const Index = () => {
             </div>
             <div className="max-w-lg mx-auto">
               <PartnerLogo name="Redvision Technologies Pvt Ltd" category="technology" delay={0} logo={redvisionLogo} />
+            </div>
+          </div>
+
+          {/* Insurance Partner */}
+          <div className="mb-8 max-w-4xl mx-auto">
+            <div className="text-center mb-6">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/10 text-secondary text-sm font-semibold mb-4">
+                <Shield className="w-4 h-4" />
+                Insurance Partner
+              </div>
+              <h3 className="text-3xl font-bold text-foreground">
+                Comprehensive Protection
+              </h3>
+            </div>
+            <div className="max-w-lg mx-auto">
+              <PartnerLogo name="Turtlemint" category="insurance" delay={0} logo={turtlemintLogo} />
             </div>
           </div>
 
