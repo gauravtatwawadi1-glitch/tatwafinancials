@@ -434,7 +434,7 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-10">
+          <div className="grid md:grid-cols-3 gap-12 max-w-6xl mx-auto mb-12">
             {/* Technology Partner */}
             <div>
               <div className="text-center mb-6">
