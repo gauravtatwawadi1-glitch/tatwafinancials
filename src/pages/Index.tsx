@@ -4,6 +4,7 @@ import { ExpertiseCard } from "@/components/ExpertiseCard";
 import { PartnerLogo } from "@/components/PartnerLogo";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Shield, Smartphone, TrendingUp, CheckCircle2, BarChart3, LineChart, Cloud, Lock, Zap, Target, Award, Handshake, Linkedin, Instagram } from "lucide-react";
+import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-finance.jpg";
 import founderPhoto from "@/assets/founder-photo.jpg";
 import hdfcMfLogo from "@/assets/logos/hdfc-mf.png";
@@ -45,6 +46,9 @@ const Index = () => {
             <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors">
               About
             </a>
+            <Link to="/contact" className="text-muted-foreground hover:text-foreground transition-colors">
+              Contact
+            </Link>
           </nav>
           <Button className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>
             <a href="https://wealthelite.in/client-login" target="_blank" rel="noopener noreferrer">
