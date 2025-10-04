@@ -386,16 +386,17 @@ const Index = () => {
               <div className="md:col-span-2 space-y-4">
                 <p className="text-base text-muted-foreground leading-relaxed">
                   Gaurav Tatwawadi is the driving force behind our vision of making investing truly 
-                  <strong> client-first and risk-aware</strong>. Combining the analytical rigor of engineering from 
-                  <strong> COEP (College of Engineering, Pune)</strong> with elite business management training from 
-                  <strong> MDI Gurgaon</strong>, he brings a unique perspective to financial advisory.
+                  <strong> client-first and risk-aware</strong>. Armed with an <strong>MBA in Finance from MDI Gurgaon</strong> and an engineering degree from 
+                  <strong> COEP (College of Engineering, Pune)</strong>, he combines strategic financial acumen with analytical precision to bring a balanced, insightful approach to wealth management.
                 </p>
                 
                 <p className="text-base text-muted-foreground leading-relaxed">
-                  Having worked under the best in the business, Gaurav has mastered the art of wealth multiplication through strategic mutual fund investments. 
-                  His expertise spans portfolio management, risk evaluation, and strategic financial planning. As 
-                  <strong> Co-founder of autumnbreezefilmz.com</strong>, he has built a reputation for delivering personalized, 
-                  high-integrity financial solutions that match each client's unique goals and risk profile.
+                  Having worked under some of the best minds in the investment industry, Gaurav has mastered the art of wealth creation through disciplined mutual fund strategies. 
+                  His expertise spans portfolio management, risk evaluation, and long-term financial planning — with a <strong>proven track record of managing the wealth of celebrities and ultra-high-net-worth individuals (UHNIs)</strong>.
+                </p>
+                
+                <p className="text-base text-muted-foreground leading-relaxed">
+                  As <strong>Founder of Tatwa Financials</strong>, Gaurav has built a reputation for personalized, transparent, and high-integrity financial solutions that align with each client's unique goals and risk profile. His philosophy is simple — <strong>growth means little without trust</strong>.
                 </p>
               </div>
             </div>
