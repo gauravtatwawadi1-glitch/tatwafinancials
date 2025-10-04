@@ -158,141 +158,126 @@ const Index = () => {
 
       {/* Mutual Fund Lifecycle */}
       <section className="py-12 px-4 bg-gradient-to-br from-primary/5 via-accent/5 to-secondary/5">
-        <div className="container mx-auto">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
-                Your Mutual Fund Investment Journey
-              </h2>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                Understanding roles: We guide and advise. Top AMCs manage your money.
-              </p>
-            </div>
+        <div className="container mx-auto max-w-5xl">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold mb-3 text-foreground">
+              How It Works
+            </h2>
+            <p className="text-muted-foreground">
+              Simple, transparent, and efficient investment process
+            </p>
+          </div>
 
-            {/* Lifecycle Flow */}
-            <div className="relative">
-              {/* Connecting Lines - Hidden on mobile */}
-              <div className="hidden lg:block absolute top-32 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
+          {/* Compact Flow */}
+          <div className="relative mb-8">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-4">
               
-              <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
-                {/* Step 1: Risk Profiling */}
-                <div className="relative">
-                  <div className="bg-card border-2 border-primary rounded-2xl p-6 text-center h-full shadow-lg hover:shadow-xl transition-shadow">
-                    <div className="w-16 h-16 rounded-full bg-primary text-primary-foreground flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
-                      1
-                    </div>
-                    <div className="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center mx-auto mb-3">
-                      <Target className="w-6 h-6" />
-                    </div>
-                    <h3 className="text-lg font-bold text-foreground mb-2">Risk Profiling</h3>
-                    <p className="text-sm text-muted-foreground mb-3">We assess your financial goals, risk appetite, and investment horizon</p>
-                    <div className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-full">
-                      Tatwa Financials
-                    </div>
+              {/* Step 1 */}
+              <div className="flex-1 max-w-xs">
+                <div className="bg-card border border-border rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow">
+                  <div className="flex items-center gap-3 mb-2">
+                    <div className="w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-sm font-bold flex-shrink-0">1</div>
+                    <h3 className="font-semibold text-foreground text-sm">Risk Assessment</h3>
+                  </div>
+                  <p className="text-xs text-muted-foreground ml-11">We analyze your goals & risk profile</p>
+                  <div className="mt-2 ml-11">
+                    <span className="text-[10px] px-2 py-0.5 bg-primary/10 text-primary rounded-full font-medium">Our Role</span>
                   </div>
                 </div>
+              </div>
 
-                {/* Step 2: Fund Selection */}
-                <div className="relative">
-                  <div className="bg-card border-2 border-accent rounded-2xl p-6 text-center h-full shadow-lg hover:shadow-xl transition-shadow">
-                    <div className="w-16 h-16 rounded-full bg-accent text-primary-foreground flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
-                      2
-                    </div>
-                    <div className="w-12 h-12 rounded-lg bg-accent/10 text-accent flex items-center justify-center mx-auto mb-3">
-                      <BarChart3 className="w-6 h-6" />
-                    </div>
-                    <h3 className="text-lg font-bold text-foreground mb-2">Fund Selection</h3>
-                    <p className="text-sm text-muted-foreground mb-3">We recommend the right mix of funds tailored to your profile</p>
-                    <div className="inline-block px-3 py-1 bg-accent/10 text-accent text-xs font-semibold rounded-full">
-                      Tatwa Financials
-                    </div>
+              <div className="hidden md:block text-muted-foreground">→</div>
+
+              {/* Step 2 */}
+              <div className="flex-1 max-w-xs">
+                <div className="bg-card border border-border rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow">
+                  <div className="flex items-center gap-3 mb-2">
+                    <div className="w-8 h-8 rounded-full bg-accent text-primary-foreground flex items-center justify-center text-sm font-bold flex-shrink-0">2</div>
+                    <h3 className="font-semibold text-foreground text-sm">Fund Selection</h3>
+                  </div>
+                  <p className="text-xs text-muted-foreground ml-11">We recommend the right funds for you</p>
+                  <div className="mt-2 ml-11">
+                    <span className="text-[10px] px-2 py-0.5 bg-accent/10 text-accent rounded-full font-medium">Our Role</span>
                   </div>
                 </div>
+              </div>
 
-                {/* Step 3: Investment */}
-                <div className="relative">
-                  <div className="bg-card border-2 border-secondary rounded-2xl p-6 text-center h-full shadow-lg hover:shadow-xl transition-shadow">
-                    <div className="w-16 h-16 rounded-full bg-secondary text-primary-foreground flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
-                      3
-                    </div>
-                    <div className="w-12 h-12 rounded-lg bg-secondary/10 text-secondary flex items-center justify-center mx-auto mb-3">
-                      <Smartphone className="w-6 h-6" />
-                    </div>
-                    <h3 className="text-lg font-bold text-foreground mb-2">Easy Investment</h3>
-                    <p className="text-sm text-muted-foreground mb-3">Invest digitally through our app in minutes</p>
-                    <div className="inline-block px-3 py-1 bg-secondary/10 text-secondary text-xs font-semibold rounded-full">
-                      Digital Platform
-                    </div>
+              <div className="hidden md:block text-muted-foreground">→</div>
+
+              {/* Step 3 */}
+              <div className="flex-1 max-w-xs">
+                <div className="bg-card border border-border rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow">
+                  <div className="flex items-center gap-3 mb-2">
+                    <div className="w-8 h-8 rounded-full bg-secondary text-primary-foreground flex items-center justify-center text-sm font-bold flex-shrink-0">3</div>
+                    <h3 className="font-semibold text-foreground text-sm">Investment</h3>
                   </div>
-                </div>
-
-                {/* Step 4: Fund Management */}
-                <div className="relative">
-                  <div className="bg-card border-2 border-primary rounded-2xl p-6 text-center h-full shadow-lg hover:shadow-xl transition-shadow">
-                    <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary to-accent text-primary-foreground flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
-                      4
-                    </div>
-                    <div className="w-12 h-12 rounded-lg bg-primary/10 text-primary flex items-center justify-center mx-auto mb-3">
-                      <Shield className="w-6 h-6" />
-                    </div>
-                    <h3 className="text-lg font-bold text-foreground mb-2">Money Management</h3>
-                    <p className="text-sm text-muted-foreground mb-3">Your money is managed by top AMCs like HDFC, ICICI, SBI</p>
-                    <div className="inline-block px-3 py-1 bg-gradient-to-r from-orange-500/10 to-red-500/10 text-orange-600 text-xs font-semibold rounded-full border border-orange-500/20">
-                      Top AMCs
-                    </div>
-                  </div>
-                </div>
-
-                {/* Step 5: Monitoring */}
-                <div className="relative">
-                  <div className="bg-card border-2 border-accent rounded-2xl p-6 text-center h-full shadow-lg hover:shadow-xl transition-shadow">
-                    <div className="w-16 h-16 rounded-full bg-accent text-primary-foreground flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
-                      5
-                    </div>
-                    <div className="w-12 h-12 rounded-lg bg-accent/10 text-accent flex items-center justify-center mx-auto mb-3">
-                      <TrendingUp className="w-6 h-6" />
-                    </div>
-                    <h3 className="text-lg font-bold text-foreground mb-2">Ongoing Support</h3>
-                    <p className="text-sm text-muted-foreground mb-3">Regular portfolio reviews and rebalancing advice</p>
-                    <div className="inline-block px-3 py-1 bg-accent/10 text-accent text-xs font-semibold rounded-full">
-                      Tatwa Financials
-                    </div>
+                  <p className="text-xs text-muted-foreground ml-11">Invest digitally via our app</p>
+                  <div className="mt-2 ml-11">
+                    <span className="text-[10px] px-2 py-0.5 bg-secondary/10 text-secondary rounded-full font-medium">Platform</span>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Key Distinction */}
-            <div className="mt-12 max-w-4xl mx-auto">
-              <div className="bg-gradient-to-r from-primary to-accent p-8 rounded-2xl shadow-[var(--shadow-glow)] text-primary-foreground">
-                <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0">
-                    <Handshake className="w-10 h-10" />
+            {/* Second Row */}
+            <div className="flex flex-col md:flex-row items-center justify-center gap-4 mt-4">
+              
+              {/* Step 4 - Emphasized */}
+              <div className="flex-1 max-w-sm">
+                <div className="bg-gradient-to-br from-orange-50 to-red-50 dark:from-orange-950/20 dark:to-red-950/20 border-2 border-orange-500/30 rounded-xl p-4 shadow-md">
+                  <div className="flex items-center gap-3 mb-2">
+                    <div className="w-8 h-8 rounded-full bg-gradient-to-br from-orange-500 to-red-500 text-white flex items-center justify-center text-sm font-bold flex-shrink-0">4</div>
+                    <h3 className="font-semibold text-foreground text-sm">Money Management</h3>
                   </div>
-                  <div>
-                    <h3 className="text-2xl font-bold mb-3">Clear Role Separation</h3>
-                    <div className="grid md:grid-cols-2 gap-4 text-sm">
-                      <div className="bg-primary-foreground/10 p-4 rounded-lg backdrop-blur-sm">
-                        <p className="font-semibold mb-2">✓ Tatwa Financials (Distributor)</p>
-                        <ul className="space-y-1 opacity-90">
-                          <li>• Risk assessment & profiling</li>
-                          <li>• Fund selection guidance</li>
-                          <li>• Portfolio planning</li>
-                          <li>• Ongoing advisory</li>
-                        </ul>
-                      </div>
-                      <div className="bg-primary-foreground/10 p-4 rounded-lg backdrop-blur-sm">
-                        <p className="font-semibold mb-2">✓ AMCs (Fund Managers)</p>
-                        <ul className="space-y-1 opacity-90">
-                          <li>• Professional money management</li>
-                          <li>• Investment execution</li>
-                          <li>• Fund operations</li>
-                          <li>• Regulatory compliance</li>
-                        </ul>
-                      </div>
-                    </div>
+                  <p className="text-xs text-muted-foreground ml-11 mb-2">
+                    <strong>AMCs (HDFC, ICICI, SBI, etc.)</strong> professionally manage your investments
+                  </p>
+                  <div className="mt-2 ml-11">
+                    <span className="text-[10px] px-2 py-0.5 bg-orange-500/20 text-orange-700 dark:text-orange-400 rounded-full font-semibold">Top AMCs</span>
                   </div>
                 </div>
+              </div>
+
+              <div className="hidden md:block text-muted-foreground">→</div>
+
+              {/* Step 5 */}
+              <div className="flex-1 max-w-sm">
+                <div className="bg-card border border-border rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow">
+                  <div className="flex items-center gap-3 mb-2">
+                    <div className="w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-sm font-bold flex-shrink-0">5</div>
+                    <h3 className="font-semibold text-foreground text-sm">Ongoing Support</h3>
+                  </div>
+                  <p className="text-xs text-muted-foreground ml-11">Regular reviews & rebalancing advice</p>
+                  <div className="mt-2 ml-11">
+                    <span className="text-[10px] px-2 py-0.5 bg-primary/10 text-primary rounded-full font-medium">Our Role</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Key Distinction - Compact */}
+          <div className="bg-gradient-to-r from-primary to-accent p-6 rounded-xl shadow-lg text-primary-foreground">
+            <div className="flex items-center gap-3 mb-4">
+              <Handshake className="w-6 h-6 flex-shrink-0" />
+              <h3 className="text-lg font-bold">Clear Role Separation</h3>
+            </div>
+            <div className="grid md:grid-cols-2 gap-4 text-sm">
+              <div className="bg-primary-foreground/10 p-3 rounded-lg backdrop-blur-sm">
+                <p className="font-semibold mb-2 text-sm">✓ Tatwa Financials</p>
+                <ul className="space-y-1 opacity-90 text-xs">
+                  <li>• Risk profiling & advisory</li>
+                  <li>• Fund selection guidance</li>
+                  <li>• Portfolio planning</li>
+                </ul>
+              </div>
+              <div className="bg-primary-foreground/10 p-3 rounded-lg backdrop-blur-sm">
+                <p className="font-semibold mb-2 text-sm">✓ AMCs (Fund Houses)</p>
+                <ul className="space-y-1 opacity-90 text-xs">
+                  <li>• Professional money management</li>
+                  <li>• Investment execution</li>
+                  <li>• Regulatory compliance</li>
+                </ul>
               </div>
             </div>
           </div>
