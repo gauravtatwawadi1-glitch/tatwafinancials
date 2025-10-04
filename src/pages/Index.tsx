@@ -414,6 +414,75 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Partners Section */}
+      <section id="partners" className="py-12 px-4 bg-gradient-to-b from-muted/30 via-background to-muted/30 relative overflow-hidden">
+        {/* Decorative Background Elements */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,hsl(var(--primary)/0.05),transparent_50%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,hsl(var(--secondary)/0.05),transparent_50%)]" />
+        
+        <div className="container mx-auto relative z-10">
+          <div className="text-center mb-10 animate-fade-in">
+            <div className="inline-flex items-center justify-center w-20 h-20 rounded-3xl bg-gradient-to-br from-primary via-accent to-secondary text-primary-foreground mb-6 shadow-[var(--shadow-glow)] animate-scale-in">
+              <Handshake className="w-10 h-10" />
+            </div>
+            <h2 className="text-4xl md:text-6xl font-bold mb-4 text-foreground bg-clip-text text-transparent bg-gradient-to-r from-primary via-accent to-secondary animate-slide-up">
+              Our Partners
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+              Trusted collaborations with India's leading Mutual Fund houses and technology innovators
+            </p>
+          </div>
+
+          {/* Technology Partner */}
+          <div className="mb-12 max-w-4xl mx-auto">
+            <div className="text-center mb-8">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 text-accent text-sm font-semibold mb-4">
+                <Zap className="w-4 h-4" />
+                Technology Partner
+              </div>
+              <h3 className="text-3xl font-bold text-foreground">
+                Powered by Innovation
+              </h3>
+            </div>
+            <div className="max-w-lg mx-auto">
+              <PartnerLogo name="Redvision Technologies Pvt Ltd" category="technology" delay={0} logo={redvisionLogo} />
+            </div>
+          </div>
+
+          {/* AMC Partners */}
+          <div className="mb-10">
+            <div className="text-center mb-8">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-semibold mb-4">
+                <BarChart3 className="w-4 h-4" />
+                Asset Management Partners
+              </div>
+              <h3 className="text-2xl font-bold text-foreground mb-2">
+                Top Fund Houses
+              </h3>
+              <p className="text-sm text-muted-foreground">
+                A few of our trusted mutual fund partners
+              </p>
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 max-w-6xl mx-auto">
+              <PartnerLogo name="HDFC MF" category="amc" delay={0} logo={hdfcMfLogo} />
+              <PartnerLogo name="ICICI Prudential" category="amc" delay={50} logo={iciciPrudentialLogo} />
+              <PartnerLogo name="SBI MF" category="amc" delay={100} logo={sbiMfLogo} />
+              <PartnerLogo name="Axis MF" category="amc" delay={150} logo={axisMfLogo} />
+              <PartnerLogo name="Nippon India" category="amc" delay={200} logo={nipponIndiaLogo} />
+              <PartnerLogo name="Kotak MF" category="amc" delay={250} logo={kotakMfLogo} />
+              <PartnerLogo name="Aditya Birla" category="amc" delay={300} logo={adityaBirlaLogo} />
+              <PartnerLogo name="UTI MF" category="amc" delay={350} logo={utiMfLogo} />
+              <PartnerLogo name="Tata MF" category="amc" delay={400} logo={tataMfLogo} />
+              <PartnerLogo name="Franklin Templeton" category="amc" delay={450} logo={franklinTempletonLogo} />
+            </div>
+            <div className="text-center mt-6">
+              <p className="text-muted-foreground text-sm font-medium">...and all the leading AMCs</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
       {/* Testimonials Section */}
       <section className="py-12 px-4 bg-background">
         <div className="container mx-auto max-w-6xl">
@@ -533,75 +602,6 @@ const Index = () => {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Partners Section */}
-      <section id="partners" className="py-12 px-4 bg-gradient-to-b from-muted/30 via-background to-muted/30 relative overflow-hidden">
-        {/* Decorative Background Elements */}
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,hsl(var(--primary)/0.05),transparent_50%)]" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,hsl(var(--secondary)/0.05),transparent_50%)]" />
-        
-        <div className="container mx-auto relative z-10">
-          <div className="text-center mb-10 animate-fade-in">
-            <div className="inline-flex items-center justify-center w-20 h-20 rounded-3xl bg-gradient-to-br from-primary via-accent to-secondary text-primary-foreground mb-6 shadow-[var(--shadow-glow)] animate-scale-in">
-              <Handshake className="w-10 h-10" />
-            </div>
-            <h2 className="text-4xl md:text-6xl font-bold mb-4 text-foreground bg-clip-text text-transparent bg-gradient-to-r from-primary via-accent to-secondary animate-slide-up">
-              Our Partners
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Trusted collaborations with India's leading Mutual Fund houses and technology innovators
-            </p>
-          </div>
-
-          {/* Technology Partner */}
-          <div className="mb-12 max-w-4xl mx-auto">
-            <div className="text-center mb-8">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 text-accent text-sm font-semibold mb-4">
-                <Zap className="w-4 h-4" />
-                Technology Partner
-              </div>
-              <h3 className="text-3xl font-bold text-foreground">
-                Powered by Innovation
-              </h3>
-            </div>
-            <div className="max-w-lg mx-auto">
-              <PartnerLogo name="Redvision Technologies Pvt Ltd" category="technology" delay={0} logo={redvisionLogo} />
-            </div>
-          </div>
-
-          {/* AMC Partners */}
-          <div className="mb-10">
-            <div className="text-center mb-8">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-semibold mb-4">
-                <BarChart3 className="w-4 h-4" />
-                Asset Management Partners
-              </div>
-              <h3 className="text-2xl font-bold text-foreground mb-2">
-                Top Fund Houses
-              </h3>
-              <p className="text-sm text-muted-foreground">
-                A few of our trusted mutual fund partners
-              </p>
-            </div>
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 max-w-6xl mx-auto">
-              <PartnerLogo name="HDFC MF" category="amc" delay={0} logo={hdfcMfLogo} />
-              <PartnerLogo name="ICICI Prudential" category="amc" delay={50} logo={iciciPrudentialLogo} />
-              <PartnerLogo name="SBI MF" category="amc" delay={100} logo={sbiMfLogo} />
-              <PartnerLogo name="Axis MF" category="amc" delay={150} logo={axisMfLogo} />
-              <PartnerLogo name="Nippon India" category="amc" delay={200} logo={nipponIndiaLogo} />
-              <PartnerLogo name="Kotak MF" category="amc" delay={250} logo={kotakMfLogo} />
-              <PartnerLogo name="Aditya Birla" category="amc" delay={300} logo={adityaBirlaLogo} />
-              <PartnerLogo name="UTI MF" category="amc" delay={350} logo={utiMfLogo} />
-              <PartnerLogo name="Tata MF" category="amc" delay={400} logo={tataMfLogo} />
-              <PartnerLogo name="Franklin Templeton" category="amc" delay={450} logo={franklinTempletonLogo} />
-            </div>
-            <div className="text-center mt-6">
-              <p className="text-muted-foreground text-sm font-medium">...and all the leading AMCs</p>
-            </div>
-          </div>
-
         </div>
       </section>
 
