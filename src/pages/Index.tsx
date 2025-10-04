@@ -6,7 +6,6 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from 
 import { Shield, Smartphone, TrendingUp, CheckCircle2, BarChart3, LineChart, Cloud, Lock, Zap, Target, Award, Handshake, Linkedin, Instagram } from "lucide-react";
 import heroImage from "@/assets/hero-finance.jpg";
 import founderPhoto from "@/assets/founder-photo.jpg";
-import wealthEliteLogo from "@/assets/logos/wealthelite.png";
 import hdfcMfLogo from "@/assets/logos/hdfc-mf.png";
 import iciciPrudentialLogo from "@/assets/logos/icici-prudential.png";
 import sbiMfLogo from "@/assets/logos/sbi-mf.png";
@@ -25,7 +24,13 @@ const Index = () => {
       <header className="fixed top-0 w-full bg-background/80 backdrop-blur-md border-b border-border z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <img src={wealthEliteLogo} alt="Wealth Elite logo" className="h-12 w-auto object-contain" />
+            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center">
+              <TrendingUp className="w-6 h-6 text-primary-foreground" />
+            </div>
+            <div className="flex flex-col">
+              <span className="text-xl font-bold text-foreground leading-none">Tatwa Financials</span>
+              <span className="text-[10px] text-muted-foreground font-medium">AMFI Registered Distributor</span>
+            </div>
           </div>
           <nav className="hidden md:flex items-center gap-8">
             <a href="#why-us" className="text-muted-foreground hover:text-foreground transition-colors">
