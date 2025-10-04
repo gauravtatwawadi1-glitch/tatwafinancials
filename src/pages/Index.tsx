@@ -515,11 +515,20 @@ const Index = () => {
             {/* Testimonial 2 */}
             <div className="bg-card border border-border rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
               <div className="flex gap-1 mb-4">
-                {[...Array(5)].map((_, i) => (
+                {[...Array(4)].map((_, i) => (
                   <svg key={i} className="w-5 h-5 fill-primary" viewBox="0 0 24 24">
                     <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                   </svg>
                 ))}
+                <svg className="w-5 h-5 fill-primary" viewBox="0 0 24 24">
+                  <defs>
+                    <linearGradient id="half-fill-2">
+                      <stop offset="50%" stopColor="currentColor" />
+                      <stop offset="50%" stopColor="transparent" />
+                    </linearGradient>
+                  </defs>
+                  <path fill="url(#half-fill-2)" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
               </div>
               <p className="text-muted-foreground mb-4 italic">
                 "Finally found an advisor who focuses on my risk appetite rather than pushing products. The transparency and regular reviews give me complete peace of mind."
@@ -551,11 +560,20 @@ const Index = () => {
             {/* Testimonial 4 */}
             <div className="bg-card border border-border rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
               <div className="flex gap-1 mb-4">
-                {[...Array(5)].map((_, i) => (
+                {[...Array(4)].map((_, i) => (
                   <svg key={i} className="w-5 h-5 fill-primary" viewBox="0 0 24 24">
                     <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                   </svg>
                 ))}
+                <svg className="w-5 h-5 fill-primary" viewBox="0 0 24 24">
+                  <defs>
+                    <linearGradient id="half-fill-4">
+                      <stop offset="50%" stopColor="currentColor" />
+                      <stop offset="50%" stopColor="transparent" />
+                    </linearGradient>
+                  </defs>
+                  <path fill="url(#half-fill-4)" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
               </div>
               <p className="text-muted-foreground mb-4 italic">
                 "From retirement planning to my child's education fund, Tatwa Financials has structured everything perfectly. The best part? No hidden charges, just honest advice."
@@ -569,11 +587,20 @@ const Index = () => {
             {/* Testimonial 5 */}
             <div className="bg-card border border-border rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
               <div className="flex gap-1 mb-4">
-                {[...Array(5)].map((_, i) => (
+                {[...Array(4)].map((_, i) => (
                   <svg key={i} className="w-5 h-5 fill-primary" viewBox="0 0 24 24">
                     <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                   </svg>
                 ))}
+                <svg className="w-5 h-5 fill-primary" viewBox="0 0 24 24">
+                  <defs>
+                    <linearGradient id="half-fill-5">
+                      <stop offset="50%" stopColor="currentColor" />
+                      <stop offset="50%" stopColor="transparent" />
+                    </linearGradient>
+                  </defs>
+                  <path fill="url(#half-fill-5)" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
               </div>
               <p className="text-muted-foreground mb-4 italic">
                 "Being a first-time investor, I was nervous. Gaurav's detailed risk assessment and patient guidance made me confident. My SIPs are performing excellently!"
