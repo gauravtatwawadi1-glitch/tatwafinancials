@@ -405,9 +405,9 @@ const Index = () => {
           <div className="max-w-3xl mx-auto">
             <div className="bg-gradient-to-br from-primary to-accent p-6 rounded-2xl shadow-[var(--shadow-glow)] text-primary-foreground">
               <p className="text-lg md:text-xl font-semibold mb-2 italic text-center">
-                "An investment in knowledge pays the best interest. And the best knowledge comes from those who've walked the path before you."
+                "The investor's chief problem—and his worst enemy—is likely to be himself. Your portfolio should reflect your own temperament and risk tolerance, not someone else's."
               </p>
-              <p className="text-center text-sm opacity-90">– Benjamin Franklin</p>
+              <p className="text-center text-sm opacity-90">– Benjamin Graham, The Intelligent Investor</p>
             </div>
           </div>
         </div>
