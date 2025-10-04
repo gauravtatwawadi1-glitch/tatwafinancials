@@ -462,18 +462,7 @@ const Index = () => {
             </div>
 
             {/* AMC Partners Preview */}
-            <div>
-              <div className="text-center mb-6">
-                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-semibold mb-3">
-                  <BarChart3 className="w-4 h-4" />
-                  Asset Management
-                </div>
-              </div>
-              <div className="grid grid-cols-2 gap-3">
-                <PartnerLogo name="HDFC MF" category="amc" delay={0} logo={hdfcMfLogo} />
-                <PartnerLogo name="ICICI Prudential" category="amc" delay={50} logo={iciciPrudentialLogo} />
-              </div>
-            </div>
+            
           </div>
 
           {/* Full AMC Partners Grid */}
@@ -520,11 +509,9 @@ const Index = () => {
             {/* Testimonial 1 */}
             <div className="bg-card border border-border rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
               <div className="flex gap-1 mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <svg key={i} className="w-5 h-5 fill-primary" viewBox="0 0 24 24">
+                {[...Array(5)].map((_, i) => <svg key={i} className="w-5 h-5 fill-primary" viewBox="0 0 24 24">
                     <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                  </svg>
-                ))}
+                  </svg>)}
               </div>
               <p className="text-muted-foreground mb-4 italic">
                 "Gaurav's personalized approach to risk profiling helped me build a portfolio that perfectly matches my financial goals. The app makes tracking investments so simple!"
@@ -538,11 +525,9 @@ const Index = () => {
             {/* Testimonial 2 */}
             <div className="bg-card border border-border rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
               <div className="flex gap-1 mb-4">
-                {[...Array(4)].map((_, i) => (
-                  <svg key={i} className="w-5 h-5 fill-primary" viewBox="0 0 24 24">
+                {[...Array(4)].map((_, i) => <svg key={i} className="w-5 h-5 fill-primary" viewBox="0 0 24 24">
                     <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                  </svg>
-                ))}
+                  </svg>)}
                 <svg className="w-5 h-5 fill-primary" viewBox="0 0 24 24">
                   <defs>
                     <linearGradient id="half-fill-2">
@@ -565,11 +550,9 @@ const Index = () => {
             {/* Testimonial 3 */}
             <div className="bg-card border border-border rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
               <div className="flex gap-1 mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <svg key={i} className="w-5 h-5 fill-primary" viewBox="0 0 24 24">
+                {[...Array(5)].map((_, i) => <svg key={i} className="w-5 h-5 fill-primary" viewBox="0 0 24 24">
                     <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                  </svg>
-                ))}
+                  </svg>)}
               </div>
               <p className="text-muted-foreground mb-4 italic">
                 "The digital platform is incredibly user-friendly. I can invest, track, and redeem anytime. Gaurav's expertise in mutual funds has helped grow my wealth significantly."
@@ -583,11 +566,9 @@ const Index = () => {
             {/* Testimonial 4 */}
             <div className="bg-card border border-border rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
               <div className="flex gap-1 mb-4">
-                {[...Array(4)].map((_, i) => (
-                  <svg key={i} className="w-5 h-5 fill-primary" viewBox="0 0 24 24">
+                {[...Array(4)].map((_, i) => <svg key={i} className="w-5 h-5 fill-primary" viewBox="0 0 24 24">
                     <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                  </svg>
-                ))}
+                  </svg>)}
                 <svg className="w-5 h-5 fill-primary" viewBox="0 0 24 24">
                   <defs>
                     <linearGradient id="half-fill-4">
@@ -610,11 +591,9 @@ const Index = () => {
             {/* Testimonial 5 */}
             <div className="bg-card border border-border rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
               <div className="flex gap-1 mb-4">
-                {[...Array(4)].map((_, i) => (
-                  <svg key={i} className="w-5 h-5 fill-primary" viewBox="0 0 24 24">
+                {[...Array(4)].map((_, i) => <svg key={i} className="w-5 h-5 fill-primary" viewBox="0 0 24 24">
                     <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                  </svg>
-                ))}
+                  </svg>)}
                 <svg className="w-5 h-5 fill-primary" viewBox="0 0 24 24">
                   <defs>
                     <linearGradient id="half-fill-5">
@@ -637,11 +616,9 @@ const Index = () => {
             {/* Testimonial 6 */}
             <div className="bg-card border border-border rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
               <div className="flex gap-1 mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <svg key={i} className="w-5 h-5 fill-primary" viewBox="0 0 24 24">
+                {[...Array(5)].map((_, i) => <svg key={i} className="w-5 h-5 fill-primary" viewBox="0 0 24 24">
                     <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                  </svg>
-                ))}
+                  </svg>)}
               </div>
               <p className="text-muted-foreground mb-4 italic">
                 "Professional, transparent, and truly client-first. The regular portfolio reviews and rebalancing suggestions have helped me stay on track with my wealth goals."
