@@ -405,9 +405,9 @@ const Index = () => {
           <div className="max-w-3xl mx-auto">
             <div className="bg-gradient-to-br from-primary to-accent p-6 rounded-2xl shadow-[var(--shadow-glow)] text-primary-foreground">
               <p className="text-lg md:text-xl font-semibold mb-2 italic text-center">
-                "The investor's chief problem—and his worst enemy—is likely to be himself. Your portfolio should reflect your own temperament and risk tolerance, not someone else's."
+                "Every client deserves a portfolio built for their life story, not a one-size-fits-all product push."
               </p>
-              <p className="text-center text-sm opacity-90">– Benjamin Graham, The Intelligent Investor</p>
+              <p className="text-center text-sm opacity-90">– Gaurav Tatwawadi</p>
             </div>
           </div>
         </div>
