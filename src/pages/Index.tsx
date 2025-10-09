@@ -351,7 +351,7 @@ const Index = () => {
               <div className="flex flex-col items-center text-center space-y-4">
                 <div className="relative">
                   <div className="absolute inset-0 bg-gradient-to-br from-primary to-accent rounded-full blur-2xl opacity-30 scale-110" />
-                  <img src={founderPhoto} alt="Gaurav Tatwawadi - Founder & Chief Advisor" className="relative rounded-full shadow-[var(--shadow-strong)] w-40 h-40 object-cover border-4 border-background" />
+                  <img src={founderPhoto} alt="Gaurav Tatwawadi - Founder & Chief Advisor" className="relative rounded-full shadow-[var(--shadow-strong)] w-40 h-40 object-cover object-top border-4 border-background" />
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold text-foreground">Gaurav Tatwawadi</h3>
