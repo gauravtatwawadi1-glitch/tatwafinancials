@@ -674,28 +674,28 @@ const Index = () => {
             <div>
               <h4 className="font-semibold mb-4">Products</h4>
               <ul className="space-y-2 text-sm opacity-80">
-                <li>Mutual Funds</li>
-                <li>SIP Investments</li>
-                <li>Wealth Management</li>
-                <li>Risk Profiling</li>
+                <li><a href="#expertise" className="hover:opacity-100 transition-opacity">Mutual Funds</a></li>
+                <li><a href="#expertise" className="hover:opacity-100 transition-opacity">SIP Investments</a></li>
+                <li><a href="#expertise" className="hover:opacity-100 transition-opacity">Wealth Management</a></li>
+                <li><a href="#expertise" className="hover:opacity-100 transition-opacity">Risk Profiling</a></li>
               </ul>
             </div>
             <div>
               <h4 className="font-semibold mb-4">Company</h4>
               <ul className="space-y-2 text-sm opacity-80">
-                <li>About Us</li>
-                <li>Our Team</li>
-                <li>Careers</li>
-                <li>Contact</li>
+                <li><a href="#about" className="hover:opacity-100 transition-opacity">About Us</a></li>
+                <li><a href="#about" className="hover:opacity-100 transition-opacity">Our Team</a></li>
+                <li><a href="#" className="hover:opacity-100 transition-opacity">Careers</a></li>
+                <li><Link to="/contact" className="hover:opacity-100 transition-opacity">Contact</Link></li>
               </ul>
             </div>
             <div>
               <h4 className="font-semibold mb-4">Legal</h4>
               <ul className="space-y-2 text-sm opacity-80">
-                <li>Privacy Policy</li>
-                <li>Terms of Service</li>
-                <li>AMFI Registration</li>
-                <li>Compliance</li>
+                <li><a href="#" className="hover:opacity-100 transition-opacity">Privacy Policy</a></li>
+                <li><a href="#" className="hover:opacity-100 transition-opacity">Terms of Service</a></li>
+                <li><a href="#" className="hover:opacity-100 transition-opacity">AMFI Registration</a></li>
+                <li><a href="#" className="hover:opacity-100 transition-opacity">Compliance</a></li>
               </ul>
             </div>
           </div>
