@@ -655,7 +655,7 @@ const Index = () => {
                 <p className="text-sm opacity-90 mb-4">
                   Be aware of spam and phishing attempts. Always communicate with us only via our official channels:
                 </p>
-                <div className="flex flex-wrap gap-3 justify-center md:justify-start">
+                <div className="flex flex-wrap gap-3 justify-center">
                   <Button size="sm" variant="outline" className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 border-0" asChild>
                     <a href="https://wa.link/aq90ws" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                       <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
