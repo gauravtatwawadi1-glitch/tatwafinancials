@@ -54,12 +54,12 @@ const FinancialDirectionCall = () => {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-foreground leading-tight">
               Confused About Your
               <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-accent to-secondary">
-                Next Money Decision?
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-accent to-secondary">Existing MF portfolio?
+
               </span>
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed max-w-2xl mx-auto">
-              Get clarity with a 30-minute Financial Direction Call — designed for individuals unsure about investing, allocating surplus, or avoiding costly mistakes.
+            <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed max-w-2xl mx-auto">Get clarity with a 30-minute Financial Consultation Call — designed for individuals investing via direct platforms or for people who are unsure about investing, allocating surplus, or for someone looking to avoid costly mistakes.
+
             </p>
             <Button size="lg" className="bg-gradient-to-r from-primary to-accent text-primary-foreground hover:shadow-[var(--shadow-glow)] transition-all duration-300 gap-2 text-base px-8" asChild>
               <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
