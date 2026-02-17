@@ -6,18 +6,18 @@ import { Link } from "react-router-dom";
 const WHATSAPP_URL = "https://wa.link/aq90ws";
 
 const questions = [
-  "Where should I invest my money?",
-  "Should I prepay my loan or invest?",
-  "SIP or lumpsum?",
-  "Equity, debt, or gold?",
-  "Am I making financial mistakes?",
-];
+"Where should I invest my money?",
+"Should I prepay my loan or invest?",
+"SIP or lumpsum?",
+"Equity, debt, or gold?",
+"Am I making financial mistakes?"];
+
 
 const benefits = [
-  { text: "Clarity on your current financial direction", icon: Target },
-  { text: "Identification of possible mistakes", icon: ShieldCheck },
-  { text: "Guidance on your next step", icon: ArrowRight },
-];
+{ text: "Clarity on your current financial direction", icon: Target },
+{ text: "Identification of possible mistakes", icon: ShieldCheck },
+{ text: "Guidance on your next step", icon: ArrowRight }];
+
 
 const FinancialDirectionCall = () => {
   return (
@@ -79,14 +79,14 @@ const FinancialDirectionCall = () => {
             <p className="text-muted-foreground text-lg">This call is helpful if you're wondering:</p>
           </div>
           <div className="grid sm:grid-cols-2 gap-4 animate-slide-up max-w-2xl mx-auto">
-            {questions.map((q) => (
-              <Card key={q} className="p-4 bg-card border-border hover:border-primary/50 hover:shadow-[var(--shadow-soft)] transition-all duration-300 flex items-start gap-3">
+            {questions.map((q) =>
+            <Card key={q} className="p-4 bg-card border-border hover:border-primary/50 hover:shadow-[var(--shadow-soft)] transition-all duration-300 flex items-start gap-3">
                 <div className="p-2 rounded-lg bg-primary/10 text-primary flex-shrink-0">
                   <HelpCircle className="w-4 h-4" />
                 </div>
                 <span className="text-muted-foreground text-sm leading-relaxed">{q}</span>
               </Card>
-            ))}
+            )}
           </div>
         </div>
       </section>
@@ -99,14 +99,14 @@ const FinancialDirectionCall = () => {
             <p className="text-muted-foreground text-lg">In just 30 minutes:</p>
           </div>
           <div className="grid md:grid-cols-3 gap-6 mb-8">
-            {benefits.map(({ text, icon: Icon }) => (
-              <Card key={text} className="p-6 bg-gradient-to-br from-card to-muted border-border hover:shadow-[var(--shadow-strong)] transition-all duration-300 hover:-translate-y-1 text-center group">
+            {benefits.map(({ text, icon: Icon }) =>
+            <Card key={text} className="p-6 bg-gradient-to-br from-card to-muted border-border hover:shadow-[var(--shadow-strong)] transition-all duration-300 hover:-translate-y-1 text-center group">
                 <div className="mb-4 inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300 mx-auto">
                   <Icon className="w-6 h-6" />
                 </div>
                 <p className="text-muted-foreground leading-relaxed text-sm">{text}</p>
               </Card>
-            ))}
+            )}
           </div>
           <div className="bg-gradient-to-r from-primary to-accent p-4 rounded-xl text-primary-foreground text-center text-sm font-medium shadow-lg">
             This is a one-time session. No product push. Just honest guidance.
@@ -123,20 +123,20 @@ const FinancialDirectionCall = () => {
           </div>
           <div className="flex flex-wrap justify-center gap-6">
             {[
-              { label: "SEBI Registered", sub: "Mutual Fund Distributor", icon: ShieldCheck },
-              { label: "₹1.2 Cr+", sub: "Assets Under Management", icon: TrendingUp },
-              { label: "Trusted By", sub: "Professionals & Public Figures", icon: Award },
-            ].map(({ label, sub, icon: Icon }) => (
-              <Card key={label} className="p-6 bg-card border-border flex items-center gap-4 flex-1 min-w-[240px]">
-                <div className="p-3 rounded-xl bg-gradient-to-br from-primary to-accent text-primary-foreground flex-shrink-0">
-                  <Icon className="w-6 h-6" />
-                </div>
-                <div>
-                  <p className="font-bold text-foreground">{label}</p>
-                  <p className="text-sm text-muted-foreground">{sub}</p>
-                </div>
-              </Card>
-            ))}
+            { label: "SEBI Registered", sub: "Mutual Fund Distributor", icon: ShieldCheck },
+            { label: "₹1.2 Cr+", sub: "Assets Under Management", icon: TrendingUp },
+            { label: "Trusted By", sub: "Professionals & Public Figures", icon: Award }].
+            map(({ label, sub, icon: Icon }) => {}
+
+
+
+
+
+
+
+
+
+            )}
           </div>
         </div>
       </section>
@@ -168,8 +168,8 @@ const FinancialDirectionCall = () => {
           © {new Date().getFullYear()} Tatwa Financials. All rights reserved.
         </div>
       </footer>
-    </div>
-  );
+    </div>);
+
 };
 
 export default FinancialDirectionCall;
