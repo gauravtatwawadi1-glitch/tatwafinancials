@@ -124,7 +124,7 @@ const FinancialDirectionCall = () => {
           <div className="flex flex-wrap justify-center gap-6">
             {[
             { label: "SEBI Registered", sub: "Mutual Fund Distributor", icon: ShieldCheck },
-            { label: "₹1.2 Cr+", sub: "Assets Under Management", icon: TrendingUp },
+            { label: "₹50 Cr+", sub: "Assets Under Management", icon: TrendingUp },
             { label: "Trusted By", sub: "Professionals & Public Figures", icon: Award }].
             map(({ label, sub, icon: Icon }) =>
             <Card key={label} className="p-6 bg-card border-border hover:shadow-[var(--shadow-soft)] transition-all duration-300 text-center">
