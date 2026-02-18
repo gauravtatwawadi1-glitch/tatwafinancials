@@ -47,7 +47,7 @@ const FinancialDirectionCall = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-accent/5 to-secondary/5" />
         <div className="container mx-auto relative z-10 max-w-3xl text-center">
           <div className="animate-fade-in">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">30-Minute Financial Consultation Call
               <Award className="w-4 h-4" />
               30-Minute Financial Direction Call
             </div>
@@ -126,15 +126,15 @@ const FinancialDirectionCall = () => {
             { label: "SEBI Registered", sub: "Mutual Fund Distributor", icon: ShieldCheck },
             { label: "₹1.2 Cr+", sub: "Assets Under Management", icon: TrendingUp },
             { label: "Trusted By", sub: "Professionals & Public Figures", icon: Award }].
-            map(({ label, sub, icon: Icon }) => (
-              <Card key={label} className="p-6 bg-card border-border hover:shadow-[var(--shadow-soft)] transition-all duration-300 text-center">
+            map(({ label, sub, icon: Icon }) =>
+            <Card key={label} className="p-6 bg-card border-border hover:shadow-[var(--shadow-soft)] transition-all duration-300 text-center">
                 <div className="mb-3 inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10 text-primary mx-auto">
                   <Icon className="w-6 h-6" />
                 </div>
                 <p className="text-foreground font-semibold">{label}</p>
                 <p className="text-muted-foreground text-sm">{sub}</p>
               </Card>
-            ))}
+            )}
 
           </div>
         </div>
