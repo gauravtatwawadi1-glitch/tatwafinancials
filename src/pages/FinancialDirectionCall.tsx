@@ -1,22 +1,21 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { MessageCircle, TrendingUp, HelpCircle, Target, ShieldCheck, Award, ArrowRight } from "lucide-react";
+import { MessageCircle, TrendingUp, AlertTriangle, Target, ShieldCheck, Award, Eye, PieChart, Zap } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const WHATSAPP_URL = "https://wa.link/hl5sv3";
 
-const questions = [
-  "Where should I invest my money?",
-  "Should I prepay my loan or invest?",
-  "SIP or lumpsum?",
-  "Equity, debt, or gold?",
-  "Am I making financial mistakes?",
+const risks = [
+  { label: "Over-diversified", desc: "Holding 15+ funds that move together, adding complexity without safety.", icon: PieChart },
+  { label: "Misaligned to goals", desc: "Investments not matched to your actual timeline or life milestones.", icon: Target },
+  { label: "Taking risk unknowingly", desc: "Exposure to volatility you haven't consciously chosen or understood.", icon: AlertTriangle },
+  { label: "Silent concentration", desc: "Heavy overlap across funds — you think you're diversified, but you're not.", icon: Eye },
 ];
 
-const benefits = [
-  { text: "Clarity on your current financial direction", icon: Target },
-  { text: "Identification of possible mistakes", icon: ShieldCheck },
-  { text: "Guidance on your next step", icon: ArrowRight },
+const outcomes = [
+  { text: "Identify hidden risks in your current allocation", icon: AlertTriangle },
+  { text: "See if your portfolio truly matches your goals", icon: Target },
+  { text: "Know exactly where you may be exposed", icon: Eye },
 ];
 
 const FinancialDirectionCall = () => {
@@ -42,24 +41,27 @@ const FinancialDirectionCall = () => {
         </div>
       </header>
 
-      {/* Hero Section */}
+      {/* Hero Section — Doubt */}
       <section className="pt-24 pb-12 px-4 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-accent/5 to-secondary/5" />
         <div className="container mx-auto relative z-10 max-w-3xl text-center">
           <div className="animate-fade-in">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 text-primary text-xs sm:text-sm font-medium mb-5">
               <Award className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
-              30-Minute Financial Direction Call
+              30-Minute Portfolio Review Call
             </div>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 text-foreground leading-tight">
-              Confused About Your
+              Is Your Portfolio Growing…
               <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-accent to-secondary">
-                Existing MF Portfolio?
+                or Just Drifting?
               </span>
             </h1>
+            <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-3 leading-relaxed max-w-2xl mx-auto px-2">
+              Many self-managed portfolios look fine today —
+            </p>
             <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-7 leading-relaxed max-w-2xl mx-auto px-2">
-              Get clarity with a 30-minute Financial Consultation Call — designed for individuals investing via direct platforms or unsure about investing, allocating surplus, or looking to avoid costly mistakes.
+              but hidden allocation mistakes only show up during downturns.
             </p>
             <Button
               size="lg"
@@ -68,45 +70,51 @@ const FinancialDirectionCall = () => {
             >
               <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
                 <MessageCircle className="w-5 h-5" />
-                Book on WhatsApp
+                Get a Second Opinion
               </a>
             </Button>
+            <p className="text-xs text-muted-foreground mt-3">Built for DIY investors who want a professional second look.</p>
           </div>
         </div>
       </section>
 
-      {/* Who This Is For */}
+      {/* Mirror Section — Risk */}
       <section className="py-12 px-4 bg-muted/30">
         <div className="container mx-auto max-w-3xl">
           <div className="text-center mb-8 animate-fade-in">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2 text-foreground">Who This Is For</h2>
-            <p className="text-muted-foreground text-base sm:text-lg">This call is helpful if you're wondering:</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 text-foreground">
+              If You Built Your Portfolio Yourself,<br className="hidden sm:block" /> You Might Be:
+            </h2>
+            <p className="text-muted-foreground text-base sm:text-lg max-w-xl mx-auto">These aren't rare edge cases. They're the most common silent mistakes in self-managed portfolios.</p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 animate-slide-up max-w-2xl mx-auto">
-            {questions.map((q) => (
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 animate-slide-up">
+            {risks.map(({ label, desc, icon: Icon }) => (
               <Card
-                key={q}
-                className="p-4 bg-card border-border hover:border-primary/50 hover:shadow-[var(--shadow-soft)] transition-all duration-300 flex items-start gap-3"
+                key={label}
+                className="p-5 bg-card border-border hover:border-destructive/40 hover:shadow-[var(--shadow-soft)] transition-all duration-300 flex items-start gap-4"
               >
-                <div className="p-1.5 rounded-lg bg-primary/10 text-primary flex-shrink-0 mt-0.5">
-                  <HelpCircle className="w-4 h-4" />
+                <div className="p-2 rounded-lg bg-destructive/10 text-destructive flex-shrink-0 mt-0.5">
+                  <Icon className="w-4 h-4" />
                 </div>
-                <span className="text-muted-foreground text-sm leading-relaxed">{q}</span>
+                <div>
+                  <p className="text-foreground font-semibold text-sm mb-1">{label}</p>
+                  <p className="text-muted-foreground text-sm leading-relaxed">{desc}</p>
+                </div>
               </Card>
             ))}
           </div>
         </div>
       </section>
 
-      {/* What You Get */}
+      {/* Solution + Outcome */}
       <section className="py-12 px-4">
         <div className="container mx-auto max-w-3xl">
           <div className="text-center mb-8">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2 text-foreground">What You Get</h2>
-            <p className="text-muted-foreground text-base sm:text-lg">In just 30 minutes:</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2 text-foreground">What You Walk Away With</h2>
+            <p className="text-muted-foreground text-base sm:text-lg">In 30 minutes, you'll know:</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
-            {benefits.map(({ text, icon: Icon }) => (
+            {outcomes.map(({ text, icon: Icon }) => (
               <Card
                 key={text}
                 className="p-5 bg-gradient-to-br from-card to-muted border-border hover:shadow-[var(--shadow-strong)] transition-all duration-300 hover:-translate-y-1 flex sm:flex-col items-center sm:items-center gap-4 sm:gap-0 sm:text-center group"
@@ -119,16 +127,16 @@ const FinancialDirectionCall = () => {
             ))}
           </div>
           <div className="bg-gradient-to-r from-primary to-accent p-4 rounded-xl text-primary-foreground text-center text-sm font-medium shadow-lg">
-            This is a one-time session. No product push. Just honest guidance.
+            No product push. No sales pitch. Just an honest look at where you stand.
           </div>
         </div>
       </section>
 
-      {/* About / Trust */}
+      {/* Authority / Trust */}
       <section className="py-12 px-4 bg-muted/30">
         <div className="container mx-auto max-w-3xl">
           <div className="text-center mb-8">
-            <p className="text-muted-foreground text-base sm:text-lg">Conducted by a trusted professional</p>
+            <p className="text-muted-foreground text-base sm:text-lg">A professional second opinion — from someone managing real portfolios</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {[
@@ -153,6 +161,21 @@ const FinancialDirectionCall = () => {
         </div>
       </section>
 
+      {/* Soft Urgency */}
+      <section className="py-10 px-4">
+        <div className="container mx-auto max-w-2xl text-center">
+          <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-destructive/10 text-destructive mb-4 mx-auto">
+            <Zap className="w-6 h-6" />
+          </div>
+          <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-3">
+            Better to review once today —<br className="hidden sm:block" /> than discover mistakes in a downturn.
+          </h3>
+          <p className="text-muted-foreground text-sm sm:text-base">
+            This isn't just a consultation. Think of it as insurance for your financial decisions.
+          </p>
+        </div>
+      </section>
+
       {/* Pricing + CTA */}
       <section className="py-16 px-4 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-accent/5 to-secondary/5" />
@@ -160,7 +183,7 @@ const FinancialDirectionCall = () => {
           <Card className="p-6 sm:p-10 bg-card border-border shadow-[var(--shadow-strong)]">
             <p className="text-xs sm:text-sm font-medium text-muted-foreground uppercase tracking-widest mb-2">One-time session fee</p>
             <p className="text-4xl sm:text-5xl font-bold text-foreground mb-1">₹999</p>
-            <p className="text-muted-foreground text-sm sm:text-base mb-7">30 minutes of focused financial clarity</p>
+            <p className="text-muted-foreground text-sm sm:text-base mb-7">30 minutes. One honest professional. Real answers.</p>
             <Button
               size="lg"
               className="w-full bg-gradient-to-r from-primary to-accent text-primary-foreground hover:shadow-[var(--shadow-glow)] transition-all duration-300 gap-2 text-base"
@@ -168,11 +191,11 @@ const FinancialDirectionCall = () => {
             >
               <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
                 <MessageCircle className="w-5 h-5" />
-                Book Your Session via WhatsApp
+                Book Your Portfolio Review
               </a>
             </Button>
             <p className="text-xs text-muted-foreground mt-4">
-              If you'd like clarity before making your next financial move — this is for you.
+              You might be right. But wouldn't you rather know for sure?
             </p>
           </Card>
         </div>
@@ -189,3 +212,4 @@ const FinancialDirectionCall = () => {
 };
 
 export default FinancialDirectionCall;
+
