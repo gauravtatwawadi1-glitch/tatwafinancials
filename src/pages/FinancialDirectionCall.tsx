@@ -6,17 +6,17 @@ import { Link } from "react-router-dom";
 const WHATSAPP_URL = "https://wa.link/hl5sv3";
 
 const risks = [
-  { label: "Over-diversified", desc: "Holding 15+ funds that move together, adding complexity without safety.", icon: PieChart },
-  { label: "Misaligned to goals", desc: "Investments not matched to your actual timeline or life milestones.", icon: Target },
-  { label: "Taking risk unknowingly", desc: "Exposure to volatility you haven't consciously chosen or understood.", icon: AlertTriangle },
-  { label: "Silent concentration", desc: "Heavy overlap across funds — you think you're diversified, but you're not.", icon: Eye },
-];
+{ label: "Over-diversified", desc: "Holding 15+ funds that move together, adding complexity without safety.", icon: PieChart },
+{ label: "Misaligned to goals", desc: "Investments not matched to your actual timeline or life milestones.", icon: Target },
+{ label: "Taking risk unknowingly", desc: "Exposure to volatility you haven't consciously chosen or understood.", icon: AlertTriangle },
+{ label: "Silent concentration", desc: "Heavy overlap across funds — you think you're diversified, but you're not.", icon: Eye }];
+
 
 const outcomes = [
-  { text: "Identify hidden risks in your current allocation", icon: AlertTriangle },
-  { text: "See if your portfolio truly matches your goals", icon: Target },
-  { text: "Know exactly where you may be exposed", icon: Eye },
-];
+{ text: "Identify hidden risks in your current allocation", icon: AlertTriangle },
+{ text: "See if your portfolio truly matches your goals", icon: Target },
+{ text: "Know exactly where you may be exposed", icon: Eye }];
+
 
 const FinancialDirectionCall = () => {
   return (
@@ -66,8 +66,8 @@ const FinancialDirectionCall = () => {
             <Button
               size="lg"
               className="w-full sm:w-auto bg-gradient-to-r from-primary to-accent text-primary-foreground hover:shadow-[var(--shadow-glow)] transition-all duration-300 gap-2 text-base px-8"
-              asChild
-            >
+              asChild>
+
               <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
                 <MessageCircle className="w-5 h-5" />
                 Get a Second Opinion
@@ -82,17 +82,17 @@ const FinancialDirectionCall = () => {
       <section className="py-12 px-4 bg-muted/30">
         <div className="container mx-auto max-w-3xl">
           <div className="text-center mb-8 animate-fade-in">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 text-foreground">
-              If You Built Your Portfolio Yourself,<br className="hidden sm:block" /> You Might Be:
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 text-foreground">If You Built Your Portfolio Yourself, You Might Be
+              <br className="hidden sm:block" /> You Might Be:
             </h2>
             <p className="text-muted-foreground text-base sm:text-lg max-w-xl mx-auto">These aren't rare edge cases. They're the most common silent mistakes in self-managed portfolios.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 animate-slide-up">
-            {risks.map(({ label, desc, icon: Icon }) => (
-              <Card
-                key={label}
-                className="p-5 bg-card border-border hover:border-destructive/40 hover:shadow-[var(--shadow-soft)] transition-all duration-300 flex items-start gap-4"
-              >
+            {risks.map(({ label, desc, icon: Icon }) =>
+            <Card
+              key={label}
+              className="p-5 bg-card border-border hover:border-destructive/40 hover:shadow-[var(--shadow-soft)] transition-all duration-300 flex items-start gap-4">
+
                 <div className="p-2 rounded-lg bg-destructive/10 text-destructive flex-shrink-0 mt-0.5">
                   <Icon className="w-4 h-4" />
                 </div>
@@ -101,7 +101,7 @@ const FinancialDirectionCall = () => {
                   <p className="text-muted-foreground text-sm leading-relaxed">{desc}</p>
                 </div>
               </Card>
-            ))}
+            )}
           </div>
         </div>
       </section>
@@ -114,17 +114,17 @@ const FinancialDirectionCall = () => {
             <p className="text-muted-foreground text-base sm:text-lg">In 30 minutes, you'll know:</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
-            {outcomes.map(({ text, icon: Icon }) => (
-              <Card
-                key={text}
-                className="p-5 bg-gradient-to-br from-card to-muted border-border hover:shadow-[var(--shadow-strong)] transition-all duration-300 hover:-translate-y-1 flex sm:flex-col items-center sm:items-center gap-4 sm:gap-0 sm:text-center group"
-              >
+            {outcomes.map(({ text, icon: Icon }) =>
+            <Card
+              key={text}
+              className="p-5 bg-gradient-to-br from-card to-muted border-border hover:shadow-[var(--shadow-strong)] transition-all duration-300 hover:-translate-y-1 flex sm:flex-col items-center sm:items-center gap-4 sm:gap-0 sm:text-center group">
+
                 <div className="sm:mb-3 inline-flex items-center justify-center w-11 h-11 rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300 flex-shrink-0">
                   <Icon className="w-5 h-5" />
                 </div>
                 <p className="text-muted-foreground leading-relaxed text-sm">{text}</p>
               </Card>
-            ))}
+            )}
           </div>
           <div className="bg-gradient-to-r from-primary to-accent p-4 rounded-xl text-primary-foreground text-center text-sm font-medium shadow-lg">
             No product push. No sales pitch. Just an honest look at where you stand.
@@ -140,14 +140,14 @@ const FinancialDirectionCall = () => {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {[
-              { label: "SEBI Registered", sub: "Mutual Fund Distributor", icon: ShieldCheck },
-              { label: "₹50 Cr+", sub: "Assets Under Management", icon: TrendingUp },
-              { label: "Trusted By", sub: "Professionals & Public Figures", icon: Award },
-            ].map(({ label, sub, icon: Icon }) => (
-              <Card
-                key={label}
-                className="p-5 bg-card border-border hover:shadow-[var(--shadow-soft)] transition-all duration-300 flex sm:flex-col items-center sm:items-center gap-4 sm:gap-0 sm:text-center"
-              >
+            { label: "SEBI Registered", sub: "Mutual Fund Distributor", icon: ShieldCheck },
+            { label: "₹50 Cr+", sub: "Assets Under Management", icon: TrendingUp },
+            { label: "Trusted By", sub: "Professionals & Public Figures", icon: Award }].
+            map(({ label, sub, icon: Icon }) =>
+            <Card
+              key={label}
+              className="p-5 bg-card border-border hover:shadow-[var(--shadow-soft)] transition-all duration-300 flex sm:flex-col items-center sm:items-center gap-4 sm:gap-0 sm:text-center">
+
                 <div className="sm:mb-3 inline-flex items-center justify-center w-11 h-11 rounded-xl bg-primary/10 text-primary flex-shrink-0">
                   <Icon className="w-5 h-5" />
                 </div>
@@ -156,7 +156,7 @@ const FinancialDirectionCall = () => {
                   <p className="text-muted-foreground text-sm">{sub}</p>
                 </div>
               </Card>
-            ))}
+            )}
           </div>
         </div>
       </section>
@@ -187,8 +187,8 @@ const FinancialDirectionCall = () => {
             <Button
               size="lg"
               className="w-full bg-gradient-to-r from-primary to-accent text-primary-foreground hover:shadow-[var(--shadow-glow)] transition-all duration-300 gap-2 text-base"
-              asChild
-            >
+              asChild>
+
               <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
                 <MessageCircle className="w-5 h-5" />
                 Book Your Portfolio Review
@@ -207,9 +207,8 @@ const FinancialDirectionCall = () => {
           © {new Date().getFullYear()} Tatwa Financials. All rights reserved.
         </div>
       </footer>
-    </div>
-  );
+    </div>);
+
 };
 
 export default FinancialDirectionCall;
-
