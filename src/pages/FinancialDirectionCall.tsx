@@ -180,29 +180,6 @@ const FinancialDirectionCall = () => {
         </div>
       </section>
 
-      {/* Pricing + CTA */}
-      <section className="py-12 md:py-20 px-4 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-accent/5 to-secondary/5" />
-        <div className="container mx-auto max-w-lg relative z-10 text-center">
-          <Card className="p-6 sm:p-10 md:p-12 bg-card border-border shadow-[var(--shadow-strong)]">
-            <p className="text-xs sm:text-sm font-medium text-muted-foreground uppercase tracking-widest mb-2">One-time session fee</p>
-            <p className="text-4xl sm:text-5xl md:text-6xl font-bold text-foreground mb-1">₹999</p>
-            <p className="text-muted-foreground text-sm sm:text-base md:text-lg mb-7 md:mb-8">30 minutes. One honest professional. Real answers.</p>
-            <Button
-              size="lg"
-              className="w-full bg-gradient-to-r from-primary to-accent text-primary-foreground hover:shadow-[var(--shadow-glow)] transition-all duration-300 gap-2 text-base md:text-lg py-6"
-              asChild>
-              <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
-                <MessageCircle className="w-5 h-5" />
-                Book Your Portfolio Review
-              </a>
-            </Button>
-            <p className="text-xs md:text-sm text-muted-foreground mt-4">
-              You might be right. But wouldn't you rather know for sure?
-            </p>
-          </Card>
-        </div>
-      </section>
 
       {/* Footer */}
       <footer className="py-6 md:py-8 text-center text-xs md:text-sm text-muted-foreground border-t border-border bg-muted/30">
