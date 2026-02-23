@@ -64,8 +64,9 @@ const Index = () => {
         <div className="container mx-auto relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">AMFI Registered Mutual Fund & SIF Distributor <Award className="w-4 h-4" />
-                AMFI Registered Mutual Fund Distributor
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
+                <Award className="w-4 h-4" />
+                AMFI Registered Mutual Fund & SIF Distributor
               </div>
               <h1 className="text-5xl md:text-6xl font-bold mb-6 text-foreground leading-tight">
                 Invest Smart.
