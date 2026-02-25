@@ -18,7 +18,7 @@ import utiMfLogo from "@/assets/logos/uti-mf.png";
 import tataMfLogo from "@/assets/logos/tata-mf.png";
 import franklinTempletonLogo from "@/assets/logos/franklin-templeton.png";
 import redvisionLogo from "@/assets/logos/redvision.png";
-import turtlemintLogo from "@/assets/logos/turtlemint.png";
+import { Briefcase, Layers, Crown, Gem } from "lucide-react";
 const Index = () => {
   return <div className="min-h-screen bg-background">
       {/* Header */}
@@ -37,8 +37,8 @@ const Index = () => {
             <a href="#why-us" className="text-muted-foreground hover:text-foreground transition-colors">
               Why Us
             </a>
-            <a href="#expertise" className="text-muted-foreground hover:text-foreground transition-colors">
-              Expertise
+            <a href="#products" className="text-muted-foreground hover:text-foreground transition-colors">
+              Products
             </a>
             <a href="#partners" className="text-muted-foreground hover:text-foreground transition-colors">
               Partners
@@ -333,6 +333,134 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Products We Distribute */}
+      <section id="products" className="py-12 px-4 bg-muted/30">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-10 animate-fade-in">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">Products We Distribute</h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              Comprehensive investment solutions across market segments
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 animate-slide-up">
+            {/* Mutual Funds */}
+            <div className="bg-card border border-border rounded-2xl p-6 hover:shadow-[var(--shadow-strong)] transition-all duration-300 hover:-translate-y-1 group relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-24 h-24 bg-primary/5 rounded-bl-full" />
+              <div className="mb-4 inline-flex items-center justify-center w-14 h-14 rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300">
+                <TrendingUp className="w-7 h-7" />
+              </div>
+              <h3 className="text-lg font-bold mb-2 text-foreground">Mutual Funds</h3>
+              <p className="text-sm text-muted-foreground mb-4 leading-relaxed">SIP & Lump Sum investments across equity, debt, and hybrid categories from top AMCs.</p>
+              <div className="space-y-2">
+                <div className="flex items-center justify-between text-xs">
+                  <span className="text-muted-foreground">Min SIP</span>
+                  <span className="font-semibold text-primary">₹500/month</span>
+                </div>
+                <div className="flex items-center justify-between text-xs">
+                  <span className="text-muted-foreground">Min Lump Sum</span>
+                  <span className="font-semibold text-primary">₹5,000</span>
+                </div>
+                <div className="flex items-center justify-between text-xs">
+                  <span className="text-muted-foreground">Risk Level</span>
+                  <span className="font-semibold text-accent">Low to High</span>
+                </div>
+              </div>
+              <div className="mt-4 pt-3 border-t border-border">
+                <span className="text-[10px] px-2 py-1 bg-primary/10 text-primary rounded-full font-medium">Most Popular</span>
+              </div>
+            </div>
+
+            {/* SIF */}
+            <div className="bg-card border border-border rounded-2xl p-6 hover:shadow-[var(--shadow-strong)] transition-all duration-300 hover:-translate-y-1 group relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-24 h-24 bg-accent/5 rounded-bl-full" />
+              <div className="mb-4 inline-flex items-center justify-center w-14 h-14 rounded-xl bg-accent/10 text-accent group-hover:bg-accent group-hover:text-primary-foreground transition-all duration-300">
+                <Layers className="w-7 h-7" />
+              </div>
+              <h3 className="text-lg font-bold mb-2 text-foreground">Specialized Investment Fund</h3>
+              <p className="text-sm text-muted-foreground mb-4 leading-relaxed">Concentrated portfolio strategies for investors seeking higher alpha with focused bets.</p>
+              <div className="space-y-2">
+                <div className="flex items-center justify-between text-xs">
+                  <span className="text-muted-foreground">Min Investment</span>
+                  <span className="font-semibold text-accent">₹10 Lakhs</span>
+                </div>
+                <div className="flex items-center justify-between text-xs">
+                  <span className="text-muted-foreground">Lock-in</span>
+                  <span className="font-semibold text-accent">None</span>
+                </div>
+                <div className="flex items-center justify-between text-xs">
+                  <span className="text-muted-foreground">Risk Level</span>
+                  <span className="font-semibold text-accent">Medium to High</span>
+                </div>
+              </div>
+              <div className="mt-4 pt-3 border-t border-border">
+                <span className="text-[10px] px-2 py-1 bg-accent/10 text-accent rounded-full font-medium">New Category</span>
+              </div>
+            </div>
+
+            {/* PMS */}
+            <div className="bg-card border border-border rounded-2xl p-6 hover:shadow-[var(--shadow-strong)] transition-all duration-300 hover:-translate-y-1 group relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-24 h-24 bg-secondary/5 rounded-bl-full" />
+              <div className="mb-4 inline-flex items-center justify-center w-14 h-14 rounded-xl bg-secondary/10 text-secondary group-hover:bg-secondary group-hover:text-primary-foreground transition-all duration-300">
+                <Crown className="w-7 h-7" />
+              </div>
+              <h3 className="text-lg font-bold mb-2 text-foreground">Portfolio Management (PMS)</h3>
+              <p className="text-sm text-muted-foreground mb-4 leading-relaxed">Professionally managed, customized portfolios for HNIs with direct stock ownership.</p>
+              <div className="space-y-2">
+                <div className="flex items-center justify-between text-xs">
+                  <span className="text-muted-foreground">Min Investment</span>
+                  <span className="font-semibold text-secondary">₹50 Lakhs</span>
+                </div>
+                <div className="flex items-center justify-between text-xs">
+                  <span className="text-muted-foreground">Management</span>
+                  <span className="font-semibold text-secondary">Discretionary</span>
+                </div>
+                <div className="flex items-center justify-between text-xs">
+                  <span className="text-muted-foreground">Risk Level</span>
+                  <span className="font-semibold text-secondary">High</span>
+                </div>
+              </div>
+              <div className="mt-4 pt-3 border-t border-border">
+                <span className="text-[10px] px-2 py-1 bg-secondary/10 text-secondary rounded-full font-medium">For HNIs</span>
+              </div>
+            </div>
+
+            {/* AIF */}
+            <div className="bg-card border border-border rounded-2xl p-6 hover:shadow-[var(--shadow-strong)] transition-all duration-300 hover:-translate-y-1 group relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-24 h-24 bg-primary/5 rounded-bl-full" />
+              <div className="mb-4 inline-flex items-center justify-center w-14 h-14 rounded-xl bg-gradient-to-br from-primary/10 to-accent/10 text-primary group-hover:bg-gradient-to-br group-hover:from-primary group-hover:to-accent group-hover:text-primary-foreground transition-all duration-300">
+                <Gem className="w-7 h-7" />
+              </div>
+              <h3 className="text-lg font-bold mb-2 text-foreground">Alternative Investment Fund</h3>
+              <p className="text-sm text-muted-foreground mb-4 leading-relaxed">Access to private equity, venture capital, hedge funds & other alternative asset classes.</p>
+              <div className="space-y-2">
+                <div className="flex items-center justify-between text-xs">
+                  <span className="text-muted-foreground">Min Investment</span>
+                  <span className="font-semibold text-primary">₹1 Crore</span>
+                </div>
+                <div className="flex items-center justify-between text-xs">
+                  <span className="text-muted-foreground">Lock-in</span>
+                  <span className="font-semibold text-primary">3+ Years</span>
+                </div>
+                <div className="flex items-center justify-between text-xs">
+                  <span className="text-muted-foreground">Risk Level</span>
+                  <span className="font-semibold text-primary">Very High</span>
+                </div>
+              </div>
+              <div className="mt-4 pt-3 border-t border-border">
+                <span className="text-[10px] px-2 py-1 bg-gradient-to-r from-primary/10 to-accent/10 text-primary rounded-full font-medium">Ultra HNI</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Disclaimer */}
+          <div className="mt-8 text-center">
+            <p className="text-xs text-muted-foreground">
+              Mutual fund investments are subject to market risks. Please read all scheme related documents carefully before investing.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* About the Founder */}
       <section id="about" className="py-12 px-4 bg-gradient-to-b from-muted/30 via-background to-muted/30 relative overflow-hidden">
         {/* Decorative Background */}
@@ -434,39 +562,19 @@ const Index = () => {
               Our Partners
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Trusted collaborations across Technology, Insurance, and Asset Management
+              Trusted collaborations across Technology and Asset Management
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto mb-12">
+          <div className="max-w-xs mx-auto mb-12">
             {/* Technology Partner */}
-            <div>
-              <div className="text-center mb-6">
-                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent/10 text-accent text-sm font-semibold mb-3">
-                  <Zap className="w-4 h-4" />
-                  Technology Partner
-                </div>
-              </div>
-              <div>
-                <PartnerLogo name="Redvision Technologies Pvt Ltd" category="technology" delay={0} logo={redvisionLogo} />
+            <div className="text-center mb-6">
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent/10 text-accent text-sm font-semibold mb-3">
+                <Zap className="w-4 h-4" />
+                Technology Partner
               </div>
             </div>
-
-            {/* Insurance Partner */}
-            <div>
-              <div className="text-center mb-6">
-                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-secondary/10 text-secondary text-sm font-semibold mb-3">
-                  <Shield className="w-4 h-4" />
-                  Insurance Partner
-                </div>
-              </div>
-              <div>
-                <PartnerLogo name="Turtlemint" category="insurance" delay={0} logo={turtlemintLogo} />
-              </div>
-            </div>
-
-            {/* AMC Partners Preview */}
-            
+            <PartnerLogo name="Redvision Technologies Pvt Ltd" category="technology" delay={0} logo={redvisionLogo} />
           </div>
 
           {/* Full AMC Partners Grid */}
@@ -703,10 +811,10 @@ const Index = () => {
             <div>
               <h4 className="font-semibold mb-4">Products</h4>
               <ul className="space-y-2 text-sm opacity-80">
-                <li><a href="#expertise" className="hover:opacity-100 transition-opacity">Mutual Funds</a></li>
-                <li><a href="#expertise" className="hover:opacity-100 transition-opacity">SIP Investments</a></li>
-                <li><a href="#expertise" className="hover:opacity-100 transition-opacity">Wealth Management</a></li>
-                <li><a href="#expertise" className="hover:opacity-100 transition-opacity">Risk Profiling</a></li>
+                <li><a href="#products" className="hover:opacity-100 transition-opacity">Mutual Funds</a></li>
+                <li><a href="#products" className="hover:opacity-100 transition-opacity">SIF</a></li>
+                <li><a href="#products" className="hover:opacity-100 transition-opacity">PMS</a></li>
+                <li><a href="#products" className="hover:opacity-100 transition-opacity">AIF</a></li>
               </ul>
             </div>
             <div>
@@ -729,7 +837,7 @@ const Index = () => {
             </div>
           </div>
           <div className="pt-8 border-t border-background/20 text-center text-sm opacity-80">
-            <p>© 2025 Tatwa Financials. All rights reserved. AMFI Registered Mutual Fund Distributor.</p>
+            <p>© {new Date().getFullYear()} Tatwa Financials. All rights reserved. AMFI Registered Investment Distributor.</p>
           </div>
         </div>
       </footer>
