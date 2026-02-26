@@ -1,9 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { FeatureCard } from "@/components/FeatureCard";
-import { ExpertiseCard } from "@/components/ExpertiseCard";
 import { PartnerLogo } from "@/components/PartnerLogo";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
-import { Shield, Smartphone, TrendingUp, CheckCircle2, BarChart3, LineChart, Cloud, Lock, Zap, Target, Award, Handshake, Linkedin, Instagram, Mail } from "lucide-react";
+import { Shield, Smartphone, TrendingUp, CheckCircle2, BarChart3, LineChart, Lock, Zap, Target, Award, Handshake, Linkedin, Instagram, Mail, Users, Briefcase, Layers, Crown, Gem, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-finance.jpg";
 import founderPhoto from "@/assets/founder-photo.jpg";
@@ -18,7 +17,7 @@ import utiMfLogo from "@/assets/logos/uti-mf.png";
 import tataMfLogo from "@/assets/logos/tata-mf.png";
 import franklinTempletonLogo from "@/assets/logos/franklin-templeton.png";
 import redvisionLogo from "@/assets/logos/redvision.png";
-import { Briefcase, Layers, Crown, Gem } from "lucide-react";
+
 const Index = () => {
   return <div className="min-h-screen bg-background">
       {/* Header */}
@@ -30,15 +29,15 @@ const Index = () => {
             </div>
             <div className="flex flex-col">
               <span className="text-xl font-bold text-foreground leading-none">Tatwa Financials</span>
-              <span className="text-[10px] text-muted-foreground font-medium">AMFI Registered Distributor (ARN-341189)</span>
+              <span className="text-[10px] text-muted-foreground font-medium">Multi-Asset Portfolio Advisory | ARN-341189</span>
             </div>
           </Link>
           <nav className="hidden md:flex items-center gap-8">
-            <a href="#why-us" className="text-muted-foreground hover:text-foreground transition-colors">
-              Why Us
+            <a href="#approach" className="text-muted-foreground hover:text-foreground transition-colors">
+              Our Approach
             </a>
-            <a href="#products" className="text-muted-foreground hover:text-foreground transition-colors">
-              Products
+            <a href="#portfolios" className="text-muted-foreground hover:text-foreground transition-colors">
+              Portfolios
             </a>
             <a href="#partners" className="text-muted-foreground hover:text-foreground transition-colors">
               Partners
@@ -59,42 +58,42 @@ const Index = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="pt-24 pb-12 px-4 relative overflow-hidden">
+      <section className="pt-24 pb-16 px-4 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-accent/5 to-secondary/5" />
         <div className="container mx-auto relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
                 <Award className="w-4 h-4" />
-                AMFI Registered Mutual Fund & SIF Distributor
+                Multi-Asset Portfolio Advisory
               </div>
               <h1 className="text-5xl md:text-6xl font-bold mb-6 text-foreground leading-tight">
-                Invest Smart.
+                Beyond Mutual Funds.
                 <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-accent to-secondary">
-                  Grow Confidently.
+                  Into Portfolio Thinking.
                 </span>
               </h1>
               <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-                100% digital Mutual Fund Distributor. Experience seamless app-based
-                investment powered by data-driven risk evaluation and personalized portfolio management.
+                We help investors move beyond single-product investing into structured, multi-asset portfolios — 
+                across Mutual Funds, SIF, PMS & AIF — designed for real financial outcomes.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Button size="lg" className="bg-gradient-to-r from-primary to-accent text-primary-foreground hover:shadow-[var(--shadow-glow)] transition-all duration-300" asChild>
                   <a href="https://calendly.com/gauravtatwawadi/30min" target="_blank" rel="noopener noreferrer">
-                    Get free consultation and risk profiling
+                    Schedule a Portfolio Consultation
                   </a>
                 </Button>
                 <Dialog>
                   <DialogTrigger asChild>
                     <Button size="lg" variant="outline" className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground">
                       <Smartphone className="w-5 h-5 mr-2" />
-                      Download Client App
+                      Client Portal
                     </Button>
                   </DialogTrigger>
                   <DialogContent className="sm:max-w-md">
                     <DialogHeader>
-                      <DialogTitle className="text-2xl font-bold text-center mb-2">Download Our Client App</DialogTitle>
+                      <DialogTitle className="text-2xl font-bold text-center mb-2">Access Client Portal</DialogTitle>
                     </DialogHeader>
                     <div className="grid gap-4 py-4">
                       <Button size="lg" className="h-20 bg-gradient-to-r from-primary to-accent text-primary-foreground hover:shadow-[var(--shadow-glow)] transition-all duration-300" asChild>
@@ -119,75 +118,221 @@ const Index = () => {
               </div>
             </div>
             <div className="animate-scale-in">
-              <img src={heroImage} alt="Financial dashboard showing investment growth and security" className="rounded-2xl shadow-[var(--shadow-strong)] w-full" />
+              <img src={heroImage} alt="Multi-asset portfolio strategy and wealth management" className="rounded-2xl shadow-[var(--shadow-strong)] w-full" />
             </div>
           </div>
         </div>
       </section>
 
-      {/* Why Choose Us */}
-      <section id="why-us" className="py-12 px-4 bg-muted/30">
+      {/* Why Tatwa — Advisory Approach */}
+      <section id="approach" className="py-16 px-4 bg-muted/30">
         <div className="container mx-auto">
-          <div className="text-center mb-10 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">Why Choose Us</h2>
+          <div className="text-center mb-12 animate-fade-in">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">The Tatwa Approach</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Your trusted partner for digital investment solutions
+              From product selection to portfolio construction — an institutional mindset for every investor
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 animate-slide-up">
-            <FeatureCard icon={Shield} title="Trusted & Certified" description="AMFI registered distributor with full regulatory compliance and transparency." />
-            <FeatureCard icon={Smartphone} title="All-Digital Convenience" description="Access your investments anytime, anywhere with our easy-to-use mobile app." />
-            <FeatureCard icon={Target} title="Best Risk Evaluation" description="We evaluate your financial goals, risk appetite, and life stage to build the right portfolio." />
-            <FeatureCard icon={CheckCircle2} title="Comprehensive Planning" description="Tailored Mutual Fund solutions aligned with your retirement, child education, and wealth creation goals." />
-            <FeatureCard icon={TrendingUp} title="Transparent & Client-First" description="No jargon, no hidden costs – just clear advice and honest guidance." />
-            <FeatureCard icon={Zap} title="Fast & Paperless" description="Complete onboarding, KYC, and transactions digitally in minutes." />
+            <FeatureCard icon={Target} title="Goal-Based Allocation" description="Every portfolio starts with your life goals — not product features. We design allocation strategies around what truly matters to you." />
+            <FeatureCard icon={Layers} title="Multi-Asset Exposure" description="Structured portfolios across Mutual Funds, SIF, PMS & AIF — layered for stability, growth, and alpha generation." />
+            <FeatureCard icon={Shield} title="Risk Layering" description="We don't just assess risk — we layer it. Core stability, tactical growth, and alternative exposure, each with a defined role." />
+            <FeatureCard icon={BarChart3} title="Portfolio Construction" description="Institutional-style portfolio design that balances concentration and diversification — not 15 overlapping funds." />
+            <FeatureCard icon={TrendingUp} title="Active Rebalancing" description="Markets shift. Portfolios should too. Regular reviews ensure your allocation stays aligned with your evolving goals." />
+            <FeatureCard icon={Handshake} title="Transparent Advisory" description="No product pushing, no hidden agendas. Just clear, honest guidance rooted in your financial reality." />
           </div>
         </div>
       </section>
 
-      {/* Expertise Section */}
-      <section id="expertise" className="py-12 px-4">
-        <div className="container mx-auto">
-          <div className="text-center mb-10">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">Our Expertise</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Comprehensive financial solutions tailored to your needs
+      {/* How We Build Portfolios */}
+      <section id="portfolios" className="py-16 px-4">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-12 animate-fade-in">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">How We Build Portfolios</h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Each portfolio is structured across four layers — designed to balance stability, strategy, alpha, and alternative exposure
             </p>
           </div>
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            <ExpertiseCard icon={BarChart3} title="Mutual Funds Distribution" features={["Wide range of schemes across top fund houses", "Tailored asset allocation based on your profile", "SIPs, lump sum investments, retirement & child-goal planning", "Regular portfolio reviews and rebalancing"]} />
-            <ExpertiseCard icon={LineChart} title="Risk Evaluation" features={["Comprehensive risk profiling using advanced frameworks", "Analysis of your financial goals and investment horizon", "Personalized asset allocation strategies", "Regular risk assessment and portfolio rebalancing"]} />
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 animate-slide-up">
+            {/* Core Stability */}
+            <div className="bg-card border border-border rounded-2xl p-6 hover:shadow-[var(--shadow-strong)] transition-all duration-300 hover:-translate-y-1 group relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-24 h-24 bg-primary/5 rounded-bl-full" />
+              <div className="mb-4 inline-flex items-center justify-center w-14 h-14 rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300">
+                <Shield className="w-7 h-7" />
+              </div>
+              <div className="mb-3">
+                <span className="text-[10px] px-2 py-1 bg-primary/10 text-primary rounded-full font-semibold uppercase tracking-wide">Layer 1</span>
+              </div>
+              <h3 className="text-lg font-bold mb-1 text-foreground">Core Stability</h3>
+              <p className="text-primary font-semibold text-sm mb-3">Mutual Funds</p>
+              <p className="text-sm text-muted-foreground mb-4 leading-relaxed">The foundation of every portfolio. Broad market exposure through diversified equity, debt, and hybrid funds from India's top AMCs.</p>
+              <div className="space-y-2">
+                <div className="flex items-center justify-between text-xs">
+                  <span className="text-muted-foreground">Min Entry</span>
+                  <span className="font-semibold text-primary">₹500/month</span>
+                </div>
+                <div className="flex items-center justify-between text-xs">
+                  <span className="text-muted-foreground">Role</span>
+                  <span className="font-semibold text-primary">Foundation & Stability</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Custom Strategy */}
+            <div className="bg-card border border-border rounded-2xl p-6 hover:shadow-[var(--shadow-strong)] transition-all duration-300 hover:-translate-y-1 group relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-24 h-24 bg-accent/5 rounded-bl-full" />
+              <div className="mb-4 inline-flex items-center justify-center w-14 h-14 rounded-xl bg-accent/10 text-accent group-hover:bg-accent group-hover:text-primary-foreground transition-all duration-300">
+                <Layers className="w-7 h-7" />
+              </div>
+              <div className="mb-3">
+                <span className="text-[10px] px-2 py-1 bg-accent/10 text-accent rounded-full font-semibold uppercase tracking-wide">Layer 2</span>
+              </div>
+              <h3 className="text-lg font-bold mb-1 text-foreground">Custom Strategy</h3>
+              <p className="text-accent font-semibold text-sm mb-3">Specialized Investment Funds</p>
+              <p className="text-sm text-muted-foreground mb-4 leading-relaxed">Concentrated, thesis-driven strategies for investors seeking targeted allocation beyond conventional diversified funds.</p>
+              <div className="space-y-2">
+                <div className="flex items-center justify-between text-xs">
+                  <span className="text-muted-foreground">Min Entry</span>
+                  <span className="font-semibold text-accent">₹10 Lakhs</span>
+                </div>
+                <div className="flex items-center justify-between text-xs">
+                  <span className="text-muted-foreground">Role</span>
+                  <span className="font-semibold text-accent">Tactical Positioning</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Active Alpha */}
+            <div className="bg-card border border-border rounded-2xl p-6 hover:shadow-[var(--shadow-strong)] transition-all duration-300 hover:-translate-y-1 group relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-24 h-24 bg-secondary/5 rounded-bl-full" />
+              <div className="mb-4 inline-flex items-center justify-center w-14 h-14 rounded-xl bg-secondary/10 text-secondary group-hover:bg-secondary group-hover:text-primary-foreground transition-all duration-300">
+                <Crown className="w-7 h-7" />
+              </div>
+              <div className="mb-3">
+                <span className="text-[10px] px-2 py-1 bg-secondary/10 text-secondary rounded-full font-semibold uppercase tracking-wide">Layer 3</span>
+              </div>
+              <h3 className="text-lg font-bold mb-1 text-foreground">Active Alpha</h3>
+              <p className="text-secondary font-semibold text-sm mb-3">Portfolio Management Services</p>
+              <p className="text-sm text-muted-foreground mb-4 leading-relaxed">Professionally managed, customized stock portfolios with direct ownership — designed for HNIs seeking differentiated returns.</p>
+              <div className="space-y-2">
+                <div className="flex items-center justify-between text-xs">
+                  <span className="text-muted-foreground">Min Entry</span>
+                  <span className="font-semibold text-secondary">₹50 Lakhs</span>
+                </div>
+                <div className="flex items-center justify-between text-xs">
+                  <span className="text-muted-foreground">Role</span>
+                  <span className="font-semibold text-secondary">Alpha Generation</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Alternative Exposure */}
+            <div className="bg-card border border-border rounded-2xl p-6 hover:shadow-[var(--shadow-strong)] transition-all duration-300 hover:-translate-y-1 group relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-24 h-24 bg-primary/5 rounded-bl-full" />
+              <div className="mb-4 inline-flex items-center justify-center w-14 h-14 rounded-xl bg-gradient-to-br from-primary/10 to-accent/10 text-primary group-hover:bg-gradient-to-br group-hover:from-primary group-hover:to-accent group-hover:text-primary-foreground transition-all duration-300">
+                <Gem className="w-7 h-7" />
+              </div>
+              <div className="mb-3">
+                <span className="text-[10px] px-2 py-1 bg-gradient-to-r from-primary/10 to-accent/10 text-primary rounded-full font-semibold uppercase tracking-wide">Layer 4</span>
+              </div>
+              <h3 className="text-lg font-bold mb-1 text-foreground">Alternative Exposure</h3>
+              <p className="text-primary font-semibold text-sm mb-3">Alternative Investment Funds</p>
+              <p className="text-sm text-muted-foreground mb-4 leading-relaxed">Access to private equity, venture capital, and hedge fund strategies — for investors seeking uncorrelated, institutional-grade returns.</p>
+              <div className="space-y-2">
+                <div className="flex items-center justify-between text-xs">
+                  <span className="text-muted-foreground">Min Entry</span>
+                  <span className="font-semibold text-primary">₹1 Crore</span>
+                </div>
+                <div className="flex items-center justify-between text-xs">
+                  <span className="text-muted-foreground">Role</span>
+                  <span className="font-semibold text-primary">Diversification & Edge</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Portfolio Philosophy Banner */}
+          <div className="mt-10 bg-gradient-to-r from-primary to-accent p-6 rounded-xl text-primary-foreground text-center shadow-lg">
+            <p className="text-lg font-semibold">
+              Not every investor needs all four layers. We design what fits your stage, scale, and ambition.
+            </p>
+          </div>
+
+          <div className="mt-6 text-center">
+            <p className="text-xs text-muted-foreground">
+              Mutual fund investments are subject to market risks. Please read all scheme related documents carefully before investing.
+            </p>
           </div>
         </div>
       </section>
 
-      {/* Mutual Fund Lifecycle */}
-      <section className="py-12 px-4 bg-gradient-to-br from-primary/5 via-accent/5 to-secondary/5">
+      {/* Who We Work With */}
+      <section className="py-16 px-4 bg-muted/30">
         <div className="container mx-auto max-w-5xl">
-          <div className="text-center mb-8">
-            <h2 className="text-3xl md:text-4xl font-bold mb-3 text-foreground">
-              How It Works
-            </h2>
-            <p className="text-muted-foreground">
-              We advise, top AMCs professionally manage your money
+          <div className="text-center mb-12 animate-fade-in">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">Who We Work With</h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              Built for investors who've outgrown basic products and want a portfolio-first approach
             </p>
           </div>
 
-          {/* Compact Flow */}
+          <div className="grid md:grid-cols-3 gap-8 animate-slide-up">
+            <div className="bg-card border border-border rounded-2xl p-8 text-center hover:shadow-[var(--shadow-strong)] transition-all duration-300 hover:-translate-y-1 group">
+              <div className="mb-5 inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300">
+                <ArrowRight className="w-8 h-8" />
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-foreground">Graduating Investors</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                You've been doing SIPs. Now you're ready for a structured, multi-asset portfolio that actually compounds towards your goals.
+              </p>
+            </div>
+
+            <div className="bg-card border border-border rounded-2xl p-8 text-center hover:shadow-[var(--shadow-strong)] transition-all duration-300 hover:-translate-y-1 group">
+              <div className="mb-5 inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-accent/10 text-accent group-hover:bg-accent group-hover:text-primary-foreground transition-all duration-300">
+                <Briefcase className="w-8 h-8" />
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-foreground">HNIs & UHNIs</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Your wealth deserves more than diversified mutual funds. Access PMS, AIF, and institutional-style portfolio construction.
+              </p>
+            </div>
+
+            <div className="bg-card border border-border rounded-2xl p-8 text-center hover:shadow-[var(--shadow-strong)] transition-all duration-300 hover:-translate-y-1 group">
+              <div className="mb-5 inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-secondary/10 text-secondary group-hover:bg-secondary group-hover:text-primary-foreground transition-all duration-300">
+                <Users className="w-8 h-8" />
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-foreground">Professionals & Leaders</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Doctors, founders, CXOs — you don't have time to manage money. We build, monitor, and rebalance so you can focus on what you do best.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* How It Works — Simplified Advisory Flow */}
+      <section className="py-16 px-4 bg-gradient-to-br from-primary/5 via-accent/5 to-secondary/5">
+        <div className="container mx-auto max-w-5xl">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl md:text-4xl font-bold mb-3 text-foreground">
+              Our Portfolio Process
+            </h2>
+            <p className="text-muted-foreground text-lg">
+              From understanding you to building your portfolio
+            </p>
+          </div>
+
           <div className="relative mb-8">
             <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-              
               {/* Step 1 */}
               <div className="flex-1 max-w-xs">
                 <div className="bg-card border border-border rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow">
                   <div className="flex items-center gap-3 mb-2">
                     <div className="w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-sm font-bold flex-shrink-0">1</div>
-                    <h3 className="font-semibold text-foreground text-sm">Risk Assessment</h3>
+                    <h3 className="font-semibold text-foreground text-sm">Discovery & Profiling</h3>
                   </div>
-                  <p className="text-xs text-muted-foreground ml-11">We analyze your goals & risk profile</p>
-                  <div className="mt-2 ml-11">
-                    <span className="text-[10px] px-2 py-0.5 bg-primary/10 text-primary rounded-full font-medium">Our Role</span>
-                  </div>
+                  <p className="text-xs text-muted-foreground ml-11">We understand your goals, risk capacity, and timeline</p>
                 </div>
               </div>
 
@@ -198,12 +343,9 @@ const Index = () => {
                 <div className="bg-card border border-border rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow">
                   <div className="flex items-center gap-3 mb-2">
                     <div className="w-8 h-8 rounded-full bg-accent text-primary-foreground flex items-center justify-center text-sm font-bold flex-shrink-0">2</div>
-                    <h3 className="font-semibold text-foreground text-sm">Fund Selection</h3>
+                    <h3 className="font-semibold text-foreground text-sm">Portfolio Design</h3>
                   </div>
-                  <p className="text-xs text-muted-foreground ml-11">We recommend the right funds for you</p>
-                  <div className="mt-2 ml-11">
-                    <span className="text-[10px] px-2 py-0.5 bg-accent/10 text-accent rounded-full font-medium">Our Role</span>
-                  </div>
+                  <p className="text-xs text-muted-foreground ml-11">We construct a multi-asset allocation strategy</p>
                 </div>
               </div>
 
@@ -214,31 +356,27 @@ const Index = () => {
                 <div className="bg-card border border-border rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow">
                   <div className="flex items-center gap-3 mb-2">
                     <div className="w-8 h-8 rounded-full bg-secondary text-primary-foreground flex items-center justify-center text-sm font-bold flex-shrink-0">3</div>
-                    <h3 className="font-semibold text-foreground text-sm">Investment</h3>
+                    <h3 className="font-semibold text-foreground text-sm">Execution</h3>
                   </div>
-                  <p className="text-xs text-muted-foreground ml-11">Invest digitally via our app</p>
-                  <div className="mt-2 ml-11">
-                    <span className="text-[10px] px-2 py-0.5 bg-secondary/10 text-secondary rounded-full font-medium">Platform</span>
-                  </div>
+                  <p className="text-xs text-muted-foreground ml-11">Seamless deployment through top AMCs and managers</p>
                 </div>
               </div>
             </div>
 
             {/* Second Row */}
             <div className="flex flex-col md:flex-row items-center justify-center gap-4 mt-4">
-              
-              {/* Step 4 - Emphasized */}
+              {/* Step 4 */}
               <div className="flex-1 max-w-sm">
                 <div className="bg-gradient-to-br from-orange-50 to-red-50 dark:from-orange-950/20 dark:to-red-950/20 border-2 border-orange-500/30 rounded-xl p-4 shadow-md">
                   <div className="flex items-center gap-3 mb-2">
                     <div className="w-8 h-8 rounded-full bg-gradient-to-br from-orange-500 to-red-500 text-white flex items-center justify-center text-sm font-bold flex-shrink-0">4</div>
-                    <h3 className="font-semibold text-foreground text-sm">Money Management </h3>
+                    <h3 className="font-semibold text-foreground text-sm">Professional Management</h3>
                   </div>
                   <p className="text-xs text-muted-foreground ml-11 mb-2">
-                    <strong>AMCs (HDFC, ICICI, SBI, etc.)</strong> professionally manage your investments
+                    <strong>AMCs & Portfolio Managers</strong> handle the day-to-day management of your capital
                   </p>
                   <div className="mt-2 ml-11">
-                    <span className="text-[10px] px-2 py-0.5 bg-orange-500/20 text-orange-700 dark:text-orange-400 rounded-full font-semibold">Top AMCs</span>
+                    <span className="text-[10px] px-2 py-0.5 bg-orange-500/20 text-orange-700 dark:text-orange-400 rounded-full font-semibold">Partner Institutions</span>
                   </div>
                 </div>
               </div>
@@ -250,18 +388,15 @@ const Index = () => {
                 <div className="bg-card border border-border rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow">
                   <div className="flex items-center gap-3 mb-2">
                     <div className="w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-sm font-bold flex-shrink-0">5</div>
-                    <h3 className="font-semibold text-foreground text-sm">Ongoing Support</h3>
+                    <h3 className="font-semibold text-foreground text-sm">Review & Rebalance</h3>
                   </div>
-                  <p className="text-xs text-muted-foreground ml-11">Regular reviews & rebalancing advice</p>
-                  <div className="mt-2 ml-11">
-                    <span className="text-[10px] px-2 py-0.5 bg-primary/10 text-primary rounded-full font-medium">Our Role</span>
-                  </div>
+                  <p className="text-xs text-muted-foreground ml-11">Regular portfolio reviews to keep allocation on track</p>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Key Distinction - Compact */}
+          {/* Role Separation */}
           <div className="bg-gradient-to-r from-primary to-accent p-6 rounded-xl shadow-lg text-primary-foreground">
             <div className="flex items-center gap-3 mb-4">
               <Handshake className="w-6 h-6 flex-shrink-0" />
@@ -271,15 +406,15 @@ const Index = () => {
               <div className="bg-primary-foreground/10 p-3 rounded-lg backdrop-blur-sm">
                 <p className="font-semibold mb-2 text-sm">✓ Tatwa Financials</p>
                 <ul className="space-y-1 opacity-90 text-xs">
-                  <li>• Risk profiling & advisory</li>
-                  <li>• Fund selection guidance</li>
-                  <li>• Portfolio planning</li>
+                  <li>• Portfolio design & allocation strategy</li>
+                  <li>• Risk layering & goal mapping</li>
+                  <li>• Ongoing review & rebalancing</li>
                 </ul>
               </div>
               <div className="bg-primary-foreground/10 p-3 rounded-lg backdrop-blur-sm">
-                <p className="font-semibold mb-2 text-sm">✓ AMCs (Fund Houses)</p>
+                <p className="font-semibold mb-2 text-sm">✓ AMCs & Portfolio Managers</p>
                 <ul className="space-y-1 opacity-90 text-xs">
-                  <li>• Professional money management</li>
+                  <li>• Professional capital management</li>
                   <li>• Investment execution</li>
                   <li>• Regulatory compliance</li>
                 </ul>
@@ -289,181 +424,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Digital Experience */}
-      <section className="py-12 px-4">
-        <div className="container mx-auto">
-          <div className="text-center mb-10">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
-              100% Digital Experience
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Modern technology meets financial expertise
-            </p>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-            <div className="p-6 text-center">
-              <div className="w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mx-auto mb-4">
-                <Smartphone className="w-8 h-8" />
-              </div>
-              <h3 className="text-lg font-semibold mb-2 text-foreground">Mobile App</h3>
-              <p className="text-muted-foreground">Track, invest, redeem anytime</p>
-            </div>
-            <div className="p-6 text-center">
-              <div className="w-16 h-16 rounded-2xl bg-accent/10 text-accent flex items-center justify-center mx-auto mb-4">
-                <BarChart3 className="w-8 h-8" />
-              </div>
-              <h3 className="text-lg font-semibold mb-2 text-foreground">Dashboard</h3>
-              <p className="text-muted-foreground">Real-time portfolio insights</p>
-            </div>
-            <div className="p-6 text-center">
-              <div className="w-16 h-16 rounded-2xl bg-secondary/10 text-secondary flex items-center justify-center mx-auto mb-4">
-                <Lock className="w-8 h-8" />
-              </div>
-              <h3 className="text-lg font-semibold mb-2 text-foreground">Secure Systems</h3>
-              <p className="text-muted-foreground">Your data fully protected</p>
-            </div>
-            <div className="p-6 text-center">
-              <div className="w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mx-auto mb-4">
-                <Cloud className="w-8 h-8" />
-              </div>
-              <h3 className="text-lg font-semibold mb-2 text-foreground">Paperless</h3>
-              <p className="text-muted-foreground">Complete KYC digitally</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Products We Distribute */}
-      <section id="products" className="py-12 px-4 bg-muted/30">
-        <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-10 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">Products We Distribute</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Comprehensive investment solutions across market segments
-            </p>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 animate-slide-up">
-            {/* Mutual Funds */}
-            <div className="bg-card border border-border rounded-2xl p-6 hover:shadow-[var(--shadow-strong)] transition-all duration-300 hover:-translate-y-1 group relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-24 h-24 bg-primary/5 rounded-bl-full" />
-              <div className="mb-4 inline-flex items-center justify-center w-14 h-14 rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300">
-                <TrendingUp className="w-7 h-7" />
-              </div>
-              <h3 className="text-lg font-bold mb-2 text-foreground">Mutual Funds</h3>
-              <p className="text-sm text-muted-foreground mb-4 leading-relaxed">SIP & Lump Sum investments across equity, debt, and hybrid categories from top AMCs.</p>
-              <div className="space-y-2">
-                <div className="flex items-center justify-between text-xs">
-                  <span className="text-muted-foreground">Min SIP</span>
-                  <span className="font-semibold text-primary">₹500/month</span>
-                </div>
-                <div className="flex items-center justify-between text-xs">
-                  <span className="text-muted-foreground">Min Lump Sum</span>
-                  <span className="font-semibold text-primary">₹5,000</span>
-                </div>
-                <div className="flex items-center justify-between text-xs">
-                  <span className="text-muted-foreground">Risk Level</span>
-                  <span className="font-semibold text-accent">Low to High</span>
-                </div>
-              </div>
-              <div className="mt-4 pt-3 border-t border-border">
-                <span className="text-[10px] px-2 py-1 bg-primary/10 text-primary rounded-full font-medium">Most Popular</span>
-              </div>
-            </div>
-
-            {/* SIF */}
-            <div className="bg-card border border-border rounded-2xl p-6 hover:shadow-[var(--shadow-strong)] transition-all duration-300 hover:-translate-y-1 group relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-24 h-24 bg-accent/5 rounded-bl-full" />
-              <div className="mb-4 inline-flex items-center justify-center w-14 h-14 rounded-xl bg-accent/10 text-accent group-hover:bg-accent group-hover:text-primary-foreground transition-all duration-300">
-                <Layers className="w-7 h-7" />
-              </div>
-              <h3 className="text-lg font-bold mb-2 text-foreground">Specialized Investment Fund</h3>
-              <p className="text-sm text-muted-foreground mb-4 leading-relaxed">Concentrated portfolio strategies for investors seeking higher alpha with focused bets.</p>
-              <div className="space-y-2">
-                <div className="flex items-center justify-between text-xs">
-                  <span className="text-muted-foreground">Min Investment</span>
-                  <span className="font-semibold text-accent">₹10 Lakhs</span>
-                </div>
-                <div className="flex items-center justify-between text-xs">
-                  <span className="text-muted-foreground">Lock-in</span>
-                  <span className="font-semibold text-accent">None</span>
-                </div>
-                <div className="flex items-center justify-between text-xs">
-                  <span className="text-muted-foreground">Risk Level</span>
-                  <span className="font-semibold text-accent">Medium to High</span>
-                </div>
-              </div>
-              <div className="mt-4 pt-3 border-t border-border">
-                <span className="text-[10px] px-2 py-1 bg-accent/10 text-accent rounded-full font-medium">New Category</span>
-              </div>
-            </div>
-
-            {/* PMS */}
-            <div className="bg-card border border-border rounded-2xl p-6 hover:shadow-[var(--shadow-strong)] transition-all duration-300 hover:-translate-y-1 group relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-24 h-24 bg-secondary/5 rounded-bl-full" />
-              <div className="mb-4 inline-flex items-center justify-center w-14 h-14 rounded-xl bg-secondary/10 text-secondary group-hover:bg-secondary group-hover:text-primary-foreground transition-all duration-300">
-                <Crown className="w-7 h-7" />
-              </div>
-              <h3 className="text-lg font-bold mb-2 text-foreground">Portfolio Management (PMS)</h3>
-              <p className="text-sm text-muted-foreground mb-4 leading-relaxed">Professionally managed, customized portfolios for HNIs with direct stock ownership.</p>
-              <div className="space-y-2">
-                <div className="flex items-center justify-between text-xs">
-                  <span className="text-muted-foreground">Min Investment</span>
-                  <span className="font-semibold text-secondary">₹50 Lakhs</span>
-                </div>
-                <div className="flex items-center justify-between text-xs">
-                  <span className="text-muted-foreground">Management</span>
-                  <span className="font-semibold text-secondary">Discretionary</span>
-                </div>
-                <div className="flex items-center justify-between text-xs">
-                  <span className="text-muted-foreground">Risk Level</span>
-                  <span className="font-semibold text-secondary">High</span>
-                </div>
-              </div>
-              <div className="mt-4 pt-3 border-t border-border">
-                <span className="text-[10px] px-2 py-1 bg-secondary/10 text-secondary rounded-full font-medium">For HNIs</span>
-              </div>
-            </div>
-
-            {/* AIF */}
-            <div className="bg-card border border-border rounded-2xl p-6 hover:shadow-[var(--shadow-strong)] transition-all duration-300 hover:-translate-y-1 group relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-24 h-24 bg-primary/5 rounded-bl-full" />
-              <div className="mb-4 inline-flex items-center justify-center w-14 h-14 rounded-xl bg-gradient-to-br from-primary/10 to-accent/10 text-primary group-hover:bg-gradient-to-br group-hover:from-primary group-hover:to-accent group-hover:text-primary-foreground transition-all duration-300">
-                <Gem className="w-7 h-7" />
-              </div>
-              <h3 className="text-lg font-bold mb-2 text-foreground">Alternative Investment Fund</h3>
-              <p className="text-sm text-muted-foreground mb-4 leading-relaxed">Access to private equity, venture capital, hedge funds & other alternative asset classes.</p>
-              <div className="space-y-2">
-                <div className="flex items-center justify-between text-xs">
-                  <span className="text-muted-foreground">Min Investment</span>
-                  <span className="font-semibold text-primary">₹1 Crore</span>
-                </div>
-                <div className="flex items-center justify-between text-xs">
-                  <span className="text-muted-foreground">Lock-in</span>
-                  <span className="font-semibold text-primary">3+ Years</span>
-                </div>
-                <div className="flex items-center justify-between text-xs">
-                  <span className="text-muted-foreground">Risk Level</span>
-                  <span className="font-semibold text-primary">Very High</span>
-                </div>
-              </div>
-              <div className="mt-4 pt-3 border-t border-border">
-                <span className="text-[10px] px-2 py-1 bg-gradient-to-r from-primary/10 to-accent/10 text-primary rounded-full font-medium">Ultra HNI</span>
-              </div>
-            </div>
-          </div>
-
-          {/* Disclaimer */}
-          <div className="mt-8 text-center">
-            <p className="text-xs text-muted-foreground">
-              Mutual fund investments are subject to market risks. Please read all scheme related documents carefully before investing.
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* About the Founder */}
-      <section id="about" className="py-12 px-4 bg-gradient-to-b from-muted/30 via-background to-muted/30 relative overflow-hidden">
-        {/* Decorative Background */}
+      <section id="about" className="py-16 px-4 bg-gradient-to-b from-muted/30 via-background to-muted/30 relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,hsl(var(--primary)/0.03),transparent_70%)]" />
         
         <div className="container mx-auto max-w-6xl relative z-10">
@@ -472,7 +434,6 @@ const Index = () => {
             <div className="w-24 h-1 bg-gradient-to-r from-primary via-accent to-secondary mx-auto rounded-full" />
           </div>
           
-          {/* Founder Profile Card */}
           <div className="bg-card border border-border rounded-3xl shadow-[var(--shadow-strong)] overflow-hidden mb-8">
             <div className="grid md:grid-cols-3 gap-8 p-8 md:p-12">
               {/* Photo and Name */}
@@ -486,7 +447,6 @@ const Index = () => {
                   <p className="text-primary font-semibold">Founder & Chief Advisor</p>
                 </div>
                 
-                {/* Credentials Badges */}
                 <div className="flex flex-wrap gap-2 justify-center pt-2">
                   <span className="px-3 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-full">
                     MBA - MDI Gurgaon
@@ -495,14 +455,13 @@ const Index = () => {
                     COEP Graduate
                   </span>
                   <span className="px-3 py-1 bg-secondary/10 text-secondary text-xs font-semibold rounded-full">
-                    AMFI registered (ARN: 341189)
+                    AMFI Registered (ARN: 341189)
                   </span>
                   <span className="px-3 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-full">
-                    Trusted Advisor to Celebrities
+                    Trusted by HNIs & Public Figures
                   </span>
                 </div>
                 
-                {/* Social Links */}
                 <div className="flex gap-3 pt-2">
                   <a href="https://www.linkedin.com/in/gaurav-tatwawadi-5133a917/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-primary-foreground flex items-center justify-center transition-all duration-300" aria-label="LinkedIn Profile">
                     <Linkedin className="w-5 h-5" />
@@ -515,21 +474,23 @@ const Index = () => {
                 </div>
               </div>
               
-              {/* Bio Content */}
+              {/* Bio Content — Advisory Tone */}
               <div className="md:col-span-2 space-y-4">
                 <p className="text-base text-muted-foreground leading-relaxed">
-                  Gaurav Tatwawadi is the driving force behind our vision of making investing truly 
-                  <strong> client-first and risk-aware</strong>. Armed with an <strong>MBA in Finance from MDI Gurgaon</strong> and an engineering degree from 
-                  <strong> COEP (College of Engineering, Pune)</strong>, he combines strategic financial acumen with analytical precision to bring a balanced, insightful approach to wealth management.
+                  Gaurav Tatwawadi founded Tatwa Financials with a singular belief: <strong>investors deserve portfolios, not just products</strong>. 
+                  With an <strong>MBA in Finance from MDI Gurgaon</strong> and an engineering degree from 
+                  <strong> COEP (College of Engineering, Pune)</strong>, he brings an analytical, strategy-first mindset to wealth management.
                 </p>
                 
                 <p className="text-base text-muted-foreground leading-relaxed">
-                  Having worked under some of the best minds in the investment industry, Gaurav has mastered the art of wealth creation through disciplined mutual fund strategies. 
-                  His expertise spans portfolio management, risk evaluation, and long-term financial planning — with a <strong>proven track record of managing the wealth of celebrities and ultra-high-net-worth individuals (UHNIs)</strong>.
+                  Over the years, Gaurav has built deep expertise in <strong>multi-asset portfolio construction</strong> — helping investors transition from fragmented product-buying 
+                  to structured, goal-aligned portfolios. His client base includes <strong>HNIs, professionals, entrepreneurs, and public figures</strong> who 
+                  trust him to design and manage their wealth with precision and integrity.
                 </p>
                 
                 <p className="text-base text-muted-foreground leading-relaxed">
-                  As <strong>Founder of Tatwa Financials</strong>, Gaurav has built a reputation for personalized, transparent, and high-integrity financial solutions that align with each client's unique goals and risk profile. His philosophy is simple — <strong>growth means little without trust</strong>.
+                  Tatwa Financials exists to help investors move from <strong>product investing to portfolio thinking</strong> — 
+                  where every allocation decision is intentional, layered, and aligned with real financial outcomes.
                 </p>
               </div>
             </div>
@@ -539,7 +500,7 @@ const Index = () => {
           <div className="max-w-3xl mx-auto">
             <div className="bg-gradient-to-br from-primary to-accent p-6 rounded-2xl shadow-[var(--shadow-glow)] text-primary-foreground">
               <p className="text-lg md:text-xl font-semibold mb-2 italic text-center">
-                "Every client deserves a portfolio built for their life story, not a one-size-fits-all product push."
+                "Every client deserves a portfolio built for their life story — not a product push disguised as advice."
               </p>
               <p className="text-center text-sm opacity-90">– Gaurav Tatwawadi</p>
             </div>
@@ -548,8 +509,7 @@ const Index = () => {
       </section>
 
       {/* Partners Section */}
-      <section id="partners" className="py-12 px-4 bg-gradient-to-b from-muted/30 via-background to-muted/30 relative overflow-hidden">
-        {/* Decorative Background Elements */}
+      <section id="partners" className="py-16 px-4 bg-gradient-to-b from-muted/30 via-background to-muted/30 relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,hsl(var(--primary)/0.05),transparent_50%)]" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,hsl(var(--secondary)/0.05),transparent_50%)]" />
         
@@ -567,7 +527,6 @@ const Index = () => {
           </div>
 
           <div className="max-w-xs mx-auto mb-12">
-            {/* Technology Partner */}
             <div className="text-center mb-6">
               <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent/10 text-accent text-sm font-semibold mb-3">
                 <Zap className="w-4 h-4" />
@@ -577,14 +536,13 @@ const Index = () => {
             <PartnerLogo name="Redvision Technologies Pvt Ltd" category="technology" delay={0} logo={redvisionLogo} />
           </div>
 
-          {/* Full AMC Partners Grid */}
           <div className="mb-10">
             <div className="text-center mb-6">
               <h3 className="text-2xl font-bold text-foreground mb-2">
-                All Asset Management Partners
+                Asset Management Partners
               </h3>
               <p className="text-sm text-muted-foreground">
-                Working with India's leading mutual fund houses
+                Partnered with India's leading fund houses and portfolio managers
               </p>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 max-w-6xl mx-auto">
@@ -603,17 +561,16 @@ const Index = () => {
               <p className="text-muted-foreground text-sm font-medium">...and all the leading AMCs</p>
             </div>
           </div>
-
         </div>
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-12 px-4 bg-background">
+      <section className="py-16 px-4 bg-background">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-10">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">What Our Clients Say</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Real experiences from investors who trust us with their financial future
+              From investors who trust us with their portfolio strategy
             </p>
           </div>
           
@@ -626,7 +583,7 @@ const Index = () => {
                   </svg>)}
               </div>
               <p className="text-muted-foreground mb-4 italic">
-                "Gaurav's personalized approach to risk profiling helped me build a portfolio that perfectly matches my financial goals. The app makes tracking investments so simple!"
+                "Gaurav helped me transition from a scattered set of SIPs into a structured portfolio. For the first time, I feel like my money is working with a purpose."
               </p>
               <div>
                 <p className="font-semibold text-foreground">Priya Sharma</p>
@@ -637,21 +594,12 @@ const Index = () => {
             {/* Testimonial 2 */}
             <div className="bg-card border border-border rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
               <div className="flex gap-1 mb-4">
-                {[...Array(4)].map((_, i) => <svg key={i} className="w-5 h-5 fill-primary" viewBox="0 0 24 24">
+                {[...Array(5)].map((_, i) => <svg key={i} className="w-5 h-5 fill-primary" viewBox="0 0 24 24">
                     <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                   </svg>)}
-                <svg className="w-5 h-5 fill-primary" viewBox="0 0 24 24">
-                  <defs>
-                    <linearGradient id="half-fill-2">
-                      <stop offset="50%" stopColor="currentColor" />
-                      <stop offset="50%" stopColor="transparent" />
-                    </linearGradient>
-                  </defs>
-                  <path fill="url(#half-fill-2)" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                </svg>
               </div>
               <p className="text-muted-foreground mb-4 italic">
-                "Finally found an advisor who focuses on my risk appetite rather than pushing products. The transparency and regular reviews give me complete peace of mind."
+                "What I value most is the clarity. Gaurav doesn't push products — he builds a portfolio around my goals and explains every allocation decision."
               </p>
               <div>
                 <p className="font-semibold text-foreground">Rajesh Patel</p>
@@ -667,7 +615,7 @@ const Index = () => {
                   </svg>)}
               </div>
               <p className="text-muted-foreground mb-4 italic">
-                "The digital platform is incredibly user-friendly. I can invest, track, and redeem anytime. Gaurav's expertise in mutual funds has helped grow my wealth significantly."
+                "As a doctor, I don't have time to track markets. Tatwa designed my portfolio, handles rebalancing, and I sleep easy knowing it's strategy-driven."
               </p>
               <div>
                 <p className="font-semibold text-foreground">Ananya Reddy</p>
@@ -678,21 +626,12 @@ const Index = () => {
             {/* Testimonial 4 */}
             <div className="bg-card border border-border rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
               <div className="flex gap-1 mb-4">
-                {[...Array(4)].map((_, i) => <svg key={i} className="w-5 h-5 fill-primary" viewBox="0 0 24 24">
+                {[...Array(5)].map((_, i) => <svg key={i} className="w-5 h-5 fill-primary" viewBox="0 0 24 24">
                     <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                   </svg>)}
-                <svg className="w-5 h-5 fill-primary" viewBox="0 0 24 24">
-                  <defs>
-                    <linearGradient id="half-fill-4">
-                      <stop offset="50%" stopColor="currentColor" />
-                      <stop offset="50%" stopColor="transparent" />
-                    </linearGradient>
-                  </defs>
-                  <path fill="url(#half-fill-4)" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                </svg>
               </div>
               <p className="text-muted-foreground mb-4 italic">
-                "From retirement planning to my child's education fund, Tatwa Financials has structured everything perfectly. The best part? No hidden charges, just honest advice."
+                "From retirement planning to my child's education — everything is mapped to a clear allocation strategy. The transparency is refreshing."
               </p>
               <div>
                 <p className="font-semibold text-foreground">Vikram Desai</p>
@@ -703,21 +642,12 @@ const Index = () => {
             {/* Testimonial 5 */}
             <div className="bg-card border border-border rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
               <div className="flex gap-1 mb-4">
-                {[...Array(4)].map((_, i) => <svg key={i} className="w-5 h-5 fill-primary" viewBox="0 0 24 24">
+                {[...Array(5)].map((_, i) => <svg key={i} className="w-5 h-5 fill-primary" viewBox="0 0 24 24">
                     <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                   </svg>)}
-                <svg className="w-5 h-5 fill-primary" viewBox="0 0 24 24">
-                  <defs>
-                    <linearGradient id="half-fill-5">
-                      <stop offset="50%" stopColor="currentColor" />
-                      <stop offset="50%" stopColor="transparent" />
-                    </linearGradient>
-                  </defs>
-                  <path fill="url(#half-fill-5)" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                </svg>
               </div>
               <p className="text-muted-foreground mb-4 italic">
-                "Being a first-time investor, I was nervous. Gaurav's detailed risk assessment and patient guidance made me confident. My SIPs are performing excellently!"
+                "I started with mutual funds, and Gaurav gradually helped me understand PMS and SIF. It's like having an institutional advisory team for my personal wealth."
               </p>
               <div>
                 <p className="font-semibold text-foreground">Meera Krishnan</p>
@@ -733,7 +663,7 @@ const Index = () => {
                   </svg>)}
               </div>
               <p className="text-muted-foreground mb-4 italic">
-                "Professional, transparent, and truly client-first. The regular portfolio reviews and rebalancing suggestions have helped me stay on track with my wealth goals."
+                "Professional, strategic, and always aligned with my goals. The regular portfolio reviews keep me confident even in volatile markets."
               </p>
               <div>
                 <p className="font-semibold text-foreground">Arjun Mehta</p>
@@ -748,20 +678,28 @@ const Index = () => {
       <section className="py-16 px-4 bg-gradient-to-br from-primary via-accent to-secondary text-primary-foreground">
         <div className="container mx-auto max-w-4xl text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Ready to invest smarter and grow your wealth?
+            Ready to move from investing to portfolio building?
           </h2>
           <p className="text-xl mb-8 opacity-90">
-            Download our app today and experience the future of mutual fund investing.
+            Let's design a multi-asset strategy that matches your ambition.
           </p>
           
+          <div className="flex flex-wrap gap-4 justify-center mb-8">
+            <Button size="lg" className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 font-semibold text-lg px-8" asChild>
+              <a href="https://calendly.com/gauravtatwawadi/30min" target="_blank" rel="noopener noreferrer">
+                Schedule a Portfolio Consultation
+              </a>
+            </Button>
+          </div>
+
           {/* Security Notice */}
-          <div className="bg-background/10 border border-primary-foreground/20 rounded-xl p-6 mb-8 backdrop-blur-sm">
+          <div className="bg-background/10 border border-primary-foreground/20 rounded-xl p-6 backdrop-blur-sm">
             <div className="flex items-start gap-3 text-left">
               <Shield className="w-6 h-6 flex-shrink-0 mt-1" />
               <div>
-                <h3 className="font-semibold text-lg mb-2">Stay Safe from Fraud</h3>
+                <h3 className="font-semibold text-lg mb-2">Official Channels Only</h3>
                 <p className="text-sm opacity-90 mb-4">
-                  Be aware of spam and phishing attempts. Always communicate with us only via our official channels:
+                  Stay safe from fraud. Communicate with us only via verified channels:
                 </p>
                 <div className="flex flex-wrap gap-3 justify-center">
                   <Button size="sm" variant="outline" className="bg-primary-foreground text-primary hover:bg-[#25D366] hover:text-white border-0 transition-colors" asChild>
@@ -805,23 +743,23 @@ const Index = () => {
                 <span className="text-lg font-bold">Tatwa Financials</span>
               </div>
               <p className="text-sm opacity-80">
-                Your trusted partner for digital mutual fund investment solutions.
+                Multi-asset portfolio advisory. From product investing to portfolio thinking.
               </p>
             </div>
             <div>
-              <h4 className="font-semibold mb-4">Products</h4>
+              <h4 className="font-semibold mb-4">Portfolio Layers</h4>
               <ul className="space-y-2 text-sm opacity-80">
-                <li><a href="#products" className="hover:opacity-100 transition-opacity">Mutual Funds</a></li>
-                <li><a href="#products" className="hover:opacity-100 transition-opacity">SIF</a></li>
-                <li><a href="#products" className="hover:opacity-100 transition-opacity">PMS</a></li>
-                <li><a href="#products" className="hover:opacity-100 transition-opacity">AIF</a></li>
+                <li><a href="#portfolios" className="hover:opacity-100 transition-opacity">Mutual Funds</a></li>
+                <li><a href="#portfolios" className="hover:opacity-100 transition-opacity">SIF</a></li>
+                <li><a href="#portfolios" className="hover:opacity-100 transition-opacity">PMS</a></li>
+                <li><a href="#portfolios" className="hover:opacity-100 transition-opacity">AIF</a></li>
               </ul>
             </div>
             <div>
               <h4 className="font-semibold mb-4">Company</h4>
               <ul className="space-y-2 text-sm opacity-80">
                 <li><a href="#about" className="hover:opacity-100 transition-opacity">About Us</a></li>
-                <li><a href="#about" className="hover:opacity-100 transition-opacity">Our Team</a></li>
+                <li><a href="#approach" className="hover:opacity-100 transition-opacity">Our Approach</a></li>
                 <li><a href="#" className="hover:opacity-100 transition-opacity">Careers</a></li>
                 <li><Link to="/contact" className="hover:opacity-100 transition-opacity">Contact</Link></li>
               </ul>
@@ -837,7 +775,7 @@ const Index = () => {
             </div>
           </div>
           <div className="pt-8 border-t border-background/20 text-center text-sm opacity-80">
-            <p>© {new Date().getFullYear()} Tatwa Financials. All rights reserved. AMFI Registered Investment Distributor.</p>
+            <p>© {new Date().getFullYear()} Tatwa Financials. All rights reserved. AMFI Registered Multi-Asset Portfolio Advisory.</p>
           </div>
         </div>
       </footer>
