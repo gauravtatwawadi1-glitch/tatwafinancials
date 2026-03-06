@@ -1,9 +1,11 @@
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { FeatureCard } from "@/components/FeatureCard";
 import { ExpertiseCard } from "@/components/ExpertiseCard";
 import { PartnerLogo } from "@/components/PartnerLogo";
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
-import { Shield, Smartphone, TrendingUp, CheckCircle2, BarChart3, LineChart, Cloud, Lock, Zap, Target, Award, Handshake, Linkedin, Instagram, Mail } from "lucide-react";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger, DialogDescription } from "@/components/ui/dialog";
+import { AlertDialog, AlertDialogContent, AlertDialogHeader, AlertDialogTitle, AlertDialogDescription, AlertDialogFooter, AlertDialogAction } from "@/components/ui/alert-dialog";
+import { Shield, Smartphone, TrendingUp, CheckCircle2, BarChart3, LineChart, Cloud, Lock, Zap, Target, Award, Handshake, Linkedin, Instagram, Mail, AlertTriangle } from "lucide-react";
 import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-finance.jpg";
 import founderPhoto from "@/assets/founder-photo.jpg";
@@ -20,7 +22,53 @@ import franklinTempletonLogo from "@/assets/logos/franklin-templeton.png";
 import redvisionLogo from "@/assets/logos/redvision.png";
 import { Briefcase, Layers, Crown, Gem } from "lucide-react";
 const Index = () => {
+  const [showNotice, setShowNotice] = useState(false);
+
+  useEffect(() => {
+    const dismissed = sessionStorage.getItem("notice-dismissed");
+    if (!dismissed) {
+      setShowNotice(true);
+    }
+  }, []);
+
+  const handleDismiss = () => {
+    setShowNotice(false);
+    sessionStorage.setItem("notice-dismissed", "true");
+  };
+
   return <div className="min-h-screen bg-background">
+      {/* Important Notice Popup */}
+      <AlertDialog open={showNotice} onOpenChange={setShowNotice}>
+        <AlertDialogContent className="max-w-md">
+          <AlertDialogHeader>
+            <div className="flex items-center gap-3 mb-2">
+              <div className="w-10 h-10 rounded-full bg-amber-100 flex items-center justify-center">
+                <AlertTriangle className="w-5 h-5 text-amber-600" />
+              </div>
+              <AlertDialogTitle className="text-xl font-bold text-foreground">Important Notice</AlertDialogTitle>
+            </div>
+            <AlertDialogDescription asChild>
+              <div className="space-y-4 text-sm text-muted-foreground leading-relaxed">
+                <p>
+                  <strong className="text-foreground">Tatwa Financials does not charge any fees</strong> from clients for investment discussions or mutual fund investment facilitation.
+                </p>
+                <p>
+                  If anyone claims to represent Tatwa Financials and asks for payment, please treat it with caution and <strong className="text-foreground">report it to us immediately</strong>.
+                </p>
+                <p className="text-primary font-medium">
+                  Your trust and safety are our priority.
+                </p>
+              </div>
+            </AlertDialogDescription>
+          </AlertDialogHeader>
+          <AlertDialogFooter>
+            <AlertDialogAction onClick={handleDismiss} className="w-full">
+              I Understand
+            </AlertDialogAction>
+          </AlertDialogFooter>
+        </AlertDialogContent>
+      </AlertDialog>
+
       {/* Header */}
       <header className="fixed top-0 w-full bg-background/80 backdrop-blur-md border-b border-border z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
