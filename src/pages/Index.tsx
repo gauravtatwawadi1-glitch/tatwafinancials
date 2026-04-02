@@ -798,10 +798,10 @@ const Index = () => {
       <section className="py-16 px-4 bg-gradient-to-br from-primary via-accent to-secondary text-primary-foreground">
         <div className="container mx-auto max-w-4xl text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Ready to invest smarter and grow your wealth?
+            Ready to build a portfolio that works for you?
           </h2>
           <p className="text-xl mb-8 opacity-90">
-            Download our app today and experience the future of mutual fund investing.
+            Whether it's Mutual Funds, SIF, PMS, or AIF — we help you allocate capital thoughtfully across strategies.
           </p>
           
           {/* Security Notice */}
