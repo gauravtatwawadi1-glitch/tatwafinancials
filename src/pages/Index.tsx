@@ -808,7 +808,7 @@ const Index = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Ready to build a portfolio that works for you?
           </h2>
-          <p className="text-xl mb-8 opacity-90">
+          <p className="text-sm mb-8 opacity-90">
             Whether it's Mutual Funds, SIF, PMS, or AIF — we help you allocate capital thoughtfully across strategies.
           </p>
           
