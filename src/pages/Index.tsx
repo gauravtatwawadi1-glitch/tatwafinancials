@@ -123,14 +123,17 @@ const Index = () => {
                   Over Product Chasing.
                 </span>
               </h1>
-              <p className="text-base text-muted-foreground mb-4 leading-relaxed">
-                Too many options. Too little clarity. We help you cut through the noise.
+              <p className="text-lg text-foreground font-medium mb-2 leading-relaxed">
+                We sit on <span className="text-primary font-bold">your side of the table</span> — helping you choose the best products for your risk-return profile.
               </p>
-              <div className="flex flex-wrap gap-3 mb-8">
-                <span className="px-3 py-1.5 bg-primary/10 text-primary text-sm font-medium rounded-full">2,500+ Mutual Funds</span>
-                <span className="px-3 py-1.5 bg-accent/10 text-accent text-sm font-medium rounded-full">500+ PMS</span>
-                <span className="px-3 py-1.5 bg-secondary/10 text-secondary text-sm font-medium rounded-full">1,750+ AIFs</span>
-                <span className="px-3 py-1.5 bg-muted text-muted-foreground text-sm font-medium rounded-full">New SIFs monthly</span>
+              <p className="text-sm text-muted-foreground mb-5 leading-relaxed">
+                With thousands of options across Mutual Funds, PMS, AIFs & SIFs, you need a partner — not a salesman.
+              </p>
+              <div className="flex flex-wrap gap-2 mb-8">
+                <span className="px-3 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-full">2,500+ Mutual Funds</span>
+                <span className="px-3 py-1 bg-accent/10 text-accent text-xs font-semibold rounded-full">500+ PMS</span>
+                <span className="px-3 py-1 bg-secondary/10 text-secondary text-xs font-semibold rounded-full">1,750+ AIFs</span>
+                <span className="px-3 py-1 bg-muted text-muted-foreground text-xs font-semibold rounded-full">New SIFs monthly</span>
               </div>
               <div className="flex flex-wrap gap-4">
                 <Button size="lg" className="bg-gradient-to-r from-primary to-accent text-primary-foreground hover:shadow-[var(--shadow-glow)] transition-all duration-300" asChild>
