@@ -896,6 +896,9 @@ const Index = () => {
           </div>
           <div className="pt-8 border-t border-background/20 text-center text-sm opacity-80">
             <p>© {new Date().getFullYear()} Tatwa Financials. All rights reserved. AMFI Registered Investment Distributor (ARN-341189 | APRN-08733).</p>
+            <p className="mt-3 text-xs opacity-60">
+              Disclaimer: "Tatwa Financials" is a brand/trade name. All licenses and registrations are held in the name of <strong className="opacity-80">Gaurav Vivek Tatwawadi</strong>. For details or clarifications, write to <a href="mailto:connect@tatwafinancials.com" className="underline hover:opacity-100 transition-opacity">connect@tatwafinancials.com</a>.
+            </p>
           </div>
         </div>
       </footer>
