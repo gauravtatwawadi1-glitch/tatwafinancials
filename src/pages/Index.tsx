@@ -50,7 +50,7 @@ const Index = () => {
             <AlertDialogDescription asChild>
               <div className="space-y-4 text-sm text-muted-foreground leading-relaxed">
                 <p>
-                  <strong className="text-foreground">Tatwa Financials does not charge any fees</strong> from clients for investment discussions or mutual fund investment facilitation.
+                  <strong className="text-foreground">Tatwa Financials does not charge any fees</strong> from clients for investment discussions or investment facilitation.
                 </p>
                 <p>
                   If anyone claims to represent Tatwa Financials and asks for payment, please treat it with caution and <strong className="text-foreground">report it to us immediately</strong>.
@@ -114,18 +114,18 @@ const Index = () => {
             <div className="animate-fade-in">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
                 <Award className="w-4 h-4" />
-                AMFI Registered Mutual Fund & SIF Distributor
+                Boutique Investment Firm · MF · SIF · PMS · AIF
               </div>
               <h1 className="text-5xl md:text-6xl font-bold mb-6 text-foreground leading-tight">
-                Invest Smart.
+                Portfolio Construction
                 <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-accent to-secondary">
-                  Grow Confidently.
+                  Over Product Chasing.
                 </span>
               </h1>
               <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-                100% digital Mutual Fund Distributor. Experience seamless app-based
-                investment powered by data-driven risk evaluation and personalized portfolio management.
+                2,500+ Mutual Funds. 500+ PMS. 1,750+ AIFs. New SIFs launching monthly. 
+                The challenge isn't access — it's selection. We help you construct thoughtful portfolios across all investment vehicles.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Button size="lg" className="bg-gradient-to-r from-primary to-accent text-primary-foreground hover:shadow-[var(--shadow-glow)] transition-all duration-300" asChild>
@@ -179,16 +179,16 @@ const Index = () => {
           <div className="text-center mb-10 animate-fade-in">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">Why Choose Us</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Your trusted partner for digital investment solutions
+              A boutique investment firm focused on portfolio architecture, not product pushing
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 animate-slide-up">
-            <FeatureCard icon={Shield} title="Trusted & Certified" description="AMFI registered distributor with full regulatory compliance and transparency." />
-            <FeatureCard icon={Smartphone} title="All-Digital Convenience" description="Access your investments anytime, anywhere with our easy-to-use mobile app." />
-            <FeatureCard icon={Target} title="Best Risk Evaluation" description="We evaluate your financial goals, risk appetite, and life stage to build the right portfolio." />
-            <FeatureCard icon={CheckCircle2} title="Comprehensive Planning" description="Tailored Mutual Fund solutions aligned with your retirement, child education, and wealth creation goals." />
-            <FeatureCard icon={TrendingUp} title="Transparent & Client-First" description="No jargon, no hidden costs – just clear advice and honest guidance." />
-            <FeatureCard icon={Zap} title="Fast & Paperless" description="Complete onboarding, KYC, and transactions digitally in minutes." />
+            <FeatureCard icon={Target} title="Portfolio Architecture" description="We focus on how capital is allocated across strategies — not which stock to buy or which fund to pick." />
+            <FeatureCard icon={Layers} title="Access Across Vehicles" description="Seamless distribution across Mutual Funds, SIF, PMS, and AIF — all from a single trusted platform." />
+            <FeatureCard icon={Shield} title="Manager Selection" description="Rigorous due diligence to select best-in-class fund managers with proven track records across categories." />
+            <FeatureCard icon={CheckCircle2} title="Strategic Allocation" description="Long-term returns are driven by how capital is allocated across strategies — we design for resilience and growth." />
+            <FeatureCard icon={Handshake} title="Boutique & Client-First" description="Focused client relationships with personalized attention — quality over volume, always." />
+            <FeatureCard icon={Zap} title="Entirely Digital" description="Modern, paperless execution. Invest, track, and manage your portfolio anytime via our digital platform." />
           </div>
         </div>
       </section>
@@ -197,14 +197,14 @@ const Index = () => {
       <section id="expertise" className="py-12 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-10">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">Our Expertise</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">Strategic Framework</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Comprehensive financial solutions tailored to your needs
+              A well-constructed portfolio combines multiple strategy types for resilience and growth
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            <ExpertiseCard icon={BarChart3} title="Mutual Funds Distribution" features={["Wide range of schemes across top fund houses", "Tailored asset allocation based on your profile", "SIPs, lump sum investments, retirement & child-goal planning", "Regular portfolio reviews and rebalancing"]} />
-            <ExpertiseCard icon={LineChart} title="Risk Evaluation" features={["Comprehensive risk profiling using advanced frameworks", "Analysis of your financial goals and investment horizon", "Personalized asset allocation strategies", "Regular risk assessment and portfolio rebalancing"]} />
+            <ExpertiseCard icon={BarChart3} title="Core Wealth Creation" features={["Diversified equity exposure via Mutual Funds & SIFs", "Long-term market growth through strategic allocation", "SIP & lump sum across equity, debt, and hybrid categories", "Regular portfolio reviews and rebalancing"]} />
+            <ExpertiseCard icon={LineChart} title="Alpha Generation & Alternatives" features={["PMS for concentrated, actively managed strategies", "AIF access to private equity, venture capital & hedge funds", "Manager selection through rigorous due diligence", "Tactical opportunities in emerging themes"]} />
           </div>
         </div>
       </section>
@@ -214,10 +214,10 @@ const Index = () => {
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-bold mb-3 text-foreground">
-              How It Works
+              Our Investment Process
             </h2>
             <p className="text-muted-foreground">
-              We advise, top AMCs professionally manage your money
+              A disciplined framework for aligning capital with your objectives
             </p>
           </div>
 
@@ -230,9 +230,9 @@ const Index = () => {
                 <div className="bg-card border border-border rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow">
                   <div className="flex items-center gap-3 mb-2">
                     <div className="w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-sm font-bold flex-shrink-0">1</div>
-                    <h3 className="font-semibold text-foreground text-sm">Risk Assessment</h3>
+                    <h3 className="font-semibold text-foreground text-sm">Understand Goals</h3>
                   </div>
-                  <p className="text-xs text-muted-foreground ml-11">We analyze your goals & risk profile</p>
+                  <p className="text-xs text-muted-foreground ml-11">Your goals, time horizon & risk tolerance</p>
                   <div className="mt-2 ml-11">
                     <span className="text-[10px] px-2 py-0.5 bg-primary/10 text-primary rounded-full font-medium">Our Role</span>
                   </div>
@@ -246,9 +246,9 @@ const Index = () => {
                 <div className="bg-card border border-border rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow">
                   <div className="flex items-center gap-3 mb-2">
                     <div className="w-8 h-8 rounded-full bg-accent text-primary-foreground flex items-center justify-center text-sm font-bold flex-shrink-0">2</div>
-                    <h3 className="font-semibold text-foreground text-sm">Fund Selection</h3>
+                    <h3 className="font-semibold text-foreground text-sm">Evaluate Strategies</h3>
                   </div>
-                  <p className="text-xs text-muted-foreground ml-11">We recommend the right funds for you</p>
+                  <p className="text-xs text-muted-foreground ml-11">Due diligence on managers & strategies</p>
                   <div className="mt-2 ml-11">
                     <span className="text-[10px] px-2 py-0.5 bg-accent/10 text-accent rounded-full font-medium">Our Role</span>
                   </div>
@@ -262,9 +262,9 @@ const Index = () => {
                 <div className="bg-card border border-border rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow">
                   <div className="flex items-center gap-3 mb-2">
                     <div className="w-8 h-8 rounded-full bg-secondary text-primary-foreground flex items-center justify-center text-sm font-bold flex-shrink-0">3</div>
-                    <h3 className="font-semibold text-foreground text-sm">Investment</h3>
+                    <h3 className="font-semibold text-foreground text-sm">Construct Portfolio</h3>
                   </div>
-                  <p className="text-xs text-muted-foreground ml-11">Invest digitally via our app</p>
+                  <p className="text-xs text-muted-foreground ml-11">Allocate across MF, SIF, PMS & AIF</p>
                   <div className="mt-2 ml-11">
                     <span className="text-[10px] px-2 py-0.5 bg-secondary/10 text-secondary rounded-full font-medium">Platform</span>
                   </div>
@@ -280,13 +280,13 @@ const Index = () => {
                 <div className="bg-gradient-to-br from-orange-50 to-red-50 dark:from-orange-950/20 dark:to-red-950/20 border-2 border-orange-500/30 rounded-xl p-4 shadow-md">
                   <div className="flex items-center gap-3 mb-2">
                     <div className="w-8 h-8 rounded-full bg-gradient-to-br from-orange-500 to-red-500 text-white flex items-center justify-center text-sm font-bold flex-shrink-0">4</div>
-                    <h3 className="font-semibold text-foreground text-sm">Money Management </h3>
+                    <h3 className="font-semibold text-foreground text-sm">Execution</h3>
                   </div>
                   <p className="text-xs text-muted-foreground ml-11 mb-2">
-                    <strong>AMCs (HDFC, ICICI, SBI, etc.)</strong> professionally manage your investments
+<strong>Best-in-class fund managers</strong> execute strategies across chosen vehicles
                   </p>
                   <div className="mt-2 ml-11">
-                    <span className="text-[10px] px-2 py-0.5 bg-orange-500/20 text-orange-700 dark:text-orange-400 rounded-full font-semibold">Top AMCs</span>
+                    <span className="text-[10px] px-2 py-0.5 bg-orange-500/20 text-orange-700 dark:text-orange-400 rounded-full font-semibold">Fund Managers</span>
                   </div>
                 </div>
               </div>
@@ -298,9 +298,9 @@ const Index = () => {
                 <div className="bg-card border border-border rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow">
                   <div className="flex items-center gap-3 mb-2">
                     <div className="w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-sm font-bold flex-shrink-0">5</div>
-                    <h3 className="font-semibold text-foreground text-sm">Ongoing Support</h3>
+                    <h3 className="font-semibold text-foreground text-sm">Monitor & Rebalance</h3>
                   </div>
-                  <p className="text-xs text-muted-foreground ml-11">Regular reviews & rebalancing advice</p>
+                  <p className="text-xs text-muted-foreground ml-11">Continuous monitoring & alignment</p>
                   <div className="mt-2 ml-11">
                     <span className="text-[10px] px-2 py-0.5 bg-primary/10 text-primary rounded-full font-medium">Our Role</span>
                   </div>
@@ -313,22 +313,22 @@ const Index = () => {
           <div className="bg-gradient-to-r from-primary to-accent p-6 rounded-xl shadow-lg text-primary-foreground">
             <div className="flex items-center gap-3 mb-4">
               <Handshake className="w-6 h-6 flex-shrink-0" />
-              <h3 className="text-lg font-bold">Clear Role Separation</h3>
+              <h3 className="text-lg font-bold">Our Role vs. Fund Managers</h3>
             </div>
             <div className="grid md:grid-cols-2 gap-4 text-sm">
               <div className="bg-primary-foreground/10 p-3 rounded-lg backdrop-blur-sm">
-                <p className="font-semibold mb-2 text-sm">✓ Tatwa Financials</p>
+                <p className="font-semibold mb-2 text-sm">✓ Tatwa Financials (Strategic Intermediary)</p>
                 <ul className="space-y-1 opacity-90 text-xs">
-                  <li>• Risk profiling & advisory</li>
-                  <li>• Fund selection guidance</li>
-                  <li>• Portfolio planning</li>
+                  <li>• Portfolio architecture & construction</li>
+                  <li>• Manager selection & due diligence</li>
+                  <li>• Capital allocation across MF, SIF, PMS, AIF</li>
                 </ul>
               </div>
               <div className="bg-primary-foreground/10 p-3 rounded-lg backdrop-blur-sm">
-                <p className="font-semibold mb-2 text-sm">✓ AMCs (Fund Houses)</p>
+                <p className="font-semibold mb-2 text-sm">✓ Investment Managers</p>
                 <ul className="space-y-1 opacity-90 text-xs">
+                  <li>• Strategy execution & stock selection</li>
                   <li>• Professional money management</li>
-                  <li>• Investment execution</li>
                   <li>• Regulatory compliance</li>
                 </ul>
               </div>
@@ -385,9 +385,9 @@ const Index = () => {
       <section id="products" className="py-12 px-4 bg-muted/30">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-10 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">Products We Distribute</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">Investment Vehicles</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Comprehensive investment solutions across market segments
+              Access the full spectrum — from ₹500 SIPs to ₹1 Crore+ alternative investments
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 animate-slide-up">
@@ -569,18 +569,17 @@ const Index = () => {
               {/* Bio Content */}
               <div className="md:col-span-2 space-y-4">
                 <p className="text-base text-muted-foreground leading-relaxed">
-                  Gaurav Tatwawadi is the driving force behind our vision of making investing truly 
-                  <strong> client-first and risk-aware</strong>. Armed with an <strong>MBA in Finance from MDI Gurgaon</strong> and an engineering degree from 
-                  <strong> COEP (College of Engineering, Pune)</strong>, he combines strategic financial acumen with analytical precision to bring a balanced, insightful approach to wealth management.
+                  Gaurav Tatwawadi is the driving force behind Tatwa Financials' vision of 
+                  <strong> thoughtful portfolio construction over product chasing</strong>. Armed with an <strong>MBA in Finance from MDI Gurgaon</strong> and an engineering degree from 
+                  <strong> COEP (College of Engineering, Pune)</strong>, he combines strategic financial acumen with analytical precision to design portfolios across Mutual Funds, SIF, PMS, and AIF.
                 </p>
                 
                 <p className="text-base text-muted-foreground leading-relaxed">
-                  Having worked under some of the best minds in the investment industry, Gaurav has mastered the art of wealth creation through disciplined mutual fund strategies. 
-                  His expertise spans portfolio management, risk evaluation, and long-term financial planning — with a <strong>proven track record of managing the wealth of celebrities and ultra-high-net-worth individuals (UHNIs)</strong>.
+                  With treasury & financial markets experience at <strong>ICICI Bank, Lloyds Bank (UK), and Religare Finvest</strong>, and having worked on AI/LLM models for Amazon and Google Finance, Gaurav brings a unique blend of institutional finance expertise and modern technology thinking. His <strong>proven track record spans managing wealth for celebrities and ultra-high-net-worth individuals (UHNIs)</strong>.
                 </p>
                 
                 <p className="text-base text-muted-foreground leading-relaxed">
-                  As <strong>Founder of Tatwa Financials</strong>, Gaurav has built a reputation for personalized, transparent, and high-integrity financial solutions that align with each client's unique goals and risk profile. His philosophy is simple — <strong>growth means little without trust</strong>.
+                  As <strong>Founder of Tatwa Financials</strong>, Gaurav has built a boutique platform that prioritizes quality over volume — deeper attention to portfolio design and strategy selection. His philosophy: <strong>long-term returns are driven by how capital is allocated across strategies, not which stock to buy</strong>.
                 </p>
               </div>
             </div>
@@ -590,7 +589,7 @@ const Index = () => {
           <div className="max-w-3xl mx-auto">
             <div className="bg-gradient-to-br from-primary to-accent p-6 rounded-2xl shadow-[var(--shadow-glow)] text-primary-foreground">
               <p className="text-lg md:text-xl font-semibold mb-2 italic text-center">
-                "Every client deserves a portfolio built for their life story, not a one-size-fits-all product push."
+                "Our role is not to pick individual stocks. Our role is to construct thoughtful portfolios."
               </p>
               <p className="text-center text-sm opacity-90">– Gaurav Tatwawadi</p>
             </div>
@@ -635,7 +634,7 @@ const Index = () => {
                 All Asset Management Partners
               </h3>
               <p className="text-sm text-muted-foreground">
-                Working with India's leading mutual fund houses
+                Working with India's leading fund houses and investment managers
               </p>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 max-w-6xl mx-auto">
@@ -799,10 +798,10 @@ const Index = () => {
       <section className="py-16 px-4 bg-gradient-to-br from-primary via-accent to-secondary text-primary-foreground">
         <div className="container mx-auto max-w-4xl text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Ready to invest smarter and grow your wealth?
+            Ready to build a portfolio that works for you?
           </h2>
           <p className="text-xl mb-8 opacity-90">
-            Download our app today and experience the future of mutual fund investing.
+            Whether it's Mutual Funds, SIF, PMS, or AIF — we help you allocate capital thoughtfully across strategies.
           </p>
           
           {/* Security Notice */}
@@ -856,7 +855,7 @@ const Index = () => {
                 <span className="text-lg font-bold">Tatwa Financials</span>
               </div>
               <p className="text-sm opacity-80">
-                Your trusted partner for digital mutual fund investment solutions.
+                A boutique investment firm focused on portfolio construction across Mutual Funds, SIF, PMS & AIF.
               </p>
             </div>
             <div>
