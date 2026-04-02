@@ -313,22 +313,22 @@ const Index = () => {
           <div className="bg-gradient-to-r from-primary to-accent p-6 rounded-xl shadow-lg text-primary-foreground">
             <div className="flex items-center gap-3 mb-4">
               <Handshake className="w-6 h-6 flex-shrink-0" />
-              <h3 className="text-lg font-bold">Clear Role Separation</h3>
+              <h3 className="text-lg font-bold">Our Role vs. Fund Managers</h3>
             </div>
             <div className="grid md:grid-cols-2 gap-4 text-sm">
               <div className="bg-primary-foreground/10 p-3 rounded-lg backdrop-blur-sm">
-                <p className="font-semibold mb-2 text-sm">✓ Tatwa Financials</p>
+                <p className="font-semibold mb-2 text-sm">✓ Tatwa Financials (Strategic Intermediary)</p>
                 <ul className="space-y-1 opacity-90 text-xs">
-                  <li>• Risk profiling & advisory</li>
-                  <li>• Fund selection guidance</li>
-                  <li>• Portfolio planning</li>
+                  <li>• Portfolio architecture & construction</li>
+                  <li>• Manager selection & due diligence</li>
+                  <li>• Capital allocation across MF, SIF, PMS, AIF</li>
                 </ul>
               </div>
               <div className="bg-primary-foreground/10 p-3 rounded-lg backdrop-blur-sm">
-                <p className="font-semibold mb-2 text-sm">✓ AMCs (Fund Houses)</p>
+                <p className="font-semibold mb-2 text-sm">✓ Investment Managers</p>
                 <ul className="space-y-1 opacity-90 text-xs">
+                  <li>• Strategy execution & stock selection</li>
                   <li>• Professional money management</li>
-                  <li>• Investment execution</li>
                   <li>• Regulatory compliance</li>
                 </ul>
               </div>
