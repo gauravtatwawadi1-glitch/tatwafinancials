@@ -114,18 +114,18 @@ const Index = () => {
             <div className="animate-fade-in">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
                 <Award className="w-4 h-4" />
-                AMFI Registered Mutual Fund & SIF Distributor
+                Boutique Investment Firm · MF · SIF · PMS · AIF
               </div>
               <h1 className="text-5xl md:text-6xl font-bold mb-6 text-foreground leading-tight">
-                Invest Smart.
+                Portfolio Construction
                 <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-accent to-secondary">
-                  Grow Confidently.
+                  Over Product Chasing.
                 </span>
               </h1>
               <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-                100% digital Mutual Fund Distributor. Experience seamless app-based
-                investment powered by data-driven risk evaluation and personalized portfolio management.
+                2,500+ Mutual Funds. 500+ PMS. 1,750+ AIFs. New SIFs launching monthly. 
+                The challenge isn't access — it's selection. We help you construct thoughtful portfolios across all investment vehicles.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Button size="lg" className="bg-gradient-to-r from-primary to-accent text-primary-foreground hover:shadow-[var(--shadow-glow)] transition-all duration-300" asChild>
