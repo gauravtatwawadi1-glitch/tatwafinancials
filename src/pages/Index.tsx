@@ -123,7 +123,7 @@ const Index = () => {
                   Over Product Chasing.
                 </span>
               </h1>
-              <p className="text-sm text-foreground font-medium mb-2 leading-relaxed">
+              <p className="text-sm text-muted-foreground font-medium mb-2 leading-relaxed">
                 We sit on <span className="text-primary font-bold">your side of the table</span> — helping you choose the best products for your risk-return profile.
               </p>
               <p className="text-sm text-muted-foreground mb-5 leading-relaxed">
