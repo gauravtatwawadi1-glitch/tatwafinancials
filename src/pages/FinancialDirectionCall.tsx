@@ -30,24 +30,11 @@ const FinancialDirectionCall = () => {
     <div className="min-h-screen bg-background">
 
       {/* Header */}
-      <header className="fixed top-0 w-full bg-background/80 backdrop-blur-md border-b border-border z-50">
-        <div className="container mx-auto px-4 md:px-8 py-3 flex items-center justify-between max-w-6xl">
-          <Link to="/" className="flex items-center gap-2 cursor-pointer">
-            <div className="w-8 h-8 md:w-10 md:h-10 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center flex-shrink-0">
-              <TrendingUp className="w-4 h-4 md:w-6 md:h-6 text-primary-foreground" />
-            </div>
-            <div className="flex flex-col">
-              <span className="text-base md:text-xl font-bold text-foreground leading-none">Tatwa Financials</span>
-              <span className="text-[9px] md:text-[10px] text-muted-foreground font-medium">AMFI Registered MF & SIF Distributor (ARN-341189 | APRN-08733)</span>
-            </div>
-          </Link>
-          <Button size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90 text-xs md:text-sm px-3 md:px-5" asChild>
-            <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
-              Book Now
-            </a>
-          </Button>
-        </div>
-      </header>
+      <Header
+        ctaLabel="Book Now"
+        ctaHref={WHATSAPP_URL}
+        ctaSize="sm"
+      />
 
       {/* Hero Section */}
       <section className="pt-24 md:pt-32 pb-12 md:pb-20 px-4 relative overflow-hidden">
