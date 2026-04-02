@@ -569,18 +569,17 @@ const Index = () => {
               {/* Bio Content */}
               <div className="md:col-span-2 space-y-4">
                 <p className="text-base text-muted-foreground leading-relaxed">
-                  Gaurav Tatwawadi is the driving force behind our vision of making investing truly 
-                  <strong> client-first and risk-aware</strong>. Armed with an <strong>MBA in Finance from MDI Gurgaon</strong> and an engineering degree from 
-                  <strong> COEP (College of Engineering, Pune)</strong>, he combines strategic financial acumen with analytical precision to bring a balanced, insightful approach to wealth management.
+                  Gaurav Tatwawadi is the driving force behind Tatwa Financials' vision of 
+                  <strong> thoughtful portfolio construction over product chasing</strong>. Armed with an <strong>MBA in Finance from MDI Gurgaon</strong> and an engineering degree from 
+                  <strong> COEP (College of Engineering, Pune)</strong>, he combines strategic financial acumen with analytical precision to design portfolios across Mutual Funds, SIF, PMS, and AIF.
                 </p>
                 
                 <p className="text-base text-muted-foreground leading-relaxed">
-                  Having worked under some of the best minds in the investment industry, Gaurav has mastered the art of wealth creation through disciplined mutual fund strategies. 
-                  His expertise spans portfolio management, risk evaluation, and long-term financial planning — with a <strong>proven track record of managing the wealth of celebrities and ultra-high-net-worth individuals (UHNIs)</strong>.
+                  With treasury & financial markets experience at <strong>ICICI Bank, Lloyds Bank (UK), and Religare Finvest</strong>, and having worked on AI/LLM models for Amazon and Google Finance, Gaurav brings a unique blend of institutional finance expertise and modern technology thinking. His <strong>proven track record spans managing wealth for celebrities and ultra-high-net-worth individuals (UHNIs)</strong>.
                 </p>
                 
                 <p className="text-base text-muted-foreground leading-relaxed">
-                  As <strong>Founder of Tatwa Financials</strong>, Gaurav has built a reputation for personalized, transparent, and high-integrity financial solutions that align with each client's unique goals and risk profile. His philosophy is simple — <strong>growth means little without trust</strong>.
+                  As <strong>Founder of Tatwa Financials</strong>, Gaurav has built a boutique platform that prioritizes quality over volume — deeper attention to portfolio design and strategy selection. His philosophy: <strong>long-term returns are driven by how capital is allocated across strategies, not which stock to buy</strong>.
                 </p>
               </div>
             </div>
