@@ -6,6 +6,7 @@ import { PartnerLogo } from "@/components/PartnerLogo";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger, DialogDescription } from "@/components/ui/dialog";
 import { AlertDialog, AlertDialogContent, AlertDialogHeader, AlertDialogTitle, AlertDialogDescription, AlertDialogFooter, AlertDialogAction } from "@/components/ui/alert-dialog";
 import { Shield, Smartphone, TrendingUp, CheckCircle2, BarChart3, LineChart, Cloud, Lock, Zap, Target, Award, Handshake, Linkedin, Instagram, Mail, AlertTriangle } from "lucide-react";
+import { Header } from "@/components/Header";
 import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-finance.jpg";
 import founderPhoto from "@/assets/founder-photo.jpg";
