@@ -634,7 +634,7 @@ const Index = () => {
                 All Asset Management Partners
               </h3>
               <p className="text-sm text-muted-foreground">
-                Working with India's leading mutual fund houses
+                Working with India's leading fund houses and investment managers
               </p>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 max-w-6xl mx-auto">
