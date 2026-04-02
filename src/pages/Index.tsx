@@ -78,7 +78,7 @@ const Index = () => {
             </div>
             <div className="flex flex-col">
               <span className="text-xl font-bold text-foreground leading-none">Tatwa Financials</span>
-              <span className="text-[10px] text-muted-foreground font-medium">AMFI Registered Distributor (ARN-341189)</span>
+              <span className="text-[10px] text-muted-foreground font-medium">AMFI Registered Distributor (ARN-341189 | APRN-08733)</span>
             </div>
           </Link>
           <nav className="hidden md:flex items-center gap-8">
@@ -543,7 +543,7 @@ const Index = () => {
                     COEP Graduate
                   </span>
                   <span className="px-3 py-1 bg-secondary/10 text-secondary text-xs font-semibold rounded-full">
-                    AMFI registered (ARN: 341189)
+                    AMFI registered (ARN: 341189 | APRN: 08733)
                   </span>
                   <span className="px-3 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-full">
                     Trusted Advisor to Celebrities
@@ -885,7 +885,7 @@ const Index = () => {
             </div>
           </div>
           <div className="pt-8 border-t border-background/20 text-center text-sm opacity-80">
-            <p>© {new Date().getFullYear()} Tatwa Financials. All rights reserved. AMFI Registered Investment Distributor.</p>
+            <p>© {new Date().getFullYear()} Tatwa Financials. All rights reserved. AMFI Registered Investment Distributor (ARN-341189 | APRN-08733).</p>
           </div>
         </div>
       </footer>

@@ -37,7 +37,7 @@ const FinancialDirectionCall = () => {
             </div>
             <div className="flex flex-col">
               <span className="text-base md:text-xl font-bold text-foreground leading-none">Tatwa Financials</span>
-              <span className="text-[9px] md:text-[10px] text-muted-foreground font-medium">AMFI Registered MF & SIF Distributor (ARN-341189)</span>
+              <span className="text-[9px] md:text-[10px] text-muted-foreground font-medium">AMFI Registered MF & SIF Distributor (ARN-341189 | APRN-08733)</span>
             </div>
           </Link>
           <Button size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90 text-xs md:text-sm px-3 md:px-5" asChild>
