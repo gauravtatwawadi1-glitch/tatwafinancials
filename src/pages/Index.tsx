@@ -214,10 +214,10 @@ const Index = () => {
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-bold mb-3 text-foreground">
-              How It Works
+              Our Investment Process
             </h2>
             <p className="text-muted-foreground">
-              We advise, top AMCs professionally manage your money
+              A disciplined framework for aligning capital with your objectives
             </p>
           </div>
 
