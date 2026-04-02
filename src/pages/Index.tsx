@@ -394,7 +394,7 @@ const Index = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-10 animate-fade-in">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">Investment Vehicles</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-sm text-muted-foreground max-w-2xl mx-auto">
               Access the full spectrum — from ₹500 SIPs to ₹1 Crore+ alternative investments
             </p>
           </div>
