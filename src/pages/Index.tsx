@@ -230,9 +230,9 @@ const Index = () => {
                 <div className="bg-card border border-border rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow">
                   <div className="flex items-center gap-3 mb-2">
                     <div className="w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-sm font-bold flex-shrink-0">1</div>
-                    <h3 className="font-semibold text-foreground text-sm">Risk Assessment</h3>
+                    <h3 className="font-semibold text-foreground text-sm">Understand Goals</h3>
                   </div>
-                  <p className="text-xs text-muted-foreground ml-11">We analyze your goals & risk profile</p>
+                  <p className="text-xs text-muted-foreground ml-11">Your goals, time horizon & risk tolerance</p>
                   <div className="mt-2 ml-11">
                     <span className="text-[10px] px-2 py-0.5 bg-primary/10 text-primary rounded-full font-medium">Our Role</span>
                   </div>
