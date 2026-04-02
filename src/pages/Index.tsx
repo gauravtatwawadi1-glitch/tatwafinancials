@@ -50,7 +50,7 @@ const Index = () => {
             <AlertDialogDescription asChild>
               <div className="space-y-4 text-sm text-muted-foreground leading-relaxed">
                 <p>
-                  <strong className="text-foreground">Tatwa Financials does not charge any fees</strong> from clients for investment discussions or mutual fund investment facilitation.
+                  <strong className="text-foreground">Tatwa Financials does not charge any fees</strong> from clients for investment discussions or investment facilitation.
                 </p>
                 <p>
                   If anyone claims to represent Tatwa Financials and asks for payment, please treat it with caution and <strong className="text-foreground">report it to us immediately</strong>.
