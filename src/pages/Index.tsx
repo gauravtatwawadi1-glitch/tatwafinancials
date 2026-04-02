@@ -283,7 +283,7 @@ const Index = () => {
                     <h3 className="font-semibold text-foreground text-sm">Execution</h3>
                   </div>
                   <p className="text-xs text-muted-foreground ml-11 mb-2">
-<                    <strong>Best-in-class fund managers</strong> execute strategies across chosen vehicles
+<strong>Best-in-class fund managers</strong> execute strategies across chosen vehicles
                   </p>
                   <div className="mt-2 ml-11">
                     <span className="text-[10px] px-2 py-0.5 bg-orange-500/20 text-orange-700 dark:text-orange-400 rounded-full font-semibold">Fund Managers</span>
