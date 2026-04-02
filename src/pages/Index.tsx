@@ -179,16 +179,16 @@ const Index = () => {
           <div className="text-center mb-10 animate-fade-in">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">Why Choose Us</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Your trusted partner for digital investment solutions
+              A boutique investment firm focused on portfolio architecture, not product pushing
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 animate-slide-up">
-            <FeatureCard icon={Shield} title="Trusted & Certified" description="AMFI registered distributor with full regulatory compliance and transparency." />
-            <FeatureCard icon={Smartphone} title="All-Digital Convenience" description="Access your investments anytime, anywhere with our easy-to-use mobile app." />
-            <FeatureCard icon={Target} title="Best Risk Evaluation" description="We evaluate your financial goals, risk appetite, and life stage to build the right portfolio." />
-            <FeatureCard icon={CheckCircle2} title="Comprehensive Planning" description="Tailored Mutual Fund solutions aligned with your retirement, child education, and wealth creation goals." />
-            <FeatureCard icon={TrendingUp} title="Transparent & Client-First" description="No jargon, no hidden costs – just clear advice and honest guidance." />
-            <FeatureCard icon={Zap} title="Fast & Paperless" description="Complete onboarding, KYC, and transactions digitally in minutes." />
+            <FeatureCard icon={Target} title="Portfolio Architecture" description="We focus on how capital is allocated across strategies — not which stock to buy or which fund to pick." />
+            <FeatureCard icon={Layers} title="Access Across Vehicles" description="Seamless distribution across Mutual Funds, SIF, PMS, and AIF — all from a single trusted platform." />
+            <FeatureCard icon={Shield} title="Manager Selection" description="Rigorous due diligence to select best-in-class fund managers with proven track records across categories." />
+            <FeatureCard icon={CheckCircle2} title="Strategic Allocation" description="Long-term returns are driven by how capital is allocated across strategies — we design for resilience and growth." />
+            <FeatureCard icon={Handshake} title="Boutique & Client-First" description="Focused client relationships with personalized attention — quality over volume, always." />
+            <FeatureCard icon={Zap} title="Entirely Digital" description="Modern, paperless execution. Invest, track, and manage your portfolio anytime via our digital platform." />
           </div>
         </div>
       </section>
