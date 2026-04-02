@@ -197,14 +197,14 @@ const Index = () => {
       <section id="expertise" className="py-12 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-10">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">Our Expertise</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">Strategic Framework</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Comprehensive financial solutions tailored to your needs
+              A well-constructed portfolio combines multiple strategy types for resilience and growth
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            <ExpertiseCard icon={BarChart3} title="Mutual Funds Distribution" features={["Wide range of schemes across top fund houses", "Tailored asset allocation based on your profile", "SIPs, lump sum investments, retirement & child-goal planning", "Regular portfolio reviews and rebalancing"]} />
-            <ExpertiseCard icon={LineChart} title="Risk Evaluation" features={["Comprehensive risk profiling using advanced frameworks", "Analysis of your financial goals and investment horizon", "Personalized asset allocation strategies", "Regular risk assessment and portfolio rebalancing"]} />
+            <ExpertiseCard icon={BarChart3} title="Core Wealth Creation" features={["Diversified equity exposure via Mutual Funds & SIFs", "Long-term market growth through strategic allocation", "SIP & lump sum across equity, debt, and hybrid categories", "Regular portfolio reviews and rebalancing"]} />
+            <ExpertiseCard icon={LineChart} title="Alpha Generation & Alternatives" features={["PMS for concentrated, actively managed strategies", "AIF access to private equity, venture capital & hedge funds", "Manager selection through rigorous due diligence", "Tactical opportunities in emerging themes"]} />
           </div>
         </div>
       </section>
