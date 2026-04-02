@@ -280,13 +280,13 @@ const Index = () => {
                 <div className="bg-gradient-to-br from-orange-50 to-red-50 dark:from-orange-950/20 dark:to-red-950/20 border-2 border-orange-500/30 rounded-xl p-4 shadow-md">
                   <div className="flex items-center gap-3 mb-2">
                     <div className="w-8 h-8 rounded-full bg-gradient-to-br from-orange-500 to-red-500 text-white flex items-center justify-center text-sm font-bold flex-shrink-0">4</div>
-                    <h3 className="font-semibold text-foreground text-sm">Money Management </h3>
+                    <h3 className="font-semibold text-foreground text-sm">Execution</h3>
                   </div>
                   <p className="text-xs text-muted-foreground ml-11 mb-2">
-                    <strong>AMCs (HDFC, ICICI, SBI, etc.)</strong> professionally manage your investments
+<                    <strong>Best-in-class fund managers</strong> execute strategies across chosen vehicles
                   </p>
                   <div className="mt-2 ml-11">
-                    <span className="text-[10px] px-2 py-0.5 bg-orange-500/20 text-orange-700 dark:text-orange-400 rounded-full font-semibold">Top AMCs</span>
+                    <span className="text-[10px] px-2 py-0.5 bg-orange-500/20 text-orange-700 dark:text-orange-400 rounded-full font-semibold">Fund Managers</span>
                   </div>
                 </div>
               </div>
