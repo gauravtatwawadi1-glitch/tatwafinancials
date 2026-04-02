@@ -855,7 +855,7 @@ const Index = () => {
                 <span className="text-lg font-bold">Tatwa Financials</span>
               </div>
               <p className="text-sm opacity-80">
-                Your trusted partner for digital mutual fund investment solutions.
+                A boutique investment firm focused on portfolio construction across Mutual Funds, SIF, PMS & AIF.
               </p>
             </div>
             <div>
