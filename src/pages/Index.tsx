@@ -385,9 +385,9 @@ const Index = () => {
       <section id="products" className="py-12 px-4 bg-muted/30">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-10 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">Products We Distribute</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">Investment Vehicles</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Comprehensive investment solutions across market segments
+              Access the full spectrum — from ₹500 SIPs to ₹1 Crore+ alternative investments
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 animate-slide-up">
