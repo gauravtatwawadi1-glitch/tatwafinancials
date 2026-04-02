@@ -885,7 +885,7 @@ const Index = () => {
             </div>
           </div>
           <div className="pt-8 border-t border-background/20 text-center text-sm opacity-80">
-            <p>© {new Date().getFullYear()} Tatwa Financials. All rights reserved. AMFI Registered Investment Distributor.</p>
+            <p>© {new Date().getFullYear()} Tatwa Financials. All rights reserved. AMFI Registered Investment Distributor (ARN-341189 | APRN-08733).</p>
           </div>
         </div>
       </footer>
