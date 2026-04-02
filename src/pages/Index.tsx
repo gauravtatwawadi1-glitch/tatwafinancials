@@ -548,7 +548,7 @@ const Index = () => {
                   <span className="px-3 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-full">
                     APMI registered (APRN: 08733)
                   </span>
-                  <span className="px-3 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-full">
+                  <span className="px-3 py-1 bg-accent/10 text-accent text-xs font-semibold rounded-full">
                     Trusted Advisor to Celebrities
                   </span>
                 </div>
