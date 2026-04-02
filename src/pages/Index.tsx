@@ -6,6 +6,7 @@ import { PartnerLogo } from "@/components/PartnerLogo";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger, DialogDescription } from "@/components/ui/dialog";
 import { AlertDialog, AlertDialogContent, AlertDialogHeader, AlertDialogTitle, AlertDialogDescription, AlertDialogFooter, AlertDialogAction } from "@/components/ui/alert-dialog";
 import { Shield, Smartphone, TrendingUp, CheckCircle2, BarChart3, LineChart, Cloud, Lock, Zap, Target, Award, Handshake, Linkedin, Instagram, Mail, AlertTriangle } from "lucide-react";
+import { Header } from "@/components/Header";
 import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-finance.jpg";
 import founderPhoto from "@/assets/founder-photo.jpg";
@@ -70,41 +71,7 @@ const Index = () => {
       </AlertDialog>
 
       {/* Header */}
-      <header className="fixed top-0 w-full bg-background/80 backdrop-blur-md border-b border-border z-50">
-        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-3 cursor-pointer">
-            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center">
-              <TrendingUp className="w-6 h-6 text-primary-foreground" />
-            </div>
-            <div className="flex flex-col">
-              <span className="text-xl font-bold text-foreground leading-none">Tatwa Financials</span>
-              <span className="text-[10px] text-muted-foreground font-medium">AMFI Registered Distributor (ARN-341189 | APRN-08733)</span>
-            </div>
-          </Link>
-          <nav className="hidden md:flex items-center gap-8">
-            <a href="#why-us" className="text-muted-foreground hover:text-foreground transition-colors">
-              Why Us
-            </a>
-            <a href="#products" className="text-muted-foreground hover:text-foreground transition-colors">
-              Products
-            </a>
-            <a href="#partners" className="text-muted-foreground hover:text-foreground transition-colors">
-              Partners
-            </a>
-            <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors">
-              About
-            </a>
-            <Link to="/contact" className="text-muted-foreground hover:text-foreground transition-colors">
-              Contact
-            </Link>
-          </nav>
-          <Button className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>
-            <a href="https://wealthelite.in/client-login" target="_blank" rel="noopener noreferrer">
-              Client Login
-            </a>
-          </Button>
-        </div>
-      </header>
+      <Header />
 
       {/* Hero Section */}
       <section className="pt-24 pb-12 px-4 relative overflow-hidden">
