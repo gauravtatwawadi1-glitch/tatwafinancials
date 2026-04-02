@@ -262,9 +262,9 @@ const Index = () => {
                 <div className="bg-card border border-border rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow">
                   <div className="flex items-center gap-3 mb-2">
                     <div className="w-8 h-8 rounded-full bg-secondary text-primary-foreground flex items-center justify-center text-sm font-bold flex-shrink-0">3</div>
-                    <h3 className="font-semibold text-foreground text-sm">Investment</h3>
+                    <h3 className="font-semibold text-foreground text-sm">Construct Portfolio</h3>
                   </div>
-                  <p className="text-xs text-muted-foreground ml-11">Invest digitally via our app</p>
+                  <p className="text-xs text-muted-foreground ml-11">Allocate across MF, SIF, PMS & AIF</p>
                   <div className="mt-2 ml-11">
                     <span className="text-[10px] px-2 py-0.5 bg-secondary/10 text-secondary rounded-full font-medium">Platform</span>
                   </div>
