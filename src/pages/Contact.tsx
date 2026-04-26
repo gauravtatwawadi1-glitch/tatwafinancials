@@ -3,10 +3,23 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Mail, Phone, User, TrendingUp } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Header } from "@/components/Header";
+import { SEO } from "@/components/SEO";
 
 const Contact = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Contact Tatwa Financials | Get in Touch with Our Investment Experts"
+        description="Reach out to Tatwa Financials for portfolio construction, mutual fund, PMS & AIF inquiries. Email connect@tatwafinancials.com or call +91-8879014522."
+        canonical="/contact"
+        keywords="contact Tatwa Financials, investment advisor contact, portfolio consultation, mutual fund distributor India"
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "ContactPage",
+          "name": "Contact Tatwa Financials",
+          "url": "https://tatwafinancials.com/contact"
+        }}
+      />
       {/* Header */}
       <Header
         navItems={[
