@@ -3,6 +3,7 @@ import { Card } from "@/components/ui/card";
 import { MessageCircle, TrendingUp, AlertTriangle, Target, ShieldCheck, Award, Eye, PieChart, Zap } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Header } from "@/components/Header";
+import { SEO } from "@/components/SEO";
 
 const WHATSAPP_URL = "https://wa.link/hl5sv3";
 

@@ -7,6 +7,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger, Dialog
 import { AlertDialog, AlertDialogContent, AlertDialogHeader, AlertDialogTitle, AlertDialogDescription, AlertDialogFooter, AlertDialogAction } from "@/components/ui/alert-dialog";
 import { Shield, Smartphone, TrendingUp, CheckCircle2, BarChart3, LineChart, Cloud, Lock, Zap, Target, Award, Handshake, Linkedin, Instagram, Mail, AlertTriangle } from "lucide-react";
 import { Header } from "@/components/Header";
+import { SEO } from "@/components/SEO";
 import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-finance.jpg";
 import founderPhoto from "@/assets/founder-photo.jpg";
@@ -25,6 +26,53 @@ import { Briefcase, Layers, Crown, Gem } from "lucide-react";
 const Index = () => {
   const [showNotice, setShowNotice] = useState(false);
 
+  const structuredData = [
+    {
+      "@context": "https://schema.org",
+      "@type": "FinancialService",
+      "name": "Tatwa Financials",
+      "alternateName": "Tatwa Financials - Boutique Investment Firm",
+      "description": "A boutique investment firm focused on portfolio construction across Mutual Funds, SIF, PMS & AIF.",
+      "url": "https://tatwafinancials.com",
+      "logo": "https://storage.googleapis.com/gpt-engineer-file-uploads/IpIZ7HQzo9TnlTUSk4g53Op8goz2/uploads/1759560801108-ChatGPT%20Image%20Oct%204%2C%202025%2C%2012_22_56%20PM.png",
+      "telephone": "+91-8879014522",
+      "email": "connect@tatwafinancials.com",
+      "areaServed": "IN",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "IN"
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "Gaurav Vivek Tatwawadi"
+      },
+      "serviceType": [
+        "Mutual Fund Distribution",
+        "Portfolio Construction",
+        "PMS Advisory",
+        "AIF Distribution",
+        "SIF Distribution"
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/company/tatwa-financials"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Tatwa Financials",
+      "url": "https://tatwafinancials.com",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91-8879014522",
+        "contactType": "customer service",
+        "email": "connect@tatwafinancials.com",
+        "areaServed": "IN",
+        "availableLanguage": ["en", "hi"]
+      }
+    }
+  ];
+
   useEffect(() => {
     const dismissed = sessionStorage.getItem("notice-dismissed");
     if (!dismissed) {
@@ -38,6 +86,13 @@ const Index = () => {
   };
 
   return <div className="min-h-screen bg-background">
+      <SEO
+        title="Tatwa Financials - Boutique Investment Firm | Portfolio Construction"
+        description="A boutique investment firm focused on portfolio construction. We help you navigate 2,500+ Mutual Funds, 500+ PMS, 1,750+ AIFs & SIFs with thoughtful capital allocation."
+        canonical="/"
+        keywords="portfolio construction, boutique investment firm, mutual funds, SIF, PMS, AIF, investment distributor, AMFI, wealth management, Tatwa"
+        structuredData={structuredData}
+      />
       {/* Important Notice Popup */}
       <AlertDialog open={showNotice} onOpenChange={setShowNotice}>
         <AlertDialogContent className="max-w-md">
