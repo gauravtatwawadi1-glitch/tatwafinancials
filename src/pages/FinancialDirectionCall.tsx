@@ -29,6 +29,29 @@ const trustStats = [
 const FinancialDirectionCall = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Free Financial Direction Call | Portfolio Review by Tatwa Financials"
+        description="Book a free 30-minute Financial Direction Call. Identify hidden risks, check goal alignment, and get a clear view of your portfolio with Tatwa Financials."
+        canonical="/financial-direction-call"
+        keywords="financial direction call, free portfolio review, mutual fund review, investment consultation India, portfolio risk analysis"
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Financial Direction Call",
+          "provider": {
+            "@type": "FinancialService",
+            "name": "Tatwa Financials",
+            "url": "https://tatwafinancials.com"
+          },
+          "description": "A free 30-minute consultation to review your portfolio for hidden risks, goal alignment, and concentration.",
+          "areaServed": "IN",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "INR"
+          }
+        }}
+      />
 
       {/* Header */}
       <Header
