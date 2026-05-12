@@ -31,8 +31,8 @@ const Index = () => {
       "@context": "https://schema.org",
       "@type": "FinancialService",
       "name": "Tatwa Financials",
-      "alternateName": "Tatwa Financials - Boutique Investment Firm",
-      "description": "A boutique investment firm focused on portfolio construction across Mutual Funds, SIF, PMS & AIF.",
+      "alternateName": "Tatwa Financials - AMFI Registered Distribution Firm",
+      "description": "An AMFI Registered Mutual Fund Distribution firm focused on fund selection across Mutual Funds, SIF, PMS & AIF.",
       "url": "https://tatwafinancials.com",
       "logo": "https://storage.googleapis.com/gpt-engineer-file-uploads/IpIZ7HQzo9TnlTUSk4g53Op8goz2/uploads/1759560801108-ChatGPT%20Image%20Oct%204%2C%202025%2C%2012_22_56%20PM.png",
       "telephone": "+91-8879014522",
@@ -48,7 +48,7 @@ const Index = () => {
       },
       "serviceType": [
         "Mutual Fund Distribution",
-        "Portfolio Construction",
+        "Fund Selection",
         "PMS Advisory",
         "AIF Distribution",
         "SIF Distribution"
@@ -87,10 +87,10 @@ const Index = () => {
 
   return <div className="min-h-screen bg-background">
       <SEO
-        title="Tatwa Financials - Boutique Investment Firm | Portfolio Construction"
-        description="A boutique investment firm focused on portfolio construction. We help you navigate 2,500+ Mutual Funds, 500+ PMS, 1,750+ AIFs & SIFs with thoughtful capital allocation."
+        title="Tatwa Financials - AMFI Registered Distribution Firm | Fund Selection"
+        description="An AMFI Registered Mutual Fund Distribution firm focused on fund selection. We help you navigate 2,500+ Mutual Funds, 500+ PMS, 1,750+ AIFs & SIFs with thoughtful capital allocation."
         canonical="/"
-        keywords="portfolio construction, boutique investment firm, mutual funds, SIF, PMS, AIF, investment distributor, AMFI, wealth management, Tatwa"
+        keywords="fund selection, AMFI registered distributor, mutual funds, SIF, PMS, AIF, investment distributor, AMFI, wealth management, Tatwa"
         structuredData={structuredData}
       />
       {/* Important Notice Popup */}
@@ -136,17 +136,17 @@ const Index = () => {
             <div className="animate-fade-in">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-xs font-medium mb-6">
                 <Award className="w-4 h-4" />
-                Boutique Investment Firm · MF · SIF · PMS · AIF
+                AMFI Registered Distribution Firm · MF · SIF · PMS · AIF
               </div>
               <h1 className="text-5xl md:text-6xl font-bold mb-6 text-foreground leading-tight">
-                Portfolio Construction
+                Fund Selection
                 <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-accent to-secondary">
                   Over Product Chasing.
                 </span>
               </h1>
               <p className="text-sm text-muted-foreground font-medium mb-2 leading-relaxed">
-                We sit on <span className="text-primary font-bold">your side of the table</span> — helping you choose the best products for your risk-return profile.
+                We sit on <span className="text-primary font-bold">your side of the table</span> — helping you find suitable funds for your risk-return profile.
               </p>
               <p className="text-sm text-muted-foreground mb-5 leading-relaxed">
                 With thousands of options across Mutual Funds, PMS, AIFs & SIFs, you need a partner — not a salesman.
@@ -160,7 +160,7 @@ const Index = () => {
               <div className="flex flex-wrap gap-4">
                 <Button size="lg" className="bg-gradient-to-r from-primary to-accent text-primary-foreground hover:shadow-[var(--shadow-glow)] transition-all duration-300" asChild>
                   <a href="https://calendly.com/gauravtatwawadi/30min" target="_blank" rel="noopener noreferrer">
-                    Get free consultation and risk profiling
+                    Start Your Investment Journey
                   </a>
                 </Button>
                 <Dialog>
@@ -209,13 +209,13 @@ const Index = () => {
           <div className="text-center mb-10 animate-fade-in">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">Why Choose Us</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              A boutique investment firm focused on portfolio architecture, not product pushing
+              An AMFI Registered Mutual Fund Distribution firm focused on fund selection, not product pushing
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 animate-slide-up">
-            <FeatureCard icon={Target} title="Portfolio Architecture" description="We focus on how capital is allocated across strategies — not which stock to buy or which fund to pick." />
+            <FeatureCard icon={Target} title="Fund Selection" description="We focus on how capital is allocated across strategies — not which stock to buy or which fund to pick." />
             <FeatureCard icon={Layers} title="Access Across Vehicles" description="Seamless distribution across Mutual Funds, SIF, PMS, and AIF — all from a single trusted platform." />
-            <FeatureCard icon={Shield} title="Manager Selection" description="Rigorous due diligence to select best-in-class fund managers with proven track records across categories." />
+            <FeatureCard icon={Shield} title="Fund Evaluation" description="Rigorous due diligence to select best-in-class fund managers with proven track records across categories." />
             <FeatureCard icon={CheckCircle2} title="Strategic Allocation" description="Long-term returns are driven by how capital is allocated across strategies — we design for resilience and growth." />
             <FeatureCard icon={Handshake} title="Boutique & Client-First" description="Focused client relationships with personalized attention — quality over volume, always." />
             <FeatureCard icon={Zap} title="Entirely Digital" description="Modern, paperless execution. Invest, track, and manage your portfolio anytime via our digital platform." />
@@ -233,8 +233,8 @@ const Index = () => {
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            <ExpertiseCard icon={BarChart3} title="Core Wealth Creation" features={["Diversified equity exposure via Mutual Funds & SIFs", "Long-term market growth through strategic allocation", "SIP & lump sum across equity, debt, and hybrid categories", "Regular portfolio reviews and rebalancing"]} />
-            <ExpertiseCard icon={LineChart} title="Alpha Generation & Alternatives" features={["PMS for concentrated, actively managed strategies", "AIF access to private equity, venture capital & hedge funds", "Manager selection through rigorous due diligence", "Tactical opportunities in emerging themes"]} />
+            <ExpertiseCard icon={BarChart3} title="Core Growth Deployment" features={["Diversified equity exposure via Mutual Funds & SIFs", "Long-term market growth through strategic allocation", "SIP & lump sum across equity, debt, and hybrid categories", "Regular portfolio reviews and rebalancing"]} />
+            <ExpertiseCard icon={LineChart} title="Alpha Generation & Alternatives" features={["PMS for concentrated, actively managed strategies", "AIF access to private equity, venture capital & hedge funds", "Fund evaluation through rigorous research", "Tactical opportunities in emerging themes"]} />
           </div>
         </div>
       </section>
@@ -292,7 +292,7 @@ const Index = () => {
                 <div className="bg-card border border-border rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow">
                   <div className="flex items-center gap-3 mb-2">
                     <div className="w-8 h-8 rounded-full bg-secondary text-primary-foreground flex items-center justify-center text-sm font-bold flex-shrink-0">3</div>
-                    <h3 className="font-semibold text-foreground text-sm">Construct Portfolio</h3>
+                    <h3 className="font-semibold text-foreground text-sm">Deploy Across Funds</h3>
                   </div>
                   <p className="text-xs text-muted-foreground ml-11">Allocate across MF, SIF, PMS & AIF</p>
                   <div className="mt-2 ml-11">
@@ -347,10 +347,10 @@ const Index = () => {
             </div>
             <div className="grid md:grid-cols-2 gap-4 text-sm">
               <div className="bg-primary-foreground/10 p-3 rounded-lg backdrop-blur-sm">
-                <p className="font-semibold mb-2 text-sm">✓ Tatwa Financials (Strategic Intermediary)</p>
+                <p className="font-semibold mb-2 text-sm">✓ Tatwa Financials (AMFI Registered Distributor)</p>
                 <ul className="space-y-1 opacity-90 text-xs">
-                  <li>• Portfolio architecture & construction</li>
-                  <li>• Manager selection & due diligence</li>
+                  <li>• Fund selection & deployment</li>
+                  <li>• Fund evaluation & research</li>
                   <li>• Capital allocation across MF, SIF, PMS, AIF</li>
                 </ul>
               </div>
@@ -557,11 +557,11 @@ const Index = () => {
               <div className="flex flex-col items-center text-center space-y-4">
                 <div className="relative">
                   <div className="absolute inset-0 bg-gradient-to-br from-primary to-accent rounded-full blur-2xl opacity-30 scale-110" />
-                  <img src={founderPhoto} alt="Gaurav Tatwawadi - Founder & Chief Advisor" className="relative rounded-full shadow-[var(--shadow-strong)] w-40 h-40 object-cover object-[45%_20%] border-4 border-background" />
+                  <img src={founderPhoto} alt="Gaurav Tatwawadi - Founder & AMFI Registered Distributor" className="relative rounded-full shadow-[var(--shadow-strong)] w-40 h-40 object-cover object-[45%_20%] border-4 border-background" />
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold text-foreground">Gaurav Tatwawadi</h3>
-                  <p className="text-primary font-semibold">Founder & Chief Advisor</p>
+                  <p className="text-primary font-semibold">Founder & AMFI Registered Distributor</p>
                 </div>
                 
                 {/* Credentials Badges */}
@@ -579,7 +579,7 @@ const Index = () => {
                     APMI registered (APRN: 08733)
                   </span>
                   <span className="px-3 py-1 bg-accent/10 text-accent text-xs font-semibold rounded-full">
-                    Trusted Advisor to Celebrities
+                    Serving HNIs & Celebrities
                   </span>
                 </div>
                 
@@ -600,16 +600,16 @@ const Index = () => {
               <div className="md:col-span-2 space-y-4">
                 <p className="text-base text-muted-foreground leading-relaxed">
                   Gaurav Tatwawadi is the driving force behind Tatwa Financials' vision of 
-                  <strong> thoughtful portfolio construction over product chasing</strong>. Armed with an <strong>MBA in Finance from MDI Gurgaon</strong> and an engineering degree from 
-                  <strong> COEP (College of Engineering, Pune)</strong>, he combines strategic financial acumen with analytical precision to design portfolios across Mutual Funds, SIF, PMS, and AIF.
+                  <strong> thoughtful fund selection over product chasing</strong>. Armed with an <strong>MBA in Finance from MDI Gurgaon</strong> and an engineering degree from 
+                  <strong> COEP (College of Engineering, Pune)</strong>, he combines strategic financial acumen with analytical precision to deploy capital across Mutual Funds, SIF, PMS, and AIF.
                 </p>
                 
                 <p className="text-base text-muted-foreground leading-relaxed">
-                  With treasury & financial markets experience at <strong>ICICI Bank, Lloyds Bank (UK), and Religare Finvest</strong>, and having worked on AI/LLM models for Amazon and Google Finance, Gaurav brings a unique blend of institutional finance expertise and modern technology thinking. His <strong>proven track record spans managing wealth for celebrities and ultra-high-net-worth individuals (UHNIs)</strong>.
+                  With treasury & financial markets experience at <strong>ICICI Bank, Lloyds Bank (UK), and Religare Finvest</strong>, and having worked on AI/LLM models for Amazon and Google Finance, Gaurav brings a unique blend of institutional finance expertise and modern technology thinking. He has <strong>served HNIs and celebrities across investment distribution needs</strong>.
                 </p>
                 
                 <p className="text-base text-muted-foreground leading-relaxed">
-                  As <strong>Founder of Tatwa Financials</strong>, Gaurav has built a boutique platform that prioritizes quality over volume — deeper attention to portfolio design and strategy selection. His philosophy: <strong>long-term returns are driven by how capital is allocated across strategies, not which stock to buy</strong>.
+                  As <strong>Founder of Tatwa Financials</strong>, Gaurav has built a boutique platform that prioritizes quality over volume — deeper attention to fund selection and capital deployment. His philosophy: <strong>long-term returns are driven by how capital is allocated across strategies, not which stock to buy</strong>.
                 </p>
               </div>
             </div>
@@ -731,7 +731,7 @@ const Index = () => {
                 </svg>
               </div>
               <p className="text-muted-foreground mb-4 italic">
-                "Finally found an advisor who focuses on my risk appetite rather than pushing products. The transparency and regular reviews give me complete peace of mind."
+                "Finally found a distributor who focuses on my risk appetite rather than pushing products. The transparency and regular reviews give me complete peace of mind."
               </p>
               <div>
                 <p className="font-semibold text-foreground">Rajesh Patel</p>
@@ -772,7 +772,7 @@ const Index = () => {
                 </svg>
               </div>
               <p className="text-muted-foreground mb-4 italic">
-                "From retirement planning to my child's education fund, Tatwa Financials has structured everything perfectly. The best part? No hidden charges, just honest advice."
+                "From retirement planning to my child's education fund, Tatwa Financials has structured everything perfectly. The best part? No hidden charges, just honest service."
               </p>
               <div>
                 <p className="font-semibold text-foreground">Vikram Desai</p>
@@ -813,7 +813,7 @@ const Index = () => {
                   </svg>)}
               </div>
               <p className="text-muted-foreground mb-4 italic">
-                "Professional, transparent, and truly client-first. The regular portfolio reviews and rebalancing suggestions have helped me stay on track with my wealth goals."
+                "Professional, transparent, and truly client-first. The regular portfolio reviews and rebalancing suggestions have helped me stay on track with my investment goals."
               </p>
               <div>
                 <p className="font-semibold text-foreground">Arjun Mehta</p>
@@ -885,7 +885,7 @@ const Index = () => {
                 <span className="text-lg font-bold">Tatwa Financials</span>
               </div>
               <p className="text-sm opacity-80">
-                A boutique investment firm focused on portfolio construction across Mutual Funds, SIF, PMS & AIF.
+                An AMFI Registered Mutual Fund Distribution firm across Mutual Funds, SIF, PMS & AIF.
               </p>
             </div>
             <div>
@@ -917,9 +917,12 @@ const Index = () => {
             </div>
           </div>
           <div className="pt-8 border-t border-background/20 text-center text-sm opacity-80">
-            <p>© {new Date().getFullYear()} Tatwa Financials. All rights reserved. AMFI Registered Investment Distributor (ARN-341189 | APRN-08733).</p>
+            <p>© {new Date().getFullYear()} Tatwa Financials. All rights reserved. AMFI Registered Mutual Fund Distributor (ARN-341189 | APRN-08733).</p>
             <p className="mt-3 text-xs opacity-60">
               Disclaimer: "Tatwa Financials" is a brand/trade name. All licenses and registrations are held in the name of <strong className="opacity-80">Gaurav Vivek Tatwawadi</strong>. For details or clarifications, write to <a href="mailto:connect@tatwafinancials.com" className="underline hover:opacity-100 transition-opacity">connect@tatwafinancials.com</a>.
+            </p>
+            <p className="mt-3 text-xs opacity-60">
+              Investments in Mutual Funds, PMS, SIF and AIF are subject to market risks. Please read all scheme-related documents carefully before investing. Past performance is not indicative of future results. Distributor commissions are applicable on regular plans. Registration by AMFI and NISM certification does not guarantee returns.
             </p>
           </div>
         </div>
