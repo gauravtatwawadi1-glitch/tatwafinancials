@@ -9,10 +9,10 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title="Contact Tatwa Financials | Get in Touch with Our Investment Experts"
-        description="Reach out to Tatwa Financials for portfolio construction, mutual fund, PMS & AIF inquiries. Email connect@tatwafinancials.com or call +91-8879014522."
+        title="Contact Tatwa Financials | AMFI Registered Mutual Fund Distributor"
+        description="Reach out to Tatwa Financials (ARN-341189) for Mutual Fund, SIF, PMS & AIF distribution inquiries. Email connect@tatwafinancials.com or call +91-8879014522."
         canonical="/contact"
-        keywords="contact Tatwa Financials, investment advisor contact, portfolio consultation, mutual fund distributor India"
+        keywords="contact Tatwa Financials, AMFI registered mutual fund distributor, ARN-341189, mutual fund distributor India, PMS AIF SIF distribution"
         structuredData={{
           "@context": "https://schema.org",
           "@type": "ContactPage",
