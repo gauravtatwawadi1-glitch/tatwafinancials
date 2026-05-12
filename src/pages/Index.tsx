@@ -619,7 +619,7 @@ const Index = () => {
           <div className="max-w-3xl mx-auto">
             <div className="bg-gradient-to-br from-primary to-accent p-6 rounded-2xl shadow-[var(--shadow-glow)] text-primary-foreground">
               <p className="text-lg md:text-xl font-semibold mb-2 italic text-center">
-                "Our role is not to pick individual stocks. Our role is to construct thoughtful portfolios."
+                "Our role is not to pick individual stocks. Our role is to deploy capital thoughtfully across the right funds and strategies."
               </p>
               <p className="text-center text-sm opacity-90">– Gaurav Tatwawadi</p>
             </div>
@@ -657,31 +657,11 @@ const Index = () => {
             <PartnerLogo name="Redvision Technologies Pvt Ltd" category="technology" delay={0} logo={redvisionLogo} />
           </div>
 
-          {/* Full AMC Partners Grid */}
-          <div className="mb-10">
-            <div className="text-center mb-6">
-              <h3 className="text-2xl font-bold text-foreground mb-2">
-                All Asset Management Partners
-              </h3>
-              <p className="text-sm text-muted-foreground">
-                Working with India's leading fund houses and investment managers
-              </p>
-            </div>
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 max-w-6xl mx-auto">
-              <PartnerLogo name="HDFC MF" category="amc" delay={0} logo={hdfcMfLogo} />
-              <PartnerLogo name="ICICI Prudential" category="amc" delay={50} logo={iciciPrudentialLogo} />
-              <PartnerLogo name="SBI MF" category="amc" delay={100} logo={sbiMfLogo} />
-              <PartnerLogo name="Axis MF" category="amc" delay={150} logo={axisMfLogo} />
-              <PartnerLogo name="Nippon India" category="amc" delay={200} logo={nipponIndiaLogo} />
-              <PartnerLogo name="Kotak MF" category="amc" delay={250} logo={kotakMfLogo} />
-              <PartnerLogo name="Aditya Birla" category="amc" delay={300} logo={adityaBirlaLogo} />
-              <PartnerLogo name="UTI MF" category="amc" delay={350} logo={utiMfLogo} />
-              <PartnerLogo name="Tata MF" category="amc" delay={400} logo={tataMfLogo} />
-              <PartnerLogo name="Franklin Templeton" category="amc" delay={450} logo={franklinTempletonLogo} />
-            </div>
-            <div className="text-center mt-6">
-              <p className="text-muted-foreground text-sm font-medium">...and all the leading AMCs</p>
-            </div>
+          {/* AMC Empanelment Statement */}
+          <div className="mb-10 max-w-4xl mx-auto text-center">
+            <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
+              Empanelled with all leading AMCs including HDFC MF, ICICI Prudential, SBI MF, Axis MF, Nippon India, Kotak MF, Aditya Birla Sun Life, UTI MF, Tata MF, Franklin Templeton and more.
+            </p>
           </div>
 
         </div>
