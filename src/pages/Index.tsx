@@ -229,7 +229,7 @@ const Index = () => {
           <div className="text-center mb-10">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">Strategic Framework</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              A well-constructed portfolio combines multiple strategy types for resilience and growth
+              A well-diversified fund deployment combines multiple strategy types for resilience and growth
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
@@ -680,7 +680,7 @@ const Index = () => {
       <section className="py-16 px-4 bg-gradient-to-br from-primary via-accent to-secondary text-primary-foreground">
         <div className="container mx-auto max-w-4xl text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Ready to build a portfolio that works for you?
+            Ready to start your investment journey?
           </h2>
           <p className="text-sm mb-8 opacity-90">
             Whether it's Mutual Funds, SIF, PMS, or AIF — we help you allocate capital thoughtfully across strategies.
