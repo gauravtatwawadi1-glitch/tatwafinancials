@@ -31,8 +31,8 @@ const Index = () => {
       "@context": "https://schema.org",
       "@type": "FinancialService",
       "name": "Tatwa Financials",
-      "alternateName": "Tatwa Financials - AMFI Registered Distribution Firm",
-      "description": "An AMFI Registered Mutual Fund Distribution firm focused on fund selection across Mutual Funds, SIF, PMS & AIF.",
+      "alternateName": "Tatwa Financials - AMFI Registered Mutual Fund Distributor",
+      "description": "AMFI Registered Mutual Fund Distributor (ARN-341189) offering distribution services across Mutual Funds, SIF, PMS & AIF. Investments are subject to market risks; please read all scheme-related documents carefully.",
       "url": "https://tatwafinancials.com",
       "logo": "https://storage.googleapis.com/gpt-engineer-file-uploads/IpIZ7HQzo9TnlTUSk4g53Op8goz2/uploads/1759560801108-ChatGPT%20Image%20Oct%204%2C%202025%2C%2012_22_56%20PM.png",
       "telephone": "+91-8879014522",
@@ -48,11 +48,11 @@ const Index = () => {
       },
       "serviceType": [
         "Mutual Fund Distribution",
-        "Fund Selection",
-        "PMS Advisory",
+        "PMS Distribution",
         "AIF Distribution",
         "SIF Distribution"
       ],
+      "identifier": "ARN-341189",
       "sameAs": [
         "https://www.linkedin.com/company/tatwa-financials"
       ]
@@ -87,10 +87,10 @@ const Index = () => {
 
   return <div className="min-h-screen bg-background">
       <SEO
-        title="Tatwa Financials - AMFI Registered Distribution Firm | Fund Selection"
-        description="An AMFI Registered Mutual Fund Distribution firm focused on fund selection. We help you navigate 2,500+ Mutual Funds, 500+ PMS, 1,750+ AIFs & SIFs with thoughtful capital allocation."
+        title="Tatwa Financials - AMFI Registered Mutual Fund Distributor | MF, SIF, PMS, AIF"
+        description="Tatwa Financials (ARN-341189) is an AMFI Registered Mutual Fund Distributor offering distribution across Mutual Funds, SIF, PMS & AIF. Investments are subject to market risks; read all scheme-related documents carefully."
         canonical="/"
-        keywords="fund selection, AMFI registered distributor, mutual funds, SIF, PMS, AIF, investment distributor, AMFI, wealth management, Tatwa"
+        keywords="AMFI registered mutual fund distributor, ARN-341189, mutual fund distributor India, SIF, PMS, AIF distribution, Tatwa Financials"
         structuredData={structuredData}
       />
       {/* Important Notice Popup */}
