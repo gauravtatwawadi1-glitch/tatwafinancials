@@ -614,16 +614,6 @@ const Index = () => {
               </div>
             </div>
           </div>
-          
-          {/* Mission Quote */}
-          <div className="max-w-3xl mx-auto">
-            <div className="bg-gradient-to-br from-primary to-accent p-6 rounded-2xl shadow-[var(--shadow-glow)] text-primary-foreground">
-              <p className="text-lg md:text-xl font-semibold mb-2 italic text-center">
-                "Our role is not to pick individual stocks. Our role is to deploy capital thoughtfully across the right funds and strategies."
-              </p>
-              <p className="text-center text-sm opacity-90">– Gaurav Tatwawadi</p>
-            </div>
-          </div>
         </div>
       </section>
 
