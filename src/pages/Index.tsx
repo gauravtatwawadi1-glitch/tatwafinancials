@@ -350,8 +350,8 @@ const Index = () => {
                 <p className="font-semibold mb-2 text-sm">✓ Tatwa Financials (AMFI Registered Distributor)</p>
                 <ul className="space-y-1 opacity-90 text-xs">
                   <li>• Fund selection & deployment</li>
-                  <li>• Fund evaluation & research</li>
-                  <li>• Capital allocation across MF, SIF, PMS, AIF</li>
+                  <li>• Investment assistance</li>
+                  <li>• Portfolio rebalancing and risk evaluation</li>
                 </ul>
               </div>
               <div className="bg-primary-foreground/10 p-3 rounded-lg backdrop-blur-sm">
