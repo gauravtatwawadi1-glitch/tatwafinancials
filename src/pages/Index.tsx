@@ -618,42 +618,60 @@ const Index = () => {
       </section>
 
       {/* Partners Section */}
-      <section id="partners" className="py-12 px-4 bg-gradient-to-b from-muted/30 via-background to-muted/30 relative overflow-hidden">
-        {/* Decorative Background Elements */}
+      <section id="partners" className="py-16 px-4 bg-gradient-to-b from-muted/30 via-background to-muted/30 relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,hsl(var(--primary)/0.05),transparent_50%)]" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,hsl(var(--secondary)/0.05),transparent_50%)]" />
-        
-        <div className="container mx-auto relative z-10">
-          <div className="text-center mb-10 animate-fade-in">
-            <div className="inline-flex items-center justify-center w-20 h-20 rounded-3xl bg-gradient-to-br from-primary via-accent to-secondary text-primary-foreground mb-6 shadow-[var(--shadow-glow)] animate-scale-in">
-              <Handshake className="w-10 h-10" />
-            </div>
-            <h2 className="text-4xl md:text-6xl font-bold mb-4 text-foreground bg-clip-text text-transparent bg-gradient-to-r from-primary via-accent to-secondary animate-slide-up">
+
+        <div className="container mx-auto relative z-10 max-w-5xl">
+          <div className="text-center mb-12 animate-fade-in">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-semibold mb-4 uppercase tracking-wider">
+              <Handshake className="w-3.5 h-3.5" />
               Our Partners
+            </div>
+            <h2 className="text-3xl md:text-5xl font-bold mb-3 text-foreground">
+              Built on Trusted Collaborations
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Trusted collaborations across Technology and Asset Management
+            <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto">
+              A best-in-class technology backbone and empanelment with India's leading fund houses.
             </p>
           </div>
 
-          <div className="max-w-xs mx-auto mb-12">
-            {/* Technology Partner */}
-            <div className="text-center mb-6">
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-accent/10 text-accent text-sm font-semibold mb-3">
-                <Zap className="w-4 h-4" />
-                Technology Partner
+          <div className="grid md:grid-cols-2 gap-6">
+            {/* Technology Partner Card */}
+            <div className="group relative bg-card border border-border rounded-2xl p-8 shadow-sm hover:shadow-[var(--shadow-glow)] hover:border-accent/40 transition-all duration-300 overflow-hidden">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-accent/10 to-transparent rounded-bl-full" />
+              <div className="relative">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 text-accent text-xs font-semibold mb-4 uppercase tracking-wider">
+                  <Zap className="w-3.5 h-3.5" />
+                  Technology Partner
+                </div>
+                <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-2">WealthElite</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Powering our digital infrastructure — paperless onboarding, secure transactions, and real-time portfolio tracking across MF, SIF, PMS & AIF.
+                </p>
               </div>
             </div>
-            <PartnerLogo name="Redvision Technologies Pvt Ltd" category="technology" delay={0} logo={redvisionLogo} />
-          </div>
 
-          {/* AMC Empanelment Statement */}
-          <div className="mb-10 max-w-4xl mx-auto text-center">
-            <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-              Empanelled with all leading AMCs including HDFC MF, ICICI Prudential, SBI MF, Axis MF, Nippon India, Kotak MF, Aditya Birla Sun Life, UTI MF, Tata MF, Franklin Templeton and more.
-            </p>
+            {/* AMC Empanelment Card */}
+            <div className="group relative bg-card border border-border rounded-2xl p-8 shadow-sm hover:shadow-[var(--shadow-glow)] hover:border-primary/40 transition-all duration-300 overflow-hidden">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-primary/10 to-transparent rounded-bl-full" />
+              <div className="relative">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-semibold mb-4 uppercase tracking-wider">
+                  <Layers className="w-3.5 h-3.5" />
+                  AMC Empanelment
+                </div>
+                <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-3">All Leading AMCs</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed mb-4">
+                  Empanelled with HDFC MF, ICICI Prudential, SBI MF, Axis MF, Nippon India, Kotak MF, Aditya Birla Sun Life, UTI MF, Tata MF, Franklin Templeton and more.
+                </p>
+                <div className="flex flex-wrap gap-1.5">
+                  {["HDFC", "ICICI", "SBI", "Axis", "Nippon", "Kotak", "Birla", "UTI", "Tata", "Franklin"].map((amc) => (
+                    <span key={amc} className="text-[11px] px-2 py-0.5 rounded-full bg-muted text-muted-foreground font-medium">{amc}</span>
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
-
         </div>
       </section>
 
